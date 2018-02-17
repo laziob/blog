@@ -10,9 +10,9 @@ pluralizeListTitles = false
 
 [params]
   # Sets the meta tag description
-  description          = "Blog sobre Digital Analytics. Sus usos, consejos, guías y aplicaciones al marketing digital. También proyectos hechos en R y Shiny."
+  description          = "Blog sobre Digital Analytics. Sus usos, consejos, y aplicaciones al marketing digital. También proyectos hechos en R y Shiny."
   # Sets the navbarTitle that appears in the top left of the navigation bar
-  navbarTitle          = "Blog de LazioB"
+  navbarTitle          = "Inicio  "
   # Sets where "View More Posts" links
   viewMorePostLink     = "/blog/"
 
@@ -123,7 +123,7 @@ pluralizeListTitles = false
   weight = 3
 
 [[menu.main]]
-  name = "Itemized"
+  name = "Proyectos"
   url = "/itemized/"
   identifier = "fa fa-list"
   weight = 4

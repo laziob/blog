@@ -912,4 +912,151 @@ Total 19 (delta 5), reused 0 (delta 0)[0K
 [0K[?25h[?25l
 [0;32muser@DESKTOP-0BRBO9T [0;35m [0;33m~/Documents/Blog[0;36m (master)[0m[0K
 $[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git a[0K[?25hd[0Kd[0K[11G[?25l$ git add .[0K[?25h[?25l
+[0K[?25hwarning: LF will be replaced by CRLF in public/about/index.html.[0K[?25l
+The file will have its original line endings in your working directory.[0K
+[0K[?25hwarning: LF will be replaced by CRLF in public/about/index.xml.[0K[?25l
+The file will have its original line endings in your working directory.[0K
+warning: LF will be replaced by CRLF in public/blog/creating-a-new-theme/index.html.[0K
+The file will have its original line endings in your working directory.[0K
+warning: LF will be replaced by CRLF in public/blog/goisforlovers/index.html.[0K
+The file will have its original line endings in your working directory.[0K
+[0K[?25hwarning: LF will be replaced by CRLF in public/blog/hugoisforlovers/index.html.[0K[?25l
+The file will have its original line endings in your working directory.[0K
+[0K[?25hwarning: LF will be replaced by CRLF in public/blog/index.html.[0K[?25l
+The file will have its original line endings in your working directory.[0K
+[0K[?25hwarning: LF will be replaced by CRLF in public/blog/index.xml.[0K[?25l
+The file will have its original line endings in your working directory.[0K
+warning: LF will be replaced by CRLF in public/blog/migrate-from-jekyll/index.html.[0K
+The file will have its original line endings in your working directory.[0K
+warning: LF will be replaced by CRLF in public/blog/page/2/index.html.[0K
+The file will have its original line endings in your working directory.[0K
+warning: LF will be replaced by CRLF in public/categories/go/index.html.[0K
+The file will have its original line endings in your working directory.[0K
+[0K[?25hwarning: LF will be replaced by CRLF in public/categories/go/index.xml.[0K[?25l
+The file will have its original line endings in your working directory.[0K
+warning: LF will be replaced by CRLF in public/categories/hugo/index.html.[0K
+The file will have its original line endings in your working directory.[0K
+warning: LF will be replaced by CRLF in public/categories/hugo/index.xml.[0K
+The file will have its original line endings in your working directory.[0K
+warning: LF will be replaced by CRLF in public/categories/index.html.[0K
+The file will have its original line endings in your working directory.[0K
+[0K[?25hwarning: LF will be replaced by CRLF in public/categories/index.xml.[0K[?25l
+The file will have its original line endings in your working directory.[0K
+warning: LF will be replaced by CRLF in public/categories/jekyll/index.html.[0K
+The file will have its original line endings in your working directory.[0K
+warning: LF will be replaced by CRLF in public/categories/jekyll/index.xml.[0K
+The file will have its original line endings in your working directory.[0K
+warning: LF will be replaced by CRLF in public/categories/r/index.html.[0K
+The file will have its original line endings in your working directory.[0K
+[0K[?25hwarning: LF will be replaced by CRLF in public/contact/index.html.[0K[?25l
+The file will have its original line endings in your working directory.[0K
+[0K[?25hwarning: LF will be replaced by CRLF in public/contact/index.xml.[0K[?25l
+The file will have its original line endings in your working directory.[0K
+warning: LF will be replaced by CRLF in public/index.html.[0K
+The file will have its original line endings in your working directory.[0K
+[0K[?25hwarning: LF will be replaced by CRLF in public/itemized/index.html.[0K[?25l
+The file will have its original line endings in your working directory.[0K
+warning: LF will be replaced by CRLF in public/itemized/index.xml.[0K
+The file will have its original line endings in your working directory.[0K
+warning: LF will be replaced by CRLF in public/itemized/item1/index.html.[0K
+The file will have its original line endings in your working directory.[0K
+[0K[?25hwarning: LF will be replaced by CRLF in public/itemized/item2/index.html.[0K[?25l
+The file will have its original line endings in your working directory.[0K
+warning: LF will be replaced by CRLF in public/itemized/item3/index.html.[0K
+The file will have its original line endings in your working directory.[0K
+[0K[?25hwarning: LF will be replaced by CRLF in public/itemized/item4/index.html.[0K[?25l
+The file will have its original line endings in your working directory.[0K
+[0K[?25hwarning: LF will be replaced by CRLF in public/itemized/page/2/index.html.[0K[?25l
+The file will have its original line endings in your working directory.[0K
+warning: LF will be replaced by CRLF in public/post/2015-01-01-lorem-ipsum/index.html.[0K
+The file will have its original line endings in your working directory.[0K
+[0K[?25hwarning: LF will be replaced by CRLF in public/post/2015-07-23-r-rmarkdown.Rmd.[0K[?25l
+The file will have its original line endings in your working directory.[0K
+[0K[?25hwarning: LF will be replaced by CRLF in public/post/2016-12-30-hello-markdown/index.html.[0K[?25l
+The file will have its original line endings in your working directory.[0K
+[0K[?25hwarning: LF will be replaced by CRLF in public/post/index.html.[0K[?25l
+The file will have its original line endings in your working directory.[0K
+[0K[?25hwarning: LF will be replaced by CRLF in public/sitemap.xml.[0K[?25l
+The file will have its original line endings in your working directory.[0K
+warning: LF will be replaced by CRLF in public/tags/index.html.[0K
+The file will have its original line endings in your working directory.[0K
+warning: LF will be replaced by CRLF in public/tags/index.xml.[0K
+The file will have its original line endings in your working directory.[0K
+warning: LF will be replaced by CRLF in public/tags/plot/index.html.[0K
+The file will have its original line endings in your working directory.[0K
+warning: LF will be replaced by CRLF in public/tags/r-markdown/index.html.[0K
+The file will have its original line endings in your working directory.[0K
+[0K[?25hwarning: LF will be replaced by CRLF in public/tags/regression/index.html.[0K[?25l
+The file will have its original line endings in your working directory.[0K
+[0K[?25hwarning: LF will be replaced by CRLF in public/tags/tutorial/index.html.[0K[?25l
+The file will have its original line endings in your working directory.[0K
+warning: LF will be replaced by CRLF in public/tags/tutorial/index.xml.[0K
+The file will have its original line endings in your working directory.[0K
+[0K[?25h[?25l
+[0;32muser@DESKTOP-0BRBO9T [0;35m [0;33m~/Documents/Blog[0;36m (master)[0m[0K
+$ git[0K[7G[?25h[?25l$ git c[0K[?25h[?25lo[0K[8G[?25h[9G[?25l$ git com[0K[?25hm[0K[?25lio[0K[12G[?25h[13G[?25l$ git commiot[0K[?25h[?25l$ git commio[0K[?25h[?25l$ git commi[0K[13G[?25h[12G[?25l$ git commit[0K[?25h[14G[?25l$ git commit -[0K[?25h[16G[?25l$ git commit - "[0K[?25h[?25l$ git commit -[0K[16G[?25h[15G[?25l$ git commit -m[0K[?25h[17G[?25l$ git commit -m W[0K[?25h[?25l$ git commit -m[0K[17G[?25h[?25l$ git commit -m "[0K[?25hn[0Ku[0Ke[0Kv[0Ko[0K[24G[?25l$ git commit -m "nuevo l[0K[?25ho[0Kg[0Ko[0K"#[0K[?25l$ git commit -m "nuevo logo"[0K[?25h[?25l
+[0K[?25h[master ad63ea9] nuevo logo[0K[?25l
+ 22 files changed, 112 insertions(+), 71 deletions(-)[0K
+ rewrite static/img/main/logo.jpg (99%)[0K
+[0K[?25h[?25l
+[0;32muser@DESKTOP-0BRBO9T [0;35m [0;33m~/Documents/Blog[0;36m (master)[0m[0K
+$ go[0K[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git p[0K[?25hu[0Kl[0Kl[0K[?25l
+[0K[?25hAlready up to date.[0K[?25l
+[0K[?25h[?25l
+[0;32muser@DESKTOP-0BRBO9T [0;35m [0;33m~/Documents/Blog[0;36m (master)[0m[0K
+$ git push[0K[?25h[?25l
+[0K[?25hCounting objects: 50, done.[0K[?25l
+Delta compression using up to 8 threads.[0K
+Compressing objects: 100% (40/40), done.[0K
+Writing objects: 100% (50/50), 9.09 KiB | 1.82 MiB/s, done.[0K
+Total 50 (delta 26), reused 0 (delta 0)[0K
+[0K[?25hremote: Resolving deltas:  11% (3/26)[0K[41G[?25lremote: Resolving deltas:  38% (10/26)[0K[1G[?25hremote: Resolving deltas: 100% (26/26), completed with 22 local objects.[0K[?25l
+[0K[?25hTo https://github.com/laziob/blog.git[0K[?25l
+   16ae7f7..ad63ea9  master -> master[0K
+[0K[?25h[?25l
+[0;32muser@DESKTOP-0BRBO9T [0;35m [0;33m~/Documents/Blog[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git s[0K[?25ht[0Ka[0Kt[0Ku[0K[?25ls[0K[12G[?25h[13G[?25l
+[0K[?25hOn branch master[0K[?25l
+Your branch is up to date with 'origin/master'.[0K
+[0K
+Changes not staged for commit:[0K
+  (use "git add/rm <file>..." to update what will be committed)[0K
+  (use "git checkout -- <file>..." to discard changes in working directory)[0K
+[0K
+        [0;31mmodified:   .Rproj.user/99627C60/console06/CE793CD[0m[0K
+        [0;31mmodified:   .Rproj.user/99627C60/sources/prop/22F941C5[0m[0K
+        [0;31mmodified:   .Rproj.user/99627C60/sources/prop/F305587[0m[0K
+        [0;31mmodified:   .Rproj.user/99627C60/sources/s-BD003BE2/EFBCDC69[0m[0K
+        [0;31mmodified:   .Rproj.user/99627C60/sources/s-BD003BE2/EFBCDC69-contents[0m[0K
+        [0;31mmodified:   config.toml[0m[0K
+        [0;31mdeleted:    content/about.md[0m[0K
+        [0;31mmodified:   content/about/_index.md[0m[0K
+        [0;31mmodified:   public/about/index.html[0m[0K
+        [0;31mmodified:   public/blog/hugoisforlovers/index.html[0m[0K
+        [0;31mmodified:   public/blog/index.html[0m[0K
+        [0;31mmodified:   public/categories/go/index.html[0m[0K
+        [0;31mmodified:   public/categories/index.html[0m[0K
+        [0;31mmodified:   public/contact/index.html[0m[0K
+        [0;31mmodified:   public/index.html[0m[0K
+        [0;31mmodified:   public/itemized/item1/index.html[0m[0K
+        [0;31mmodified:   public/itemized/item2/index.html[0m[0K
+        [0;31mmodified:   public/itemized/item3/index.html[0m[0K
+        [0;31mmodified:   public/itemized/item4/index.html[0m[0K
+        [0;31mmodified:   public/itemized/page/2/index.html[0m[0K
+        [0;31mmodified:   public/post/2015-01-01-lorem-ipsum/index.html[0m[0K
+        [0;31mmodified:   public/post/2016-12-30-hello-markdown/index.html[0m[0K
+        [0;31mmodified:   public/post/index.html[0m[0K
+[0K
+Untracked files:[0K
+  (use "git add <file>..." to include in what will be committed)[0K
+[0K
+        [0;31m.Rproj.user/99627C60/sources/s-BD003BE2/119505B1-contents[0m[0K
+        [0;31m.Rproj.user/99627C60/sources/s-BD003BE2/4E25F837-contents[0m[0K
+        [0;31m.Rproj.user/99627C60/sources/s-BD003BE2/D7237C78[0m[0K
+        [0;31m.Rproj.user/99627C60/sources/s-BD003BE2/D7237C78-contents[0m[0K
+[0K
+no changes added to commit (use "git add" and/or "git commit -a")[0K
+[0K[?25h[?25l
+[0;32muser@DESKTOP-0BRBO9T [0;35m [0;33m~/Documents/Blog[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git a[0K[?25hd[0Kd[0K[11G[?25l$ git add .[0K[?25h[?25l
 [0K[?25h
