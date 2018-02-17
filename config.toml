@@ -1,6 +1,6 @@
 baseurl = "/"
-languageCode = "en-us"
-title = "Hugo Future Imperfect"
+languageCode = "ar-es"
+title = "Blog de LazioB"
 theme = "hugo-future-imperfect"
 preserveTaxonomyNames = true
 paginate = 3
@@ -10,9 +10,9 @@ pluralizeListTitles = false
 
 [params]
   # Sets the meta tag description
-  description          = "HTML5 UP theme, Future Imperfect with some extra goodies, ported by Julio Pescador. Powered by Hugo"
+  description          = "Blog sobre Digital Analytics. Sus usos, consejos, guías y aplicaciones al marketing digital. También proyectos hechos en R y Shiny."
   # Sets the navbarTitle that appears in the top left of the navigation bar
-  navbarTitle          = "Future Imperfect"
+  navbarTitle          = "Blog de LazioB"
   # Sets where "View More Posts" links
   viewMorePostLink     = "/blog/"
 
@@ -82,12 +82,11 @@ pluralizeListTitles = false
   # These are optional params related to the sidebar. They are recommended, but not
   # required for proper functionality. HTML is supported within the params.
 [params.intro]
-  header    = "Hugo Future Imperfect"
+  header    = "Blog de LazioB"
 
-  paragraph = "Another fine responsive site template by <a href=\"http://html5up.net\">HTML5 UP</a>. Ported by Julio Pescador with some extra goodies <i class='fa fa-hand-peace-o'></i>"
+  paragraph = "Blog sobre Digital Analytics. Sus usos, consejos, guías y aplicaciones. También proyectos hechos en R y Shiny. <i class='fa fa-hand-peace-o'></i>"
 
-  about     = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tellus lacus, auctor vehicula molestie quis, tempor quis velit. Quisque in quam ac leo efficitur vulputate. Phasellus ullamcorper aliquam sodales. Maecenas sit amet condimentum ipsum. Proin sit amet ligula elit. Mauris."
-
+  about     = "Analista Digital y cuasi Desarrollador en Leadaki, una agencia de Marketing Digital orientada a Performance. Apasionado de Analytics, BI, estadística y los efectos de la tecnología en la sociedad"
   # This appears at the top of the sidebar above params.intro.header.
   # A width of less than 100px is recommended from a design perspective.
   [params.intro.pic]
@@ -96,8 +95,8 @@ pluralizeListTitles = false
     circle    = false
     # Sets Image to be Future Imperfect's hexagon
     imperfect = true
-    width     = ""
-    alt       = "Hugo Future Imperfect"
+    width     = "100px"
+    alt       = "perfil_laziob"
 
 [params.postAmount]
 # Sets the number of recent posts to show in the sidebar. The default value is 5.
@@ -112,7 +111,7 @@ pluralizeListTitles = false
   weight = 1
 
 [[menu.main]]
-  name = "About"
+  name = "Sobre Mí"
   url = "/about/"
   identifier = "fa fa-id-card-o"
   weight = 2
@@ -130,13 +129,13 @@ pluralizeListTitles = false
   weight = 4
 
 [[menu.main]]
-  name = "Categories"
+  name = "Categorías"
   url = "/categories/"
   identifier = "fa fa-sitemap"
   weight = 5
 
 [[menu.main]]
-  name = "Contact"
+  name = "Contacto"
   url = "/contact/"
   identifier = "fa fa-envelope-o"
   weight = 6
@@ -146,7 +145,7 @@ pluralizeListTitles = false
 # and socialAppearAtBottom.
 [social]
   # Coding Communities
-  github           = "jpescador/hugo-future-imperfect"
+  github           = "laziob"
   gitlab           = ""
   stackoverflow    = "" # User Number
   bitbucket        = ""
@@ -154,22 +153,22 @@ pluralizeListTitles = false
   codepen          = ""
   # Visual Art Communities
   deviantart       = ""
-  flickr           = "example"
+  flickr           = ""
   behance          = ""
   dribbble         = ""
   # Publishing Communities
   wordpress        = ""
-  medium           = ""
+  medium           = "ezequielboehler"
   # Professional/Business Oriented Communities
-  linkedin         = "example"
-  linkedin_company = "examplebusiness"
+  linkedin         = "ezequiel-boehler-1b01783b"
+  linkedin_company = ""
   foursquare       = ""
   xing             = ""
   slideshare       = ""
   # Social Networks
-  facebook         = "example"
+  facebook         = ""
   googleplus       = ""
-  reddit           = "example"
+  reddit           = ""
   quora            = ""
   youtube          = ""
   vimeo            = ""
@@ -177,16 +176,16 @@ pluralizeListTitles = false
     # WeChat and QQ need testing.
     wechat         = ""
     qq             = "" # User ID Number
-  instagram        = "example"
+  instagram        = ""
   tumblr           = ""
-  twitter          = "example"
+  twitter          = "LazioB"
   skype            = ""
   snapchat         = ""
-  pinterest        = "example"
-  telegram         = "example"
+  pinterest        = ""
+  telegram         = ""
   vine             = ""
   googlescholar    = ""
   orcid            = ""
-  researchgate     = "example"    
+  researchgate     = ""    
   # Email
-  email            = "example"
+  email            = "ezequielboehler@gmail.com"
