@@ -1059,4 +1059,98 @@ no changes added to commit (use "git add" and/or "git commit -a")[0K
 [0K[?25h[?25l
 [0;32muser@DESKTOP-0BRBO9T [0;35m [0;33m~/Documents/Blog[0;36m (master)[0m[0K
 $[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git a[0K[?25hd[0Kd[0K[11G[?25l$ git add .[0K[?25h[?25l
+[0K[?25hwarning: LF will be replaced by CRLF in .Rproj.user/99627C60/sources/prop/22F941C5.[0K[?25l
+The file will have its original line endings in your working directory.[0K
+[0K[?25hwarning: LF will be replaced by CRLF in .Rproj.user/99627C60/sources/prop/F305587.[0K[?25l
+The file will have its original line endings in your working directory.[0K
+[0K[?25hwarning: LF will be replaced by CRLF in .Rproj.user/99627C60/sources/s-BD003BE2/EFBCDC69.[0K[?25l
+The file will have its original line endings in your working directory.[0K
+warning: LF will be replaced by CRLF in .Rproj.user/99627C60/sources/s-BD003BE2/EFBCDC69-contents.[0K
+The file will have its original line endings in your working directory.[0K
+[0K[?25hwarning: LF will be replaced by CRLF in public/about/index.html.[0K[?25l
+The file will have its original line endings in your working directory.[0K
+[0K[?25hwarning: LF will be replaced by CRLF in public/blog/hugoisforlovers/index.html.[0K[?25l
+The file will have its original line endings in your working directory.[0K
+[0K[?25hwarning: LF will be replaced by CRLF in public/blog/index.html.[0K[?25l
+The file will have its original line endings in your working directory.[0K
+warning: LF will be replaced by CRLF in public/categories/go/index.html.[0K
+The file will have its original line endings in your working directory.[0K
+warning: LF will be replaced by CRLF in public/categories/index.html.[0K
+The file will have its original line endings in your working directory.[0K
+warning: LF will be replaced by CRLF in public/contact/index.html.[0K
+The file will have its original line endings in your working directory.[0K
+warning: LF will be replaced by CRLF in public/index.html.[0K
+The file will have its original line endings in your working directory.[0K
+[0K[?25hwarning: LF will be replaced by CRLF in public/itemized/item1/index.html.[0K[?25l
+The file will have its original line endings in your working directory.[0K
+[0K[?25hwarning: LF will be replaced by CRLF in public/itemized/item2/index.html.[0K[?25l
+The file will have its original line endings in your working directory.[0K
+warning: LF will be replaced by CRLF in public/itemized/item3/index.html.[0K[1G[?25h[?25l
+The file will have its original line endings in your working directory.[0K
+[0K[?25hwarning: LF will be replaced by CRLF in public/itemized/item4/index.html.[0K[?25l
+The file will have its original line endings in your working directory.[0K
+warning: LF will be replaced by CRLF in public/itemized/page/2/index.html.[0K
+The file will have its original line endings in your working directory.[0K
+[0K[?25hwarning: LF will be replaced by CRLF in public/post/2015-01-01-lorem-ipsum/index.html.[0K[?25l
+The file will have its original line endings in your working directory.[0K
+[0K[?25hwarning: LF will be replaced by CRLF in public/post/2016-12-30-hello-markdown/index.html.[0K[?25l
+The file will have its original line endings in your working directory.[0K
+[0K[?25hwarning: LF will be replaced by CRLF in public/post/index.html.[0K[?25l
+The file will have its original line endings in your working directory.[0K
+[0K[?25hwarning: LF will be replaced by CRLF in .Rproj.user/99627C60/sources/s-BD003BE2/119505B1-contents.[0K[?25l
+The file will have its original line endings in your working directory.[0K
+warning: LF will be replaced by CRLF in .Rproj.user/99627C60/sources/s-BD003BE2/4E25F837-contents.[0K
+The file will have its original line endings in your working directory.[0K
+warning: LF will be replaced by CRLF in .Rproj.user/99627C60/sources/s-BD003BE2/D7237C78.[0K
+The file will have its original line endings in your working directory.[0K
+[0K[?25hwarning: LF will be replaced by CRLF in .Rproj.user/99627C60/sources/s-BD003BE2/D7237C78-contents.[0K[?25l
+The file will have its original line endings in your working directory.[0K
+[0K[?25h[?25l
+[0;32muser@DESKTOP-0BRBO9T [0;35m [0;33m~/Documents/Blog[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git c[0K[?25ho[0Km[0Km[0K[?25li[0K[11G[?25h[12G[?25l$ git commit[0K[?25h[14G[?25l$ git commit -[0K[?25h,[0K[17G[?25l$ git commit -, "[0K[?25h[?25l$ git commit -,[0K[17G[?25h[16G[?25l$ git commit -[0K[?25hm[0K[17G[?25l$ git commit -m "[0K[?25hA[0Kg[0Kr[0Ke[0Kg[0Ku[0Kp[0Ke[0K[27G[?25l$ git commit -m "Agregupe e[0K[?25hl[0K[30G[29G[?25l$ git commit -m "Agregupe e[0K[?25h[?25l$ git commit -m "Agregupe[0K[27G[?25h[26G[?25l$ git commit -m "Agregup[0K[?25h[?25l$ git commit -m "Agregu[0K[?25hé[0K[26G[?25l$ git commit -m "Agregué e[0K[?25hl[0K[29G[?25l$ git commit -m "Agregué el A[0K[?25hb[0Ko[0Ku[0Kt[0K[35G[34G[?25l$ git commit -m "Agregué el About"[0K[?25h[?25l$ git commit -m "Agregué el About[0K[?25h"[0K[?25l
+[0K[?25h[master 0fb8437] Agregué el About[0K[?25l
+ 26 files changed, 301 insertions(+), 89 deletions(-)[0K
+ rename content/about.md => .Rproj.user/99627C60/sources/s-BD003BE2/119505B1-contents (100%)[0K
+ create mode 100644 .Rproj.user/99627C60/sources/s-BD003BE2/4E25F837-contents[0K
+ create mode 100644 .Rproj.user/99627C60/sources/s-BD003BE2/D7237C78[0K
+ create mode 100644 .Rproj.user/99627C60/sources/s-BD003BE2/D7237C78-contents[0K
+ rewrite content/about/_index.md (98%)[0K
+[0K[?25h[?25l
+[0;32muser@DESKTOP-0BRBO9T [0;35m [0;33m~/Documents/Blog[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git p[0K[?25hu[0Kl[0K[?25ll[0K[10G[?25h[11G[?25l
+[0K[?25hAlready up to date.[0K[?25l
+[0K[?25h[?25l
+[0;32muser@DESKTOP-0BRBO9T [0;35m [0;33m~/Documents/Blog[0;36m (master)[0m[0K
+$ git  pu[0K[?25hs[0Kh[0K[?25l
+[0K[?25hCounting objects: 49, done.[0K[?25l
+Delta compression using up to 8 threads.[0K
+Compressing objects: 100% (40/40), done.[0K
+[0K[?25hWriting objects: 100% (49/49), 6.85 KiB | 1.37 MiB/s, done.[0K[?25l
+Total 49 (delta 26), reused 0 (delta 0)[0K
+[0K[?25h[?25lremote: Resolving deltas:  23% (6/26)[0K[1G[?25hremote: Resolving deltas: 100% (26/26), completed with 24 local objects.[0K[?25l
+[0K[?25hTo https://github.com/laziob/blog.git[0K[?25l
+   ad63ea9..0fb8437  master -> master[0K
+[0K[?25h[?25l
+[0;32muser@DESKTOP-0BRBO9T [0;35m [0;33m~/Documents/Blog[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git s[0K[?25ht[0Ka[0Kt[0Ku[0Ks[0K[?25l
+[0K[?25hOn branch master[0K[?25l
+Your branch is up to date with 'origin/master'.[0K
+[0K
+Changes not staged for commit:[0K
+  (use "git add <file>..." to update what will be committed)[0K
+  (use "git checkout -- <file>..." to discard changes in working directory)[0K
+[0K
+        [0;31mmodified:   .Rproj.user/99627C60/console06/CE793CD[0m[0K
+[0K
+Untracked files:[0K
+  (use "git add <file>..." to include in what will be committed)[0K
+[0K
+        [0;31m.Rproj.user/99627C60/sources/s-BD003BE2/A8BBDB4E[0m[0K
+        [0;31m.Rproj.user/99627C60/sources/s-BD003BE2/A8BBDB4E-contents[0m[0K
+        [0;31mcontent/about.md[0m[0K
+[0K
+no changes added to commit (use "git add" and/or "git commit -a")[0K
+[0K[?25h[?25l
+[0;32muser@DESKTOP-0BRBO9T [0;35m [0;33m~/Documents/Blog[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ g[0K[?25hi[0K[?25lt[0K[5G[?25h[6G[7G[?25l$ git a[0K[7G[?25h[8G[?25l$ git ad[0K[?25h[?25ld[0K[9G[?25h[10G[11G[?25l$ git add .[0K[?25h[?25l
 [0K[?25h
