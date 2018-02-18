@@ -1,18 +1,18 @@
 {
     "collab_server" : "",
     "contents" : "",
-    "created" : 1518960147378.000,
+    "created" : 1518960482177.000,
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
     "hash" : "0",
-    "id" : "87E9FB7",
+    "id" : "AEF7FC87",
     "lastKnownWriteTime" : 1518893737,
     "last_content_update" : 1518893737,
-    "path" : "~/Blog/themes/hugo-future-imperfect/exampleSite/content/about/_index.md",
-    "project_path" : "themes/hugo-future-imperfect/exampleSite/content/about/_index.md",
+    "path" : "~/Blog/content/blog/creating-a-new-theme.md",
+    "project_path" : "content/blog/creating-a-new-theme.md",
     "properties" : {
-        "cursorPosition" : "13,39",
+        "cursorPosition" : "15,15",
         "scrollLine" : "0"
     },
     "relative_order" : 7,
