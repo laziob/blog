@@ -84,7 +84,7 @@ pluralizeListTitles = false
 [params.intro]
   header    = "Blog de LazioB"
 
-  paragraph = "Blog sobre Digital Analytics. Sus usos, consejos, guías y aplicaciones. También proyectos hechos en R y Shiny. <i class='fa fa-hand-peace-o'></i>"
+  paragraph = "Blog sobre Digital Analytics. Sus usos, consejos, y aplicaciones al marketing digital. También proyectos hechos en R y Shiny. <i class='fa fa-hand-peace-o'></i>"
 
   about     = "Analista Digital y cuasi Desarrollador en Leadaki, una agencia de Marketing Digital orientada a Performance. Apasionado de Analytics, BI, estadística y los efectos de la tecnología en la sociedad"
   # This appears at the top of the sidebar above params.intro.header.
