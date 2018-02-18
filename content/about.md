@@ -10,6 +10,7 @@ Por un lado manejo las campañas de marketing digital de ciertos clientes grande
 Por otro, doy soporte al equipo de analistas y cuentas con el desarrollo de herramientas que faciliten el análisis de las campañas, que disminuyan el tiempo operativo de optimización o cambios, y que brinde la información justa en el momento oportuno. 
 
 En consecuencia de eso, me encuentro aprendiendo constantemente sobre distintas areas:
+
 * [Marketing Digital: Probar las últimas herramientas que lanzan Adwords y Facebook y medir que utilidad pueden llegar a tener para las campañas de nuestros clientes.]
 * [Digital Analytics: Buscar la mejor forma de medir aquellos resultados que los clientes esperan obtener de sus sitios web, lugares / elementos donde optimizar, y analizar el comportamiento de sus visitantes para sacarle el mayor provecho a las estrategias de marketing.]
 * [Desarrollo / Programación: Los conocimientos técnicos son cada vez más necesarios para el marketing, y la progrmación se vuelve indispensable a la hora de poder medir objetivos en sitios web o aplicaciones (Javascript, HTML y CSS). A su vez, el análisis de datos de forma rápida y escalable tambien requiere de herramientas de programación. (R, Python, SQL). Y por último crear herramientas que faciliten y agilizen los procesos de trabajo para poder replicar resultados en más clientes en menor tiempo.]
