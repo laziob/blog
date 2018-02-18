@@ -1372,4 +1372,65 @@ $ git push[0K[?25h[?25l
 [0K[?25h[?25l
 [0;32muser@DESKTOP-0BRBO9T [0;35m [0;33m~/Documents/Blog[0;36m (master)[0m[0K
 $[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git a[0K[?25hd[0Kd[0K[11G[?25l$ git add .[0K[?25h[?25l
+[0K[?25h[?25l
+[0;32muser@DESKTOP-0BRBO9T [0;35m [0;33m~/Documents/Blog[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git c[0K[?25ho[0K[?25lm[0K[9G[?25h[10G[?25l$ git comm[0K[?25hi[0Kt[0K[14G[?25l$ git commit -[0K[?25hm[0K[17G[?25l$ git commit -m "[0K[?25hr[0Ke[0Ks[0Ko[0Kl[0Kv[0Ki[0Ke[0Kn[0Kd[0Ko[0K[30G[?25l$ git commit -m "resolviendo e[0K[?25hl[0K[33G[?25l$ git commit -m "resolviendo el a[0K[?25hb[0Ko[0Ku[0Kt[0K"[0K[?25l
+[0K[?25h[master 97b3a17] resolviendo el about[0K[?25l
+ 79 files changed, 1464 insertions(+), 979 deletions(-)[0K
+ create mode 100644 .Rproj.user/99627C60/sources/prop/2FBE0CC[0K
+ create mode 100644 .Rproj.user/99627C60/sources/prop/AE73560[0K
+ create mode 100644 .Rproj.user/99627C60/sources/s-BD003BE2/4FBE69AE[0K
+ rename content/about/_index.md => .Rproj.user/99627C60/sources/s-BD003BE2/4FBE69AE-contents (100%)[0K
+ create mode 100644 .Rproj.user/99627C60/sources/s-BD003BE2/56AA8623[0K
+ rename themes/hugo-lithium-theme/exampleSite/content/post/2016-12-30-hello-markdown.md => .Rproj.user/99627C60/sources/s-BD0[0K0
+3BE2/56AA8623-contents (100%)[0K
+ create mode 100644 .Rproj.user/99627C60/sources/s-BD003BE2/77265D6-contents[0K
+ delete mode 100644 .Rproj.user/99627C60/sources/s-BD003BE2/A8BBDB4E[0K
+ delete mode 100644 .Rproj.user/99627C60/sources/s-BD003BE2/D7237C78[0K
+ delete mode 100644 content/about.md[0K
+ create mode 100644 content/about/about.md[0K
+ create mode 100644 public/about/about/index.html[0K
+ delete mode 100644 themes/hugo-lithium-theme/.gitignore[0K
+ delete mode 100644 themes/hugo-lithium-theme/LICENSE.md[0K
+ delete mode 100644 themes/hugo-lithium-theme/README.md[0K
+ delete mode 100644 themes/hugo-lithium-theme/archetypes/default.md[0K
+ delete mode 100644 themes/hugo-lithium-theme/exampleSite/config.toml[0K
+ delete mode 100644 themes/hugo-lithium-theme/exampleSite/content/about.md[0K
+ delete mode 100644 themes/hugo-lithium-theme/exampleSite/content/post/2015-01-01-lorem-ipsum.md[0K
+ delete mode 100644 themes/hugo-lithium-theme/exampleSite/static/.gitkeep[0K
+ delete mode 100644 themes/hugo-lithium-theme/hugo-lithium-theme.Rproj[0K
+ delete mode 100644 themes/hugo-lithium-theme/layouts/_default/list.html[0K
+ delete mode 100644 themes/hugo-lithium-theme/layouts/_default/single.html[0K
+ delete mode 100644 themes/hugo-lithium-theme/layouts/partials/disqus.html[0K
+ delete mode 100644 themes/hugo-lithium-theme/layouts/partials/footer.html[0K
+ delete mode 100644 themes/hugo-lithium-theme/layouts/partials/footer_highlightjs.html[0K
+ delete mode 100644 themes/hugo-lithium-theme/layouts/partials/footer_mathjax.html[0K
+ delete mode 100644 themes/hugo-lithium-theme/layouts/partials/head.html[0K
+ delete mode 100644 themes/hugo-lithium-theme/layouts/partials/head_custom.html[0K
+ delete mode 100644 themes/hugo-lithium-theme/layouts/partials/head_highlightjs.html[0K
+ delete mode 100644 themes/hugo-lithium-theme/layouts/partials/header.html[0K
+ delete mode 100644 themes/hugo-lithium-theme/layouts/partials/nav.html[0K
+ delete mode 100644 themes/hugo-lithium-theme/static/css/fonts.css[0K
+ delete mode 100644 themes/hugo-lithium-theme/static/css/main.css[0K
+ delete mode 100644 themes/hugo-lithium-theme/static/fonts/lato-v11-latin-regular.woff[0K
+ delete mode 100644 themes/hugo-lithium-theme/static/fonts/lato-v11-latin-regular.woff2[0K
+ delete mode 100644 themes/hugo-lithium-theme/static/fonts/merriweather-v13-latin-regular.woff[0K
+ delete mode 100644 themes/hugo-lithium-theme/static/fonts/merriweather-v13-latin-regular.woff2[0K
+ delete mode 100644 themes/hugo-lithium-theme/static/images/hugo-logo.png[0K
+ delete mode 100644 themes/hugo-lithium-theme/static/images/logo.png[0K
+ delete mode 100644 themes/hugo-lithium-theme/static/js/math-code.js[0K
+[0K[?25h[?25l
+[0;32muser@DESKTOP-0BRBO9T [0;35m [0;33m~/Documents/Blog[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git p[0K[?25hu[0Ks[0Kh[0Kj[0K[?25l$ git push[0K[?25h[?25l
+[0K[?25hCounting objects: 83, done.[0K[?25l
+Delta compression using up to 8 threads.[0K
+Compressing objects:  14% (10/67)[0K[1G[?25hCompressing objects: 100% (67/67), done.[0K[?25l
+Writing objects: 100% (83/83), 19.89 KiB | 1.81 MiB/s, done.[0K
+Total 83 (delta 38), reused 0 (delta 0)[0K
+[0K[?25h[?25lremote: Resolving deltas:  15% (6/38)[0K[1G[?25hremote: Resolving deltas: 100% (38/38), completed with 28 local objects.[0K[?25l
+[0K[?25hTo https://github.com/laziob/blog.git[0K[?25l
+   065bbfb..97b3a17  master -> master[0K
+[0K[?25h[?25l
+[0;32muser@DESKTOP-0BRBO9T [0;35m [0;33m~/Documents/Blog[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git s[0K[?25h[?25l$ git[0K[7G[?25h[?25l$ git a[0K[?25hd[0Kd[0K[11G[?25l$ git add .[0K[?25h[?25l
 [0K[?25h
