@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Post on Blog de LazioB</title>
-    <link>/post/</link>
-    <description>Recent content in Post on Blog de LazioB</description>
+    <title>Gtm on Blog de LazioB</title>
+    <link>/categories/gtm/</link>
+    <description>Recent content in Gtm on Blog de LazioB</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ar-es</language>
     <lastBuildDate>Sun, 18 Feb 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/gtm/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>

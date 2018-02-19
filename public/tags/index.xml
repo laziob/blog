@@ -6,35 +6,44 @@
     <description>Recent content in Tags on Blog de LazioB</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ar-es</language>
-    <lastBuildDate>Thu, 23 Jul 2015 21:13:14 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 18 Feb 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Plot</title>
-      <link>/tags/plot/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      <title>Ga</title>
+      <link>/tags/ga/</link>
+      <pubDate>Sun, 18 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>/tags/plot/</guid>
+      <guid>/tags/ga/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>R Markdown</title>
-      <link>/tags/r-markdown/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      <title>Google analytics</title>
+      <link>/tags/google-analytics/</link>
+      <pubDate>Sun, 18 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>/tags/r-markdown/</guid>
+      <guid>/tags/google-analytics/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Regression</title>
-      <link>/tags/regression/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      <title>Google tag manager</title>
+      <link>/tags/google-tag-manager/</link>
+      <pubDate>Sun, 18 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>/tags/regression/</guid>
+      <guid>/tags/google-tag-manager/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gtm</title>
+      <link>/tags/gtm/</link>
+      <pubDate>Sun, 18 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/gtm/</guid>
       <description></description>
     </item>
     
