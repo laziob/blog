@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ezequiel -Lazio- Boehler on Blog de LazioB</title>
@@ -6,19 +6,9 @@
     <description>Recent content in Ezequiel -Lazio- Boehler on Blog de LazioB</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ar-es</language>
-    <lastBuildDate>Sat, 17 Feb 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/about/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Ezequiel -Lazio- Boehler</title>
-      <link>/about/about/</link>
-      <pubDate>Sat, 17 Feb 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/about/about/</guid>
-      <description>Soy un estudiante de Marketing de 26 años. Vivo en la Ciudad de Buenos Aires, Argentina. Hace 2 años que trabajo en Leadaki, una agencia de marketing enfocada en Performance (Obtención de prospectos/leads) Mis rol dentro de la empresa es algo hibrido. Por un lado manejo las campañas de marketing digital de ciertos clientes grandes. Por otro, doy soporte al equipo de analistas y cuentas con el desarrollo de herramientas que faciliten el análisis de las campañas, que disminuyan el tiempo operativo de optimización o cambios, y que brinde la información justa en el momento oportuno.</description>
-    </item>
     
   </channel>
 </rss>

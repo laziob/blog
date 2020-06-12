@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>estadistica on Blog de LazioB</title>
+    <link>/tags/estadistica/</link>
+    <description>Recent content in estadistica on Blog de LazioB</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ar-es</language>
+    <lastBuildDate>Thu, 11 Jun 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/estadistica/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>La falacia de la &#34;Analitica Digital&#34;</title>
+      <link>/post/la-falacia-de-la-analitica-digital/</link>
+      <pubDate>Thu, 11 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/la-falacia-de-la-analitica-digital/</guid>
+      <description>La realidad es que la mayoria de los equipos de marketing digital, o analytics, no toman decisiones en datos, no son &amp;ldquo;data-driven&amp;rdquo;.
+Hoy en día, la comunicación sobre el presente y futuro de los datos y su impacto en los negocios abunda. Alcanza con buscar &amp;ldquo;negocios data&amp;rdquo; en Google para encontrar un sinfin de notas sobre el tema.
+Con el aumento de herramientas de recoleccion de datos web, su facilidad de uso y la poca regulación (que en el último año comenzo a cambiar), los equipos de Marketing y UX fueron quiza de los más beneficiados, obteniendo datos no solo de la adquisición (campañas, audiencias, canales) de posibles clientes sino de sus interacciones con todo su producto o servicio.</description>
+    </item>
+    
+  </channel>
+</rss>
