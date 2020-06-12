@@ -1,6 +1,6 @@
 ---
 title: ¿Que pasó con las decisiones basadas en datos?
-author: ''
+author: 'Ezequiel Boehler'
 date: '2020-06-11'
 categories:
   - analytics
@@ -9,6 +9,8 @@ tags:
   - decisiones
   - estadistica
 slug: la-falacia-de-la-analitica-digital
+type: post
+description: Las empresas no están obteniendo el valor deseado de su inversión en datos. La clave para solucionar ese problema se encuentra en tener personas en el equipo con los conocimientos estadísticos necesarios.
 ---
 La realidad es que **la mayoría de los equipos de marketing digital, o analytics, no toman decisiones en base a datos**, no son "data-driven".
 
@@ -48,14 +50,22 @@ La nota más reciente sobre el tema que leí es [esta de acá](https://hbr-org.c
 
 Si recuerdan, en la primer nota de HBR se menciona el poco conocimiento de los profesionales de marketing en estadística. ¿Por qué es la estadistica importante para estos equipos? 
 
-Casi todo el conocimiento que existe en el mundo se obtiene a través de la _inferencia_ o se lo aproxima a través de la _probabilidad_. Observando que los objetos al ser levantados y luego soltados, estos caen, podemos inferir la existencia de la ley de gravedad. Pero un perro nos muerde, podemos inferir que todos los perros nos van a morder?
+Casi todo el conocimiento que existe en el mundo se obtiene a través de la _inferencia_ o se lo aproxima a través de la _probabilidad_. Observando que los objetos al ser levantados y luego soltados, estos caen, podemos inferir la existencia de la ley de gravedad. Pero si un perro nos muerde, podemos inferir que todos los perros nos van a morder?
 
-Para evitar hacer inferencias incorrectas, como la del perro, es necesario un correcto diseño de test de hipótesis y el uso correcto de la estadística. Por lo general, esto incluye seleccionar la población sobre la que queremos inferir, calcular el tamaño necesario de muestreo, lograr que el muestreo sea representativo y aleatorio de dicha población, entre otros factores. 
+Para evitar hacer inferencias incorrectas, como la del perro, es necesario un correcto diseño de test de hipótesis y el uso correcto de la estadística. Por lo general, esto incluye seleccionar la población sobre la que queremos inferir, calcular el tamaño necesario de muestreo, revisar que el muestreo sea representativo y aleatorio de dicha población, entre otros factores. 
 
-Sumado a eso, hay que tener un correcto entendimiento de "significancia estadística", "test de potencia", "intervalos de confianza" entre otros conceptos. Y eso solo si nos enfocamos en lo que se denomina "métodos frecuentistas". Si buscamos un enfoque Bayesiano, aparecen otros factores y términos que debemos entender. 
+Sumado a eso, hay que tener un correcto entendimiento de "significancia estadística", "test de potencia", "intervalos de confianza" más otros conceptos. Y eso solo si nos enfocamos en lo que se denomina "métodos frecuentistas". Si buscamos un enfoque Bayesiano, aparecen otros factores y términos que debemos entender. 
+
+¿Por qué esto es importante? Porque lo que buscamos lograr acá es aplicar el metodo cientifico. **El método científico es una metodología para obtener nuevos conocimientos**, que ha caracterizado históricamente a la ciencia, y que **consiste en la observación sistemática, medición, experimentación, y la formulación, análisis y modificación de hipótesis.** Basicamente, es lo que nos permite disitnguir hechos verdaderos de aleatorios. Y para utilizarlo correctamente se requieren conocimientos solidos tanto de estadística como de lógica. 
+
+Por lo contrario, no aplicar el método cientifico, por más buenas que sean las intenciones del equipo, y lo poco sesgado que esté, es basar las decisiones en preconceptos, intuciones, o cualquier creencia que no puede ser puesta a prueba o cuestionada de forma sistemática, y por lo tanto no se puede confirmar o negar.
 
 
 ### ¿Y como afecta esto a equipos de Marketing o UX?
+
+Cuando un equipo decide que una creatividad performa mejor que otra, que una experiencia de usuario es mejor que otra, etc, lo que está haciendo es **establecer que algo es verdadero.** Y en el momento que decidis establecer algo así, estas involucrandote en el mundo de la ciencia. 
+
+Cuando observamos que una variante performa mejor que un control en la métrica de interes (sea CTR, Tasa de Conversión, Venta por Visita, etc), no podemos simplemente decir que la variante es mejor para toda la población futura de usuarios, dado que nuestra conclusión proviene de una cantidad limitada de observaciones, de las cuales no hemos hecho ningún control para saber si podemos hacer inferencias correctas a partir de ellas. 
 
 Vamos con un ejemplo.
 
@@ -71,9 +81,9 @@ Anuncio | Impresiones | Clicks | CTR  | Significancia
 Control | 245         | 14     | 5,7% | 
 Variante| 247         | 17     | 6,8% | 70%
 
-Si analizamos estos datos como un test de proporciones, con un riesgo de error de tipo 1 del 5% (alpha = 0,05), y con una hipótesis nula de no-inferioridad (que la diferencia observable es menor o igual a cero), nos da que el siguiente test tiene solo un 70% de significancia. Por lo tanto, no hay evidencia para rechazar la hipótesis nula de que la diferencia entre CTR sea menor o igual a cero. Por lo tanto, no podemos concluir que la variante es de hecho mejor que el control.
+Si analizamos estos datos como un test de proporciones, con un riesgo de error de tipo 1 del 5% (alpha = 0,05), y con una hipótesis nula de no-inferioridad (que la diferencia observable es menor o igual a cero), nos da que el siguiente test tiene solo un 70% de significancia. No hay evidencia suficiente para rechazar la hipótesis nula de que la diferencia entre CTR sea menor o igual a cero. Por lo tanto, no podemos concluir que la variante sea de hecho mejor que el control.
 
-Además, este test, para realizarse con la potencia correcta para detectar un efecto de ese tamaño, hubiera requerido 5986 impresiones en control y en variante.
+Además, este test, para realizarse con la potencia correcta para detectar un efecto de ese tamaño, hubiera requerido 5986 impresiones en control y en variante. Este cálculo es lo que se denomina test de potencia, y debe preceder cualquier test de hipótesis, pero hablaré de esto más adelante.
 
 Este es un ejemplo de un test de hipótesis nula simple. **En la práctica, hay muchos factores que complejizan la realización de este tipo de pruebas**. Entonces imaginense cuantos equipos de Marketing o UX de verdad deciden si pausar o no anuncios, creatividades, experiencias en la web o no, con experimentos así o similares? (Una empresa que es famosa por su cultura de experimentación es Booking.com, los invito a que busquen sobre su forma de experimentar y tomar decisiones)
 

@@ -5,12 +5,12 @@ theme = "hugo-future-imperfect"
 preserveTaxonomyNames = true
 paginate = 3
 disqusShortname = "shortname"
-googleAnalytics = ""
+googleAnalytics = "UA-27830219-2"
 pluralizeListTitles = false
 
 [params]
   # Sets the meta tag description
-  description          = "Blog sobre Digital Analytics. Sus usos, consejos, y aplicaciones al marketing digital. También proyectos hechos en R y Shiny."
+  description          = "Blog sobre experimentación (A/B Tests) en marketing y productos digitales. Diseño de experimentos, buenas practicas, explicación de conceptos y metodologías diversas."
   # Sets the navbarTitle that appears in the top left of the navigation bar
   navbarTitle          = "Inicio  "
   # Sets where "View More Posts" links
@@ -109,30 +109,30 @@ pluralizeListTitles = false
   url = "/"
   identifier = "fa fa-home"
   weight = 1
+  
+[[menu.main]]
+  name = "Blog"
+  url = "/blog/"
+  identifier = "fa fa-newspaper-o"
+  weight = 2
 
 [[menu.main]]
   name = "Sobre Mí"
   url = "/about/"
   identifier = "fa fa-id-card-o"
-  weight = 2
-
-[[menu.main]]
-  name = "Blog"
-  url = "/blog/"
-  identifier = "fa fa-newspaper-o"
   weight = 3
 
 [[menu.main]]
   name = "Proyectos"
   url = "/itemized/"
   identifier = "fa fa-list"
-  weight = 4
+  weight =4
 
 [[menu.main]]
   name = "Categorías"
   url = "/categories/"
   identifier = "fa fa-sitemap"
-  weight = 5
+  weight = 5  
 
 # Sets Social Media icons to appear and link to your account. Value should be your
 # username unless otherwise noted. These are the icons affected by socialAppearAtTop

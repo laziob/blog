@@ -1,0 +1,1555 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <script type="application/ld+json">
+    {
+        "@context" : "http://schema.org",
+        "@type" : "BlogPosting",
+        "mainEntityOfPage": {
+             "@type": "WebPage",
+             "@id": "\/"
+        },
+        "articleSection" : "blog",
+        "name" : "Test A\/B: Ajuste su método al contexto del problema que quiere resolver",
+        "headline" : "Test A\/B: Ajuste su método al contexto del problema que quiere resolver",
+        "description" : "Existen muchas alternativas a la hora de experimentar. Elegir el método correcto de experimentación según el contexto es crítico para una toma de decisiones eficaz.",
+        "inLanguage" : "en",
+        "author" : "",
+        "creator" : "",
+        "publisher": "",
+        "accountablePerson" : "",
+        "copyrightHolder" : "",
+        "copyrightYear" : "2020",
+        "datePublished": "2020-06-12 00:00:00 \u002b0000 UTC",
+        "dateModified" : "2020-06-12 00:00:00 \u002b0000 UTC",
+        "url" : "\/blog\/metodos-ab-test\/",
+        "wordCount" : "2867",
+        "keywords" : [ "ab test","estadistica","bayes","hipotesis","Blog" ]
+    }
+    </script>
+        
+            
+                <title>Test A/B: Ajuste su método al contexto del problema que quiere resolver</title>
+            
+        
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="generator" content="Hugo 0.72.0" />
+        
+
+
+        
+        
+            <meta name="description" content="Existen muchas alternativas a la hora de experimentar. Elegir el método correcto de experimentación según el contexto es crítico para una toma de decisiones eficaz.">
+        
+
+        <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Test A/B: Ajuste su método al contexto del problema que quiere resolver"/>
+<meta name="twitter:description" content="Existen muchas alternativas a la hora de experimentar. Elegir el método correcto de experimentación según el contexto es crítico para una toma de decisiones eficaz."/>
+<meta name="twitter:site" content="@LazioB"/>
+
+        <meta property="og:title" content="Test A/B: Ajuste su método al contexto del problema que quiere resolver" />
+<meta property="og:description" content="Existen muchas alternativas a la hora de experimentar. Elegir el método correcto de experimentación según el contexto es crítico para una toma de decisiones eficaz." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/blog/metodos-ab-test/" />
+<meta property="article:published_time" content="2020-06-12T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-06-12T00:00:00+00:00" />
+
+        <meta property="og:image" content="//images/logo.png">
+        <meta property="og:image:type" content="image/png">
+        <meta property="og:image:width" content="512">
+        <meta property="og:image:height" content="512">
+        <meta itemprop="name" content="Test A/B: Ajuste su método al contexto del problema que quiere resolver">
+<meta itemprop="description" content="Existen muchas alternativas a la hora de experimentar. Elegir el método correcto de experimentación según el contexto es crítico para una toma de decisiones eficaz.">
+<meta itemprop="datePublished" content="2020-06-12T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2020-06-12T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="2867">
+
+
+
+<meta itemprop="keywords" content="ab test,estadistica,bayes,hipotesis," />
+        
+
+        
+            
+        
+
+        
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800,900|Source+Sans+Pro:400,700">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.css">
+            <link rel="stylesheet" href="/css/main.css">
+            <link rel="stylesheet" href="/css/add-on.css">
+            <link rel="stylesheet" href="/css/academicons.min.css">
+        
+
+        
+            
+                
+            
+        
+
+
+  
+    
+    <link href='//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+  
+
+
+      
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-27830219-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+    </head>
+    <body>
+
+      
+      <div id="wrapper">
+
+    
+    
+<header id="header">
+    
+      <h1><a href="/">blog</a></h1>
+    
+
+    <nav class="links">
+        <ul>
+            
+                <li>
+                    <a href="/">
+                            <i class="fa fa-home">&nbsp;</i>Home
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/blog/">
+                            <i class="fa fa-newspaper-o">&nbsp;</i>Blog
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/about/">
+                            <i class="fa fa-id-card-o">&nbsp;</i>Sobre Mí
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/itemized/">
+                            <i class="fa fa-list">&nbsp;</i>Proyectos
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/categories/">
+                            <i class="fa fa-sitemap">&nbsp;</i>Categorías
+                    </a>
+                </li>
+            
+        </ul>
+    </nav>
+    <nav class="main">
+        <ul>
+            
+            <li id="share-nav" class="share-menu" style="display:none;">
+                <a class="fa-share-alt" href="#share-menu">Share</a>
+            </li>
+            
+            <li class="search">
+                <a class="fa-search" href="#search">Search</a>
+                <form id="search" method="get" action="//google.com/search">
+                    <input type="text" name="q" placeholder="Search" />
+                    <input type="hidden" name="as_sitesearch" value="/">
+                </form>
+            </li>
+            <li class="menu">
+                <a class="fa-bars" href="#menu">Menu</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+<section id="menu">
+
+    
+        <section>
+            <form class="search" method="get" action="//google.com/search">
+                <input type="text" name="q" placeholder="Search" />
+                <input type="hidden" name="as_sitesearch" value="/">
+            </form>
+        </section>
+
+    
+        <section>
+            <ul class="links">
+                
+                    <li>
+                        <a href="/">
+                            <h3>
+                                <i class="fa fa-home">&nbsp;</i>Home
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/blog/">
+                            <h3>
+                                <i class="fa fa-newspaper-o">&nbsp;</i>Blog
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/about/">
+                            <h3>
+                                <i class="fa fa-id-card-o">&nbsp;</i>Sobre Mí
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/itemized/">
+                            <h3>
+                                <i class="fa fa-list">&nbsp;</i>Proyectos
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/">
+                            <h3>
+                                <i class="fa fa-sitemap">&nbsp;</i>Categorías
+                            </h3>
+                        </a>
+                    </li>
+                
+            </ul>
+        </section>
+
+    
+        <section class="recent-posts">
+            <div class="mini-posts">
+                <header>
+                    <h3>Recent Posts</h3>
+                </header>
+                
+
+                
+                    
+                
+
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="/blog/metodos-ab-test/">Test A/B: Ajuste su método al contexto del problema que quiere resolver</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2020-06-12'>
+                                    June 12, 2020</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="/blog/la-falacia-de-la-analitica-digital/">¿Que pasó con las decisiones basadas en datos?</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2020-06-11'>
+                                    June 11, 2020</time>
+                            </header>
+                            
+
+                        </article>
+                
+
+                
+            </div>
+        </section>
+
+    
+        
+</section>
+
+    <section id="share-menu">
+    <section id="social-share-nav">
+        <ul class="links">
+            <header>
+                <h3>Share this post <i class="fa fa-smile-o"></i></h3>
+            </header>
+            
+
+
+
+<li>
+  <a href="//twitter.com/share?url=%2fblog%2fmetodos-ab-test%2f&amp;text=Test%20A%2fB%3a%20Ajuste%20su%20m%c3%a9todo%20al%20contexto%20del%20problema%20que%20quiere%20resolver&amp;via=LazioB" target="_blank" class="share-btn twitter">
+    <i class="fa fa-twitter"></i>
+    <p>Twitter</p>
+    </a>
+</li>
+
+
+
+
+<li>
+  <a href="//plus.google.com/share?url=%2fblog%2fmetodos-ab-test%2f" target="_blank" class="share-btn google-plus">
+    <i class="fa fa-google-plus"></i>
+    <p>Google+</p>
+  </a>
+</li>
+
+
+
+
+
+<li>
+  <a href="//www.facebook.com/sharer/sharer.php?u=%2fblog%2fmetodos-ab-test%2f" target="_blank" class="share-btn facebook">
+    <i class="fa fa-facebook"></i>
+    <p>Facebook</p>
+    </a>
+</li>
+
+
+
+
+<li>
+  <a href="//reddit.com/submit?url=%2fblog%2fmetodos-ab-test%2f&amp;title=Test%20A%2fB%3a%20Ajuste%20su%20m%c3%a9todo%20al%20contexto%20del%20problema%20que%20quiere%20resolver" target="_blank" class="share-btn reddit">
+    <i class="fa fa-reddit-alien"></i>
+    <p>Reddit</p>
+  </a>
+</li>
+
+
+
+
+<li>
+  <a href="//www.linkedin.com/shareArticle?url=%2fblog%2fmetodos-ab-test%2f&amp;title=Test%20A%2fB%3a%20Ajuste%20su%20m%c3%a9todo%20al%20contexto%20del%20problema%20que%20quiere%20resolver" target="_blank" class="share-btn linkedin">
+      <i class="fa fa-linkedin"></i>
+      <p>LinkedIn</p>
+    </a>
+</li>
+
+
+
+
+<li>
+  <a href="//www.stumbleupon.com/submit?url=%2fblog%2fmetodos-ab-test%2f&amp;title=Test%20A%2fB%3a%20Ajuste%20su%20m%c3%a9todo%20al%20contexto%20del%20problema%20que%20quiere%20resolver" target="_blank" class="share-btn stumbleupon">
+    <i class="fa fa-stumbleupon"></i>
+    <p>StumbleUpon</p>
+  </a>
+</li>
+
+
+
+
+<li>
+  <a href="//www.pinterest.com/pin/create/button/?url=%2fblog%2fmetodos-ab-test%2f&amp;description=Test%20A%2fB%3a%20Ajuste%20su%20m%c3%a9todo%20al%20contexto%20del%20problema%20que%20quiere%20resolver" target="_blank" class="share-btn pinterest">
+    <i class="fa fa-pinterest-p"></i>
+    <p>Pinterest</p>
+  </a>
+</li>
+
+
+
+
+<li>
+  <a href="mailto:?subject=Check out this post by &amp;body=%2fblog%2fmetodos-ab-test%2f" target="_blank" class="share-btn email">
+    <i class="fa fa-envelope"></i>
+    <p>Email</p>
+  </a>
+</li>
+
+
+        </ul>
+    </section>
+</section>
+
+    
+    <div id="main">
+        
+        
+        <article class="post">
+  <header>
+    <div class="title">
+        
+            <h1><a href="/blog/metodos-ab-test/">Test A/B: Ajuste su método al contexto del problema que quiere resolver</a></h1>
+            
+        
+        
+            <p>Existen muchas alternativas a la hora de experimentar. Elegir el método correcto de experimentación según el contexto es crítico para una toma de decisiones eficaz.</p>
+        
+    </div>
+    <div class="meta">
+        
+
+        <time class="published"
+            datetime='2020-06-12'>
+            June 12, 2020</time>
+        <span class="author"></span>
+        
+            <p>14 minute read</p>
+        
+        
+    </div>
+</header>
+
+
+  
+
+  
+
+  <div id="content">
+    <p>Este articulo esta basado principalmente en los escritos y presentaciones de Matt Gershoff, fundador de Conductrics  <a href="https://conductrics.com">https://conductrics.com</a> quien me autorizó a utilizar sus ideas y material. Pueden encontrar su presentación sobre este tema en el siguiente link Los invito a que visiten su blog en el sitio de Conductrics, ya que contiene material didáctico sobre este tema y similares
+Hoy en día, cada vez más empresas se ven involucradas por una u otra razón en la realización de Tests A/B con el fin de poder tomar mejores decisiones. Ya sean por cambios en UX de páginas web o Apps, cambios en segmentación o mensajes de campañas publicitarias, e incluso en distintas selecciones de modelos de Machine Learning, decidir que versión es mejor que otra conlleva una gran cantidad de tareas, que aquellos que lo intentaron, sabrán que no son fáciles.
+El objetivo de este articulo es poder darles una guía de pautas sobre distintos métodos de muestreo y evaluación  para poder realizar experimentos que se adecuen de la mejor manera posible al desafío que tienen por delante.
+Para lograrlo revisaremos  los siguientes temas:</p>
+<p>Espero que luego de haber leído el articulo, tengan un mejor entendimiento de que no todos los tests o decisiones deben evaluarse de la misma manera, sino que existen alternativas más adecuadas a ciertos tipos de contextos,  y que sepan el funcionamiento elemental de dichas alternativas.</p>
+<p>Habiendo dicho eso, comencemos!</p>
+<h3 id="historia-de-los-test-ab">Historia de los Test A/B</h3>
+<p>1710: Primer Test de Hipótesis Publicado por John Arbuthnot en relación a la tasa de nacimiento de hombres vs la de mujeres. Primer versión de algo similar a los P-Values
+1778: Pierre-Simón Laplace realizó otro test de hipótesis para el mismo tema utilizando P-values. Escribió las bases para lo que luego sería el teorema de Bayes.
+Finales del Siglo XIX: Comienzos del Test de Hipótesis &ldquo;Moderno&rdquo;, conocido como Frequentist. 2 enfoques:</p>
+<ol>
+<li>Ronald Fisher:  P-values, Continous Measure of Evidence, Hipótesis Nula. Sin noción de Potencia. <a href="https://www.adelaide.edu.au/">https://www.adelaide.edu.au/</a></li>
+<li>Neyman-Pearson: Nivel de significancia, Hipótesis Nula y Alternativa, Potencia, Error tipo 1 y tipo 2. <a href="http://www.nasonline.org/publications/biographical-memoirs/memoir-pdfs/neyman-jerzy.pdf">http://www.nasonline.org/publications/biographical-memoirs/memoir-pdfs/neyman-jerzy.pdf</a></li>
+</ol>
+<h3 id="errores-tipo-1-y-tipo-2">Errores tipo 1 y tipo 2</h3>
+<p><em>Al evaluar hipótesis (una alternativa y una nula) tenemos 4 resultados posibles</em>
+
+
+
+  
+    
+    
+    
+      
+    
+    
+      
+    
+
+    
+    
+
+
+
+
+
+
+
+  
+
+
+
+    
+    
+    
+    
+
+    <div class="fancybox">
+      <a data-fancybox="gallery" href="/img/main//image.png" data-caption="tipos_errores"><img src="/img/main//image.png"></a>
+      
+    </div>
+  
+
+</p>
+
+
+
+  
+    
+    
+    
+      
+    
+    
+      
+    
+
+    
+    
+
+
+
+
+
+
+
+  
+
+
+
+    
+    
+    
+    
+
+    <div class="fancybox">
+      <a data-fancybox="gallery" href="/img/main//image-1.png" data-caption="tipos_errores"><img src="/img/main//image-1.png"></a>
+      
+    </div>
+  
+
+
+
+
+
+  
+    
+    
+    
+      
+    
+    
+      
+    
+
+    
+    
+
+
+
+
+
+
+
+  
+
+
+
+    
+    
+    
+    
+
+    <div class="fancybox">
+      <a data-fancybox="gallery" href="/img/main//image-2.png" data-caption="tipos_errores"><img src="/img/main//image-2.png"></a>
+      
+    </div>
+  
+
+
+<p>La idea general por Neyman y Pearson es  que utilizando Tests de Hipótesis de esta manera, uno puede minimizar la frecuencia en la que realiza errores de tipo 1 y de tipo 2 dada una muestra fija.
+Esto se traduce a la siguiente receta:</p>
+<ul>
+<li>Cuanto más bajo el Error Tipo 1 y Tipo 2, mejor</li>
+<li>Para lograr eso, uno debe &lsquo;pagar&rsquo; y en este caso, la moneda con la que se paga es el tamaño de la muestra.</li>
+<li>Por lo tanto para bajar alguna tasa de error uno debe:
+a) Aumentar la tasa del otro tipo de error
+b) Aumentar su presupuesto (tamaño muestral)</li>
+</ul>
+<p>El enfoque de Neyman-Pearson es dar la mayor Potencia (el error tipo 2 más bajo) para una muestra de tamaño fijo y una tasa de Error Tipo 1 fija.</p>
+<p>Por lo tanto, para calcular el tamaño muestral desde un enfoque Frecuentista necesitamos:</p>
+<ul>
+<li>Tasa de conversión o valor de la métrica objetivo esperado</li>
+<li>Desviación Estándar esperada</li>
+<li>Efecto Mínimo Detectable // Esto es sumamente importante ya que representa el problema de negocio. Busca contestar cuál es el efecto mínimo que requerimos encontrar para que represente un impacto práctico / significante en el negocio.</li>
+<li>Cuanto queremos controlar el Error Tipo 1 (Alpha)</li>
+<li>Cuanto queremos controlar el Error Tipo 2 (Potencia, 1-Beta)</li>
+</ul>
+<p>Si me siguieron hasta acá sabrán entonces que cubrimos el método más conocido para diseñar experimentos. Peor no es el único! A continuación describiré otros métodos apoyándome en contestar por qué es que el método frecuentista no siempre es el ideal dependiendo del contexto.</p>
+<h3 id="cuándo-y-por-qué-utilizar-bandits">¿Cuándo y por qué utilizar Bandits?</h3>
+<p>Quienes estuvieron prestando atención, habrán notado que el método frecuentista está centrado en disminuir lo más posible el Error Tipo 1. Esto resulta en experimentos no solo costosos en tamaño muestrál, sino que costosos en términos de riesgo para el negocio. Se centra en problemas donde queremos estar lo más seguros posibles de no estar &lsquo;dañando&rsquo; el negocio, la experiencia, la métrica, etc. Son situaciones donde estamos dispuestos a dejar de lado oportunidades de de mejora si obtenerlas implica una probabilidad significativa de en verdad estar empeorando las cosas. Algunos ejemplos pueden ser rearmar el flujo de Checkout, un re diseño entero del sitio, cambios en el sistema de pricing, etc. Llamamos a este tipo de problemas como &ldquo;No haga daño&rdquo;</p>
+<p>La buena noticia, es que no siempre nos encontramos en este tipo de situaciones! Existe otro tipo de problemas en los que cometer errores de Tipo 1 no es costoso para el negocio. Por ejemplo: Cambiar el copy de un anuncio, cambiar el titulo de una nota (el titulo de este articulo por ejemplo!), probar colores de botones distintos, o alternativas de UX para ciertas partes de un sitio, etc.</p>
+<p>En estos casos, no hay un costo real considerable por tomar una acción que en verdad no mejore el negocio, la experiencia o la métrica. En cambio la prioridad es el costo de oportunidad de no estar dando una mejor experiencia. Por eso, llamamos a este tipo de problemas como &ldquo;Dale nomas&rdquo;. Cuando nos encontramos con este tipo de problemas, es que podemos considerar métodos de Bandits.</p>
+<p>Estos son solo algúnos ejemplos de métodos de Bandits distintos:</p>
+<ol>
+<li>Epsilon First (AB Testing)</li>
+<li>Epsilon Greedy</li>
+<li>Thompson Sampling</li>
+<li>Pick por Potencia</li>
+</ol>
+<h3 id="epsilon-first">Epsilon First</h3>
+
+
+
+  
+    
+    
+    
+      
+    
+    
+      
+    
+
+    
+    
+
+
+
+
+
+
+
+  
+
+
+
+    
+    
+    
+    
+
+    <div class="fancybox">
+      <a data-fancybox="gallery" href="/img/main//image-9.png" data-caption="tipos_errores"><img src="/img/main//image-9.png"></a>
+      
+    </div>
+  
+
+
+<p>Si bien este método existe como una solución aproximada al problema de Bandits, podrán ver que es en verdad idéntico a como uno diseña un AB test frecuentista:</p>
+
+
+
+  
+    
+    
+    
+      
+    
+    
+      
+    
+
+    
+    
+
+
+
+
+
+
+
+  
+
+
+
+    
+    
+    
+    
+
+    <div class="fancybox">
+      <a data-fancybox="gallery" href="/img/main//image-17.png" data-caption="tipos_errores"><img src="/img/main//image-17.png"></a>
+      
+    </div>
+  
+
+
+<p>En este enfoque Epsilon First, primero se recolecta la información de cada variante, donde cada una tiene una probabilidad uniforme de ser seleccionada y se sirve aleatoriamente, y una vez recolectada la data se aplica un test de hipótesis para determinar al ganador. La versión ganadora luego se aplica al 100% de los usuarios.</p>
+<p>El problema principal de este enfoque es que tiene un costo de oportunidad muy grande. Si una de las versiones es considerablemente inferior a otra, se le va a servir a los usuarios en la misma proporción que el resto, por todo el tiempo que se requiera para recolectar la información.</p>
+<h3 id="epsilon-greedy">Epsilon Greedy</h3>
+
+
+
+  
+    
+    
+    
+      
+    
+    
+      
+    
+
+    
+    
+
+
+
+
+
+
+
+  
+
+
+
+    
+    
+    
+    
+
+    <div class="fancybox">
+      <a data-fancybox="gallery" href="/img/main//image-18.png" data-caption="tipos_errores"><img src="/img/main//image-18.png"></a>
+      
+    </div>
+  
+
+
+<p>Una forma de disminuir ese costo de oportunidad mencionado anteriormente es con el método Epsilon Greedy. En este, se va intercalando el proceso de exploración y aprendizaje con el de Explotación. Para esto, se selecciona una tasa epsilon (por ejemplo 20%). De este 20% de usuarios es del cual vamos recolectando información de las variantes, sirviendo cada una de manera aleatoria con una probabilidad uniforme. Luego, la variante que mejor performa se aplica al 80% restante de los usuarios.</p>
+<p>Ventajas de Epsilon Greedy:</p>
+<ol>
+<li>Simple de utilizar y poco costoso</li>
+<li>Muy efectivo</li>
+<li>Poco afectado por estacionalidad</li>
+</ol>
+<p>Sus desventajas son:</p>
+<ol>
+<li>No es optimo (es difícil determinar que epsilon utilizar)</li>
+<li>No mide la varianza del desempeño de las variantes</li>
+<li>No tiene forma de determinar cuando dejar de correr el experimento</li>
+<li>No tiene forma de determinar como ir disminuyendo la tasa de aprendizaje y aumentando la de explotación.</li>
+</ol>
+<h3 id="modelos-adaptatívos">Modelos Adaptatívos</h3>
+<p>Se los llaman modelos adaptatívos porque la tasa de Exploración/Aprendizaje y la de Explotación no es fija, sino que va cambiando en el tiempo en base a algún criterio.</p>
+<p>En este caso, nos centraremos en un tipo de modelo adaptatívo llamado Thomspon Sampling , inventado por William R Thompson en 1933. Este método de muestreo tiene bases en el teorema de Bayes en vez del test de hipótesis frecuentista que vimos anteriormente.</p>
+<p>Y que es el Teorema de Bayes? Veamos un ejemplo:</p>
+
+
+
+  
+    
+    
+    
+      
+    
+    
+      
+    
+
+    
+    
+
+
+
+
+
+
+
+  
+
+
+
+    
+    
+    
+    
+
+    <div class="fancybox">
+      <a data-fancybox="gallery" href="/img/main//image-20.png" data-caption="tipos_errores"><img src="/img/main//image-20.png"></a>
+      
+    </div>
+  
+
+
+<p>Para entender mejor la imagen, lo que vemos es que el bebe tiene una idea aproximada que lo que está por comer es helado (Creencia a Priori), luego lo muerde (Evidencia) y obtiene una idea actualizada donde confirma que efectivamente lo que esta comiendo es helado (Creencia Posterior).</p>
+<p>En síntesis, el Teorema de Bayes explica que mi creencia posterior sobre un hecho es explicada por el conjunto de lo observado (Evidencia) y mi creencia previa sobre el hecho.</p>
+
+
+
+  
+    
+    
+    
+      
+    
+    
+      
+    
+
+    
+    
+
+
+
+
+
+
+
+  
+
+
+
+    
+    
+    
+    
+
+    <div class="fancybox">
+      <a data-fancybox="gallery" href="/img/main//image-21.png" data-caption="tipos_errores"><img src="/img/main//image-21.png"></a>
+      
+    </div>
+  
+
+
+<p>Otra forma de verlo, es que el Teorema de Bayes intenta contestar la probabilidad de que mi hipótesis sea verdad dado los datos, basándose en la probabilidad de los datos dada mi hipótesis y la probabilidad de mi hipótesis en general. Esto supone una distinción muy importante respecto al método frecuentista de test de hipótesis, ya que el primero intenta contestar la probabilidad de que la hipótesis sea verdad, mientras que el segundo contesta cuan probable es lo observado en la data suponiendo que la hipótesis sea verdadera.</p>
+
+
+
+  
+    
+    
+    
+      
+    
+    
+      
+    
+
+    
+    
+
+
+
+
+
+
+
+  
+
+
+
+    
+    
+    
+    
+
+    <div class="fancybox">
+      <a data-fancybox="gallery" href="/img/main//image-22.png" data-caption="tipos_errores"><img src="/img/main//image-22.png"></a>
+      
+    </div>
+  
+
+
+<p>La crítica principal al método Bayesiano es que requiere esta &ldquo;Creencia Previa&rdquo; que muchas veces es subjetiva, y que para un mismo análisis, si se selecciona una Creencia Previa distinta, el resultado producido es distinto. Por eso la idea era sustituirlo por el método frecuentista, que quita esta subjetividad del análisis, aunque se puede argumentar que en el método frecuentista, todos los parámetros de diseño también son subjetivos (alpha, beta, MDE, etc).</p>
+<p>Posteriormente, cuando Laplace demuestra el teorema central del límite, se suponía entonces que con gran volúmenes de datos, ambos métodos convergían a resultados similares, aunque se demostró que eso no siempre sucede.</p>
+<p>Ahora que tenemos un mejor entendimiento del método Bayesiano, volvamos a los Métodos Adaptatívos para experimentación y el Thompson Sampling.</p>
+<p>Como veniamos diciendo, el método de Thompson Sampling se basa en la base del Teorema de Bayes. Que significa esto? Que este método utiliza la probabilidad de que una variante sea mejor para decidir que variantes ir sirviendo a los usuarios.</p>
+<p>El orden de procedencia es el siguiente:</p>
+<ol>
+<li>Servir variantes de forma aleatoria</li>
+<li>Seleccionar basado en la probabilidad de que esa variante sea la mejor</li>
+<li>Aquella variante con la mayor probabilidad de ser la mejor es seleccionada más frecuentemente.</li>
+</ol>
+<p>Veamos un ejemplo con un test donde nuestra métrica objetivo es la tasa de conversión, que sigue una distribución Beta con parámetros alpha (éxitos) y beta (fallas) , y donde tenemos 3 variantes que estamos probando, cada una con su respectiva distribución Beta.</p>
+
+
+
+  
+    
+    
+    
+      
+    
+    
+      
+    
+
+    
+    
+
+
+
+
+
+
+
+  
+
+
+
+    
+    
+    
+    
+
+    <div class="fancybox">
+      <a data-fancybox="gallery" href="/img/main//image-26.png" data-caption="tipos_errores"><img src="/img/main//image-26.png"></a>
+      
+    </div>
+  
+
+
+<p>Luego de haber servido cada variante de forma aleatoria un par de veces, podremos armar sus respectivas distribuciones Beta. Por lo tanto, al momento de decidir que variante servirle a un usuario, tomamos un valor aleatorio de cada distribución. En este ejemplo, la variante A obtuvo un valor de 0.49, la B de 0.51 y la C de 0.46. Dado que la B obtuvo el valor aleatorio más alto, procedemos a servir la experiencia B.</p>
+<p>Y qué pasa luego de que servimos la experiencia? Bueno, resulta que si el usuario convierte (realiza la tarea objetivo en la que estamos interesados), vamos a ajustar el parámetro Alpha (éxitos) de la distribución Beta de la variante B sumándole 1. Pero en caso de que el usuario no termine convirtiendo, entonces ajustamos su parámetro Beta (Fallos) de su distribución. Como resultado, cada vez que servimos una variante, la distribución de la misma ira cambiando, y por lo tanto cambia su probabilidad de ser la mejor variante entre las 3.</p>
+<p>Ahora un nuevo usuario ingresa al sitio, y el proceso comienza de nuevo:</p>
+
+
+
+  
+    
+    
+    
+      
+    
+    
+      
+    
+
+    
+    
+
+
+
+
+
+
+
+  
+
+
+
+    
+    
+    
+    
+
+    <div class="fancybox">
+      <a data-fancybox="gallery" href="/img/main//image-25.png" data-caption="tipos_errores"><img src="/img/main//image-25.png"></a>
+      
+    </div>
+  
+
+
+<p>Esta vez, la variante A obtuvo el mayor valor, por lo cual se servirá esta variante y se actualizaran sus parámetros acorde. Este método entonces aproxima la probabilidad relativa de que una variante sea la mejor, y las selecciona en base a dicha probabilidad. El proceso continúa hasta que decidamos un ganador.</p>
+<p>Y como decidimos finalmente qué variante es la mejor? Bueno esto dependerá del problema que estamos intentando resolver, pero por ejemplo, podríamos decidir una que una variante es la mejor, cuando su probabilidad de ser la mejor es mayor o igual a 95%.</p>
+<p>Puede que ya lo hayan notado, pero uno de los problemas que tiene este método, es que a diferencia del método frecuentista, Thompsom Sampling no tiene un tamaño muestrál fijo, ni un valor crítico donde terminar el experimento (excepto el que se decida a discreción). En los casos donde el cliente/gerente/dueño/etc requiera determinar si o si un ganador en un tiempo determinado, Thompsom Sampling no se adecua como herramienta.</p>
+<p>Qué podemos hacer en estos casos? Si el problema en cuestión lo amerita podemos utilizar la <em>Selección por Potencia</em>.</p>
+<h3 id="selección-por-potencia">Selección Por Potencia</h3>
+<p>La selección por potencia es un método estrictamente frecuentista, pero con una variante que a simple vista puede ser considerada controversial.</p>
+<p>Para realizar una Selección por Potencia, debemos hacer lo siguiente:</p>
+<ol>
+<li>Seleccionar una potencia deseada (1 - beta). Ejemplo: 0.95 o 95%</li>
+<li>Seleccionamos un Efecto Mínimo Detectable.</li>
+<li>Seleccionamos un Alpha</li>
+</ol>
+<p>Hasta aquí todo es igual a un test de Hipótesis Frecuentista clásico, verdad? Pero, en este caso, el alpha que seleccionaremos es de 0.5 (no confundir con 0.05, que es el que se utiliza para una significancia del 95%)</p>
+<p>Esto se traduce en que este experimento no tendrá ningún tipo de control sobre el Error Tipo 1, ya que al seleccionar un alpha de 0.5, o 50%, nuestra probabilidad de cometer un Error Tipo 1 es igual que aleatoria.</p>
+<p>Entonces, calculamos nuestro tamaño de muestra necesario utilizando estos parámetros, recolectamos los datos, y seleccionamos aquella versión que haya dado el mejor resultado Así de simple! Pero se preguntaran cómo es que esto suele funcionar? Veamos un ejemplo realizando simulaciones asumiendo que el efecto es verdadero:</p>
+
+
+
+  
+    
+    
+    
+      
+    
+    
+      
+    
+
+    
+    
+
+
+
+
+
+
+
+  
+
+
+
+    
+    
+    
+    
+
+    <div class="fancybox">
+      <a data-fancybox="gallery" href="/img/main//image-27.png" data-caption="tipos_errores"><img src="/img/main//image-27.png"></a>
+      
+    </div>
+  
+
+
+<p>Para un experimento con estos parámetros vemos que necesitamos 4650 observaciones, es decir 2325 observaciones por variante (asumiendo 2 variantes). Para simular entonces calculamos una muestra de 2325 observaciones de A y 2325 de B, calculamos la tasa de conversión de cada una, luego calculamos la diferencia entre ambas (Tasa Conv B - Tasa Conv A). Este proceso lo realizamos 10 mil veces, por lo que tendremos un listado con 10mil diferencias entre la tasa de conversion de B y de A.</p>
+<p>Si graficámos la distribución de estas diferencias, nos encontramos con llo siguiente:</p>
+
+
+
+  
+    
+    
+    
+      
+    
+    
+      
+    
+
+    
+    
+
+
+
+
+
+
+
+  
+
+
+
+    
+    
+    
+    
+
+    <div class="fancybox">
+      <a data-fancybox="gallery" href="/img/main//image-28.png" data-caption="tipos_errores"><img src="/img/main//image-28.png"></a>
+      
+    </div>
+  
+
+
+<p>Aquí podemos ver que la distribución está centrada en la diferencia real que establecimos (ya que las muestras que tomamos fueron de variantes A y B donde en verdad existía una diferencia de conversión) de 0.01 (0.05 de B menos el 0.04 de A). Pero lo interesante es que la probabilidad (area bajo la curva) de una diferencia mayor a cero, es de 95%!! El mismo valor que establecimos como potencia! Eso significa que si luego de tomar los datos de las muestras necesarios, seleccionamos aquella variante que tuvo una mejor tasa de conversión, el 95% de las veces estaremos seleccionando correctamente la versión que mejor performa.</p>
+<p>Ahora, qué pasa con nuestro riesgo de cometer Error Tipo 1? Cuál fue el efecto de haber establecio un alpha de 0.5? Para eso, vamos a repetir esta simulación, pero ahora las muestras las tomaremos de 2 variantes que tienen la misma tasa de conversión de 0.4 (Por lo tanto, un experimento donde en verdad no hay efecto alguno):</p>
+
+
+
+  
+    
+    
+    
+      
+    
+    
+      
+    
+
+    
+    
+
+
+
+
+
+
+
+  
+
+
+
+    
+    
+    
+    
+
+    <div class="fancybox">
+      <a data-fancybox="gallery" href="/img/main//image-29.png" data-caption="tipos_errores"><img src="/img/main//image-29.png"></a>
+      
+    </div>
+  
+
+
+<p>Podemos ver que en este caso, la distribución de nuestros resultados (10 mil diferencias de Tasa de Conv B - Tasa de Conv A) se centra en 0, lo cual tiene sentido dado que pusimos tasas iguales de 0.04 para ambas variantes. Esto significa que en este caso, si luego de correr el experimento seleccionamos como variante ganadora aquella que tuvo la mayor tasa de conversión, estaremos seleccionando correctamente el 50% de las veces. Pero dado que en el contexto del problema, no nos interesaba controlar el riesgo de estar eligiendo una versión que pueda ser peor, este resultado no sería grave.</p>
+<p>En resumen, realizar selección Por Potencia, nos permite ejecutar un experimento con tamaños muestráles ampliamente menores al que necesitaríamos si decidiéramos niveles de significancia altos (alpha = 0.05 o 0.01), pero en caso de haber efecto, estaríamos seleccionando la versión correcta el 95% de las veces, o el % de las veces que determinemos con la Potencia que decidamos.
+Comparemos entonces el mismo experimento con las 3 metodologías en las que nos enfocamos:</p>
+
+
+
+  
+    
+    
+    
+      
+    
+    
+      
+    
+
+    
+    
+
+
+
+
+
+
+
+  
+
+
+
+    
+    
+    
+    
+
+    <div class="fancybox">
+      <a data-fancybox="gallery" href="/img/main//image-30.png" data-caption="tipos_errores"><img src="/img/main//image-30.png"></a>
+      
+    </div>
+  
+
+
+<p>Como pueden ver, el Test AB clasico (con alpha de 0.05) requiere una muestra de 18600 observaciones totales, mientras que Thompsom Sampling obtiene el mismo resultado con solo 4800, y finalmente, la Selección por Potencia necesita solo de 4650 observaciones.</p>
+<h3 id="conclusión">Conclusión</h3>
+<p>Si bien nunca hay que olvidar los supuestos que uno debe respetar al seleccionar cualquier metodología estadística para realizar Test de Hipótesis, espero que con esta lectura hayan podido apreciar que dependiendo el problema, hay metodologías que permiten resolver los Tests de forma menos costosa, es decir, con menos tiempo de recolección de datos y por lo tanto mayor tiempo de explotación de los resultados.</p>
+<p>Algunos casos donde metodologías como Thompsom Sampling o Selección de Potencia suelen ser más idóneos que el Test de Hipótesis frecuentista clásico:</p>
+<ol>
+<li>El aprendizaje es perecedero (Cuanto más se tarda en aprender, menos valor tiene dicho aprendizaje)</li>
+<li>Procesos Always-On (Tests sobre sujetos que correrán constantemente, como anuncios de campañas, modelos de Machine Learning, etc)</li>
+<li>Decisiones Complejas (Como por ejemplo estar actualizando constantemente un modelo de ML)</li>
+</ol>
+<p>Espero que con lo mencionado en este articulo, se animen a realizar más Test de Hipótesis, con distintos métodos de muestreo y evaluación y que lleguen a sus propias conclusiones sobre que metodologías se adecuan más a sus casos de uso y problemas de negocio!</p>
+
+  </div>
+
+  <footer>
+    <ul class="stats">
+  <li class="categories">
+    <ul>
+        
+            
+            
+                <i class="fa fa-folder"></i>
+                
+                
+                <li><a class="article-category-link" href="/categories/ab-test">ab test</a></li>
+                
+            
+        
+    </ul>
+  </li>
+  <li class="tags">
+    <ul>
+        
+            
+            
+                <i class="fa fa-tags"></i>
+                
+                
+                <li><a class="article-category-link" href="/tags/ab-test">ab test</a></li>
+                
+                
+                <li><a class="article-category-link" href="/tags/estadistica">estadistica</a></li>
+                
+                
+                <li><a class="article-category-link" href="/tags/bayes">bayes</a></li>
+                
+                
+                <li><a class="article-category-link" href="/tags/hipotesis">hipotesis</a></li>
+                
+            
+        
+    </ul>
+  </li>
+</ul>
+
+  </footer>
+
+</article>
+
+    <article class="post">
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "shortname" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </article>
+
+
+<ul class="actions pagination">
+    
+        <li><a href="/blog/la-falacia-de-la-analitica-digital/"
+                class="button big previous">¿Que pasó con las decisiones basadas en datos?</a></li>
+    
+
+    
+</ul>
+
+
+    </div>
+    
+<section id="sidebar">
+
+  
+  <section id="intro">
+    
+    
+      
+        <a href='/' class="logo"><img src="/img/main/logo.jpg" alt="perfil_laziob" /></a>
+      
+    
+    
+      <header>
+        <h2>Blog de LazioB</h2>
+        <p>Blog sobre experimentación (A/B Tests) en marketing y productos digitales. Diseño de experimentos, buenas practicas, explicación de conceptos y metodologías diversas. <i class='fa fa-hand-peace-o'></i></p>
+      </header>
+    
+    
+      <ul class="icons">
+        
+        
+  <li><a href="//github.com/laziob" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//medium.com/@ezequielboehler" target="_blank" title="Medium" class="fa fa-medium"></a></li>
+
+
+
+  <li><a href="//linkedin.com/in/ezequiel-boehler-1b01783b" target="_blank" title="LinkedIn" class="fa fa-linkedin"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//twitter.com/LazioB" target="_blank" title="Twitter" class="fa fa-twitter"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="mailto:ezequielboehler@gmail.com" title="Email" class="fa fa-envelope"></a></li>
+
+
+      </ul>
+    
+  </section>
+
+  
+  <section class="recent-posts">
+    <div class="mini-posts">
+      <header>
+        <h3>Recent Posts</h3>
+      </header>
+      <div class="posts-container">
+        
+
+        
+          
+        
+
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="/blog/metodos-ab-test/">Test A/B: Ajuste su método al contexto del problema que quiere resolver</a>
+              </h3>
+              
+              <time class="published" datetime='2020-06-12'>
+                June 12, 2020
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="/blog/la-falacia-de-la-analitica-digital/">¿Que pasó con las decisiones basadas en datos?</a>
+              </h3>
+              
+              <time class="published" datetime='2020-06-11'>
+                June 11, 2020
+              </time>
+            </header>
+            
+
+          </article>
+        
+      </div>
+
+      
+    </div>
+  </section>
+
+  
+  
+  
+  
+  
+    <section id="categories">
+      <header>
+        <h3>
+          <a href="/categories/">Categories</a>
+        </h3>
+      </header>
+        
+          
+        
+
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/ab-test/">ab-test</a>
+                <span style="float:right;">1</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/analytics/">analytics</a>
+                <span style="float:right;">1</span>
+              
+            </header>
+          </article>
+        </p>
+        
+    </section>
+  
+  
+
+  
+  
+    <section id="mini-bio">
+      <h3>About</h3>
+      <p>Data Scientist en Falabella Retail. Apasionado por los datos, buscando formas de mejorar la toma de decisiones de equipos y disminuir sus sesgos.</p>
+      <a href="/about/" class="button">Learn More</a>
+    </section>
+  
+
+  
+  <section id="footer">
+    
+      <ul class="icons">
+        
+        
+  <li><a href="//github.com/laziob" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//medium.com/@ezequielboehler" target="_blank" title="Medium" class="fa fa-medium"></a></li>
+
+
+
+  <li><a href="//linkedin.com/in/ezequiel-boehler-1b01783b" target="_blank" title="LinkedIn" class="fa fa-linkedin"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//twitter.com/LazioB" target="_blank" title="Twitter" class="fa fa-twitter"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="mailto:ezequielboehler@gmail.com" title="Email" class="fa fa-envelope"></a></li>
+
+
+      </ul>
+    
+    <p class="copyright">
+      
+        &copy; 2020
+        
+          Blog de LazioB
+        
+      .
+      Powered by <a href="//gohugo.io" target="_blank">Hugo</a>
+    </p>
+  </section>
+</section>
+
+    </div>
+    <a id="back-to-top" href="#" class="fa fa-arrow-up fa-border fa-2x"></a>
+    
+
+    
+      
+    
+
+    
+      
+      
+      
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+        
+        
+        
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/yaml.min.js"></script>
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/css.min.js"></script>
+        <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+      
+    
+    
+    
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>
+      <script src="/js/util.js"></script>
+      <script src="/js/main.js"></script>
+      <script src="/js/backToTop.js"></script>
+    
+
+    
+      
+        
+      
+    
+
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+      <script src="//yihui.name/js/math-code.js"></script>
+<script async
+src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+  </body>
+</html>
+

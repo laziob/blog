@@ -6,10 +6,19 @@
     <description>Recent content in Post on Blog de LazioB</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ar-es</language>
-    <lastBuildDate>Thu, 11 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 12 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Test A/B: Ajuste su método al contexto del problema que quiere resolver</title>
+      <link>/post/metodos-ab-test/</link>
+      <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/metodos-ab-test/</guid>
+      <description>Este articulo esta basado principalmente en los escritos y presentaciones de Matt Gershoff, fundador de Conductrics https://conductrics.com quien me autorizó a utilizar sus ideas y material. Pueden encontrar su presentación sobre este tema en el siguiente link Los invito a que visiten su blog en el sitio de Conductrics, ya que contiene material didáctico sobre este tema y similares Hoy en día, cada vez más empresas se ven involucradas por una u otra razón en la realización de Tests A/B con el fin de poder tomar mejores decisiones.</description>
+    </item>
     
     <item>
       <title>¿Que pasó con las decisiones basadas en datos?</title>

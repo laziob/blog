@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>google tag manager on Blog de LazioB</title>
+    <link>/tags/google-tag-manager/</link>
+    <description>Recent content in google tag manager on Blog de LazioB</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ar-es</language>
+    <lastBuildDate>Sun, 18 Feb 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/google-tag-manager/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Test Own Post 1</title>
+      <link>/post/test-own-post-1/</link>
+      <pubDate>Sun, 18 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/test-own-post-1/</guid>
+      <description>Posteo de prueba para ver donde se ve, como</description>
+    </item>
+    
+  </channel>
+</rss>

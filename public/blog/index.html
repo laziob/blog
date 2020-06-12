@@ -29,8 +29,8 @@
         "accountablePerson" : "",
         "copyrightHolder" : "",
         "copyrightYear" : "2020",
-        "datePublished": "2020-06-11 00:00:00 \u002b0000 UTC",
-        "dateModified" : "2020-06-11 00:00:00 \u002b0000 UTC",
+        "datePublished": "2020-06-12 00:00:00 \u002b0000 UTC",
+        "dateModified" : "2020-06-12 00:00:00 \u002b0000 UTC",
         "url" : "\/blog\/",
         "wordCount" : "0",
         "keywords" : [ "Blog" ]
@@ -49,27 +49,27 @@
         
         
             
-                <meta name="description" content="Blog sobre Digital Analytics. Sus usos, consejos, y aplicaciones al marketing digital. También proyectos hechos en R y Shiny.">
+                <meta name="description" content="Blog sobre experimentación (A/B Tests) en marketing y productos digitales. Diseño de experimentos, buenas practicas, explicación de conceptos y metodologías diversas.">
             
         
 
         <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Blog"/>
-<meta name="twitter:description" content="Blog sobre Digital Analytics. Sus usos, consejos, y aplicaciones al marketing digital. También proyectos hechos en R y Shiny."/>
+<meta name="twitter:description" content="Blog sobre experimentación (A/B Tests) en marketing y productos digitales. Diseño de experimentos, buenas practicas, explicación de conceptos y metodologías diversas."/>
 <meta name="twitter:site" content="@LazioB"/>
 
         <meta property="og:title" content="Blog" />
-<meta property="og:description" content="Blog sobre Digital Analytics. Sus usos, consejos, y aplicaciones al marketing digital. También proyectos hechos en R y Shiny." />
+<meta property="og:description" content="Blog sobre experimentación (A/B Tests) en marketing y productos digitales. Diseño de experimentos, buenas practicas, explicación de conceptos y metodologías diversas." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="/blog/" />
-<meta property="og:updated_time" content="2020-06-11T00:00:00+00:00" />
+<meta property="og:updated_time" content="2020-06-12T00:00:00+00:00" />
 
         <meta property="og:image" content="//images/logo.png">
         <meta property="og:image:type" content="image/png">
         <meta property="og:image:width" content="512">
         <meta property="og:image:height" content="512">
         <meta itemprop="name" content="Blog">
-<meta itemprop="description" content="Blog sobre Digital Analytics. Sus usos, consejos, y aplicaciones al marketing digital. También proyectos hechos en R y Shiny.">
+<meta itemprop="description" content="Blog sobre experimentación (A/B Tests) en marketing y productos digitales. Diseño de experimentos, buenas practicas, explicación de conceptos y metodologías diversas.">
         
 
         
@@ -101,6 +101,19 @@
 
 
       
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-27830219-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
     </head>
     <body>
 
@@ -123,14 +136,14 @@
                 </li>
             
                 <li>
-                    <a href="/about/">
-                            <i class="fa fa-id-card-o">&nbsp;</i>Sobre Mí
+                    <a href="/blog/">
+                            <i class="fa fa-newspaper-o">&nbsp;</i>Blog
                     </a>
                 </li>
             
                 <li>
-                    <a href="/blog/">
-                            <i class="fa fa-newspaper-o">&nbsp;</i>Blog
+                    <a href="/about/">
+                            <i class="fa fa-id-card-o">&nbsp;</i>Sobre Mí
                     </a>
                 </li>
             
@@ -189,17 +202,17 @@
                     </li>
                 
                     <li>
-                        <a href="/about/">
+                        <a href="/blog/">
                             <h3>
-                                <i class="fa fa-id-card-o">&nbsp;</i>Sobre Mí
+                                <i class="fa fa-newspaper-o">&nbsp;</i>Blog
                             </h3>
                         </a>
                     </li>
                 
                     <li>
-                        <a href="/blog/">
+                        <a href="/about/">
                             <h3>
-                                <i class="fa fa-newspaper-o">&nbsp;</i>Blog
+                                <i class="fa fa-id-card-o">&nbsp;</i>Sobre Mí
                             </h3>
                         </a>
                     </li>
@@ -238,11 +251,11 @@
                 
                         <article class="mini-post">
                             <header>
-                                <h3><a href="/post/">Post</a></h3>
+                                <h3><a href="/blog/metodos-ab-test/">Test A/B: Ajuste su método al contexto del problema que quiere resolver</a></h3>
                                 
                                 <time class="published" datetime=
-                                    '2020-06-11'>
-                                    June 11, 2020</time>
+                                    '2020-06-12'>
+                                    June 12, 2020</time>
                             </header>
                             
 
@@ -250,7 +263,7 @@
                 
                         <article class="mini-post">
                             <header>
-                                <h3><a href="/post/la-falacia-de-la-analitica-digital/">¿Que pasó con las decisiones basadas en datos?</a></h3>
+                                <h3><a href="/blog/la-falacia-de-la-analitica-digital/">¿Que pasó con las decisiones basadas en datos?</a></h3>
                                 
                                 <time class="published" datetime=
                                     '2020-06-11'>
@@ -273,9 +286,155 @@
     <div id="main">
         
         
-            
+            <article class="post">
+  <header>
+    <div class="title">
+        
+            <h2><a href="/blog/metodos-ab-test/">Test A/B: Ajuste su método al contexto del problema que quiere resolver</a></h2>
+        
+        
+            <p>Existen muchas alternativas a la hora de experimentar. Elegir el método correcto de experimentación según el contexto es crítico para una toma de decisiones eficaz.</p>
+        
+    </div>
+    <div class="meta">
+        
+
+        <time class="published"
+            datetime='2020-06-12'>
+            June 12, 2020</time>
+        <span class="author"></span>
+        
+            <p>14 minute read</p>
+        
+        
+    </div>
+</header>
+
+  
+
+  
+  <p>Este articulo esta basado principalmente en los escritos y presentaciones de Matt Gershoff, fundador de Conductrics  <a href="https://conductrics.com">https://conductrics.com</a> quien me autorizó a utilizar sus ideas y material. Pueden encontrar su presentación sobre este tema en el siguiente link Los invito a que visiten su blog en el sitio de Conductrics, ya que contiene material didáctico sobre este tema y similares
+Hoy en día, cada vez más empresas se ven involucradas por una u otra razón en la realización de Tests A/B con el&hellip;</p>
+  <footer>
+    <ul class="actions">
+      <li><a href="/blog/metodos-ab-test/" class="button big">Continue Reading</a></li>
+    </ul>
+  <ul class="stats">
+  <li class="categories">
+    <ul>
         
             
+            
+                <i class="fa fa-folder"></i>
+                
+                
+                <li><a class="article-category-link" href="/categories/ab-test">ab test</a></li>
+                
+            
+        
+    </ul>
+  </li>
+  <li class="tags">
+    <ul>
+        
+            
+            
+                <i class="fa fa-tags"></i>
+                
+                
+                <li><a class="article-category-link" href="/tags/ab-test">ab test</a></li>
+                
+                
+                <li><a class="article-category-link" href="/tags/estadistica">estadistica</a></li>
+                
+                
+                <li><a class="article-category-link" href="/tags/bayes">bayes</a></li>
+                
+                
+                <li><a class="article-category-link" href="/tags/hipotesis">hipotesis</a></li>
+                
+            
+        
+    </ul>
+  </li>
+</ul>
+
+  </footer>
+</article>
+
+        
+            <article class="post">
+  <header>
+    <div class="title">
+        
+            <h2><a href="/blog/la-falacia-de-la-analitica-digital/">¿Que pasó con las decisiones basadas en datos?</a></h2>
+        
+        
+            <p>Las empresas no están obteniendo el valor deseado de su inversión en datos. La clave para solucionar ese problema se encuentra en tener personas en el equipo con los conocimientos estadísticos necesarios.</p>
+        
+    </div>
+    <div class="meta">
+        
+
+        <time class="published"
+            datetime='2020-06-11'>
+            June 11, 2020</time>
+        <span class="author">Ezequiel Boehler</span>
+        
+            <p>12 minute read</p>
+        
+        
+    </div>
+</header>
+
+  
+
+  
+  <p>La realidad es que <strong>la mayoría de los equipos de marketing digital, o analytics, no toman decisiones en base a datos</strong>, no son &ldquo;data-driven&rdquo;.</p>
+  <footer>
+    <ul class="actions">
+      <li><a href="/blog/la-falacia-de-la-analitica-digital/" class="button big">Continue Reading</a></li>
+    </ul>
+  <ul class="stats">
+  <li class="categories">
+    <ul>
+        
+            
+            
+                <i class="fa fa-folder"></i>
+                
+                
+                <li><a class="article-category-link" href="/categories/analytics">analytics</a></li>
+                
+            
+        
+    </ul>
+  </li>
+  <li class="tags">
+    <ul>
+        
+            
+            
+                <i class="fa fa-tags"></i>
+                
+                
+                <li><a class="article-category-link" href="/tags/analytics">analytics</a></li>
+                
+                
+                <li><a class="article-category-link" href="/tags/decisiones">decisiones</a></li>
+                
+                
+                <li><a class="article-category-link" href="/tags/estadistica">estadistica</a></li>
+                
+            
+        
+    </ul>
+  </li>
+</ul>
+
+  </footer>
+</article>
+
         
 
         
@@ -419,11 +578,11 @@
           <article class="mini-post">
             <header>
               <h3>
-                <a href="/post/">Post</a>
+                <a href="/blog/metodos-ab-test/">Test A/B: Ajuste su método al contexto del problema que quiere resolver</a>
               </h3>
               
-              <time class="published" datetime='2020-06-11'>
-                June 11, 2020
+              <time class="published" datetime='2020-06-12'>
+                June 12, 2020
               </time>
             </header>
             
@@ -433,7 +592,7 @@
           <article class="mini-post">
             <header>
               <h3>
-                <a href="/post/la-falacia-de-la-analitica-digital/">¿Que pasó con las decisiones basadas en datos?</a>
+                <a href="/blog/la-falacia-de-la-analitica-digital/">¿Que pasó con las decisiones basadas en datos?</a>
               </h3>
               
               <time class="published" datetime='2020-06-11'>
@@ -470,8 +629,8 @@
           <article>
             <header>
               
-                <a href="/categories/analytics/">analytics</a>
-                <span style="float:right;">2</span>
+                <a href="/categories/ab-test/">ab-test</a>
+                <span style="float:right;">1</span>
               
             </header>
           </article>
@@ -481,7 +640,7 @@
           <article>
             <header>
               
-                <a href="/categories/r/">r</a>
+                <a href="/categories/analytics/">analytics</a>
                 <span style="float:right;">1</span>
               
             </header>
