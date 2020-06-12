@@ -1,17 +1,18 @@
 ---
-author: George Jetson
+author: Ezequiel Boehler
 categories:
 - ""
-date: "2017-06-22"
-description: Application for doing cool things.
+date: "2020-05-16"
+description: Simulador de AGILE A/B Test comparado con Test frequentista clásico
 featured: ""
 featuredalt: ""
 featuredpath: ""
-format: Android
-link: '#'
+format: Shiny Web App
+link: "https://laziob.shinyapps.io/Clinical_AB_Test/"
 linktitle: ""
-title: Fancy App 1
+title: Simulador A/B Test
 type: itemized
 ---
 
-## App 1
+## Link a la App
+[Link](https://laziob.shinyapps.io/Clinical_AB_Test/ "App")

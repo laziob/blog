@@ -20,8 +20,8 @@ pluralizeListTitles = false
   # Sets navbarTitle to match the section of the website
   dynamicTitles        = true
   # Sets RSS icons to appear on the sidebar with the social media buttons
-  rssAppearAtTop       = true
-  rssAppearAtBottom    = true
+  rssAppearAtTop       = false
+  rssAppearAtBottom    = false
   # Sets Social Media icons to appear on the sidebar
   socialAppearAtTop    = true
   socialAppearAtBottom = true
@@ -84,9 +84,9 @@ pluralizeListTitles = false
 [params.intro]
   header    = "Blog de LazioB"
 
-  paragraph = "Blog sobre Digital Analytics. Sus usos, consejos, y aplicaciones al marketing digital. También proyectos hechos en R y Shiny. <i class='fa fa-hand-peace-o'></i>"
+  paragraph = "Blog sobre experimentación (A/B Tests) en marketing y productos digitales. Diseño de experimentos, buenas practicas, explicación de conceptos y metodologías diversas. <i class='fa fa-hand-peace-o'></i>"
 
-  about     = "Analista Digital y cuasi Desarrollador en Leadaki, una agencia de Marketing Digital orientada a Performance. Apasionado de Analytics, BI, estadística y los efectos de la tecnología en la sociedad"
+  about     = "Data Scientist en Falabella Retail. Apasionado por los datos, buscando formas de mejorar la toma de decisiones de equipos y disminuir sus sesgos."
   # This appears at the top of the sidebar above params.intro.header.
   # A width of less than 100px is recommended from a design perspective.
   [params.intro.pic]
@@ -133,12 +133,6 @@ pluralizeListTitles = false
   url = "/categories/"
   identifier = "fa fa-sitemap"
   weight = 5
-
-[[menu.main]]
-  name = "Contacto"
-  url = "/contact/"
-  identifier = "fa fa-envelope-o"
-  weight = 6
 
 # Sets Social Media icons to appear and link to your account. Value should be your
 # username unless otherwise noted. These are the icons affected by socialAppearAtTop
