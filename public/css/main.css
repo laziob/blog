@@ -96,7 +96,7 @@
 	}
 
 	body {
-		background: #f4f4f4;
+		background: #6797ab57;
 	}
 
 		body.is-loading *,
@@ -173,11 +173,11 @@
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #2ebaae !important;
+			color: #6797ab57 !important;
 		}
 
 			a:hover:before {
-				color: #2ebaae !important;
+				color: #6797ab57 !important;
 			}
 
 	strong, b {
@@ -1338,7 +1338,11 @@
 					text-transform: uppercase;
 					white-space: nowrap;
 				}
-
+    
+    #content {
+      text-align: justify;
+    }
+    
 		#content img {
         max-width: 100%;
     }
@@ -2568,6 +2572,16 @@
 				/* Modern Browsers */
 				opacity: 0.6;
 		}
+		
+		#intro .icons	a:hover {
+			border-bottom-color: transparent;
+			color: #FEFEFE !important;
+		}
+
+			a:hover:before {
+				color: #FEFEFE !important;
+			}
+
 
 		#intro .intro-circle {
 		    border-radius: 50%;
@@ -2583,7 +2597,8 @@
 		}
 
 			#intro .logo:before {
-				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100px' height='100px' viewBox='0 0 100 100' preserveAspectRatio='none' zoomAndPan='disable'%3E%3Cpolygon points='0,0 100,0 100,25 50,0 0,25' style='fill:%23f4f4f4' /%3E%3Cpolygon points='0,100 100,100 100,75 50,100 0,75' style='fill:%23f4f4f4' /%3E%3C/svg%3E");
+				background-image: url("main/logo.jpg");
+				border-radius:50%;
 				background-position: top left;
 				background-repeat: no-repeat;
 				background-size: 100% 100%;
@@ -2600,6 +2615,7 @@
 				display: block;
 				margin-left: -0.25em;
 				width: 4.5em;
+				border-radius:60%;
 			}
 
 		#intro header h2 {
