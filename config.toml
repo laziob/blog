@@ -139,6 +139,7 @@ pluralizeListTitles = false
 # and socialAppearAtBottom.
 [social]
   # Coding Communities
+  cafecito         = "lazio"
   github           = "laziob"
   gitlab           = ""
   stackoverflow    = "" # User Number
@@ -152,7 +153,7 @@ pluralizeListTitles = false
   dribbble         = ""
   # Publishing Communities
   wordpress        = ""
-  medium           = "ezequielboehler"
+  medium           = ""
   # Professional/Business Oriented Communities
   linkedin         = "ezequiel-boehler-1b01783b"
   linkedin_company = ""
@@ -177,7 +178,7 @@ pluralizeListTitles = false
   snapchat         = ""
   pinterest        = ""
   telegram         = ""
-  vine             = "lazio"
+  vine             = ""
   googlescholar    = ""
   orcid            = ""
   researchgate     = ""    
