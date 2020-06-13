@@ -2480,6 +2480,15 @@
 				font-size: 0.9em;
 				padding: 0;
 		}
+		
+		#sidebar #mini-bio 	a:hover {
+			color: #FEFEFE !important;
+		}
+		
+		#sidebar #categories 	a:hover {
+			border-bottom-color: transparent;
+			color: #FEFEFE !important;
+		}
 
 		@media screen and (max-width: 980px) {
 
@@ -2535,11 +2544,11 @@
 			margin: 0 0 1em 0;
 			overflow: hidden;
 			position: relative;
-			width: 4em;
+			width: 9em;
 		}
 
 			#intro .logo:before {
-				background-image: url("main/logo.jpg");
+				background-image: url("main/foto-lazio.jpg");
 				border-radius:50%;
 				background-position: top left;
 				background-repeat: no-repeat;
@@ -2556,7 +2565,7 @@
 			#intro .logo img {
 				display: block;
 				margin-left: -0.25em;
-				width: 4.5em;
+				width: 100%;
 				border-radius:60%;
 			}
 
