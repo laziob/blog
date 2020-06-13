@@ -2564,7 +2564,7 @@
 
 			#intro .logo img {
 				display: block;
-				margin-left: -0.25em;
+				margin-left: 0;
 				width: 100%;
 				border-radius:60%;
 			}
