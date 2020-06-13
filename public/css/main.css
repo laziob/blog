@@ -10,6 +10,64 @@
 	gohugo.io | @pacollins
 */
 
+/* Reset */
+
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+	blockquote, pre, a, abbr,	acronym, address, big, cite, code, del, dfn, em,
+	img, ins, kbd, q, s, samp, small, strike, strong,	sub, sup, tt, var, b, u,
+	i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table,
+	caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas,	details,
+	embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby,
+	section, summary, time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+
+	article, aside, details, figcaption, figure, footer, header, hgroup, menu,
+	nav, section {
+		display: block;
+	}
+
+	body {
+		line-height: 1;
+		-webkit-text-size-adjust: none;
+	}
+
+	ol, ul {
+		list-style: none;
+	}
+
+	blockquote, q {
+		quotes: none;
+
+	}
+
+	blockquote:before,
+	blockquote:after,
+	q:before,
+	q:after {
+		content: '';
+		content: none;
+	}
+
+	header p {
+		font-family: "Raleway", Helvetica, sans-serif;
+		font-size: 0.7em;
+		font-weight: 400;
+		letter-spacing: 0.25em;
+		line-height: 2.5;
+		margin: -1em 1em 0;
+		text-transform: uppercase;
+	}
+
+	table {
+		border-collapse: collapse;
+		border-spacing: 0;
+	}
 
 /* Box Model */
 
@@ -38,7 +96,7 @@
 	}
 
 	body {
-		background: #6797ab57;
+		background: #f4f4f4;
 	}
 
 		body.is-loading *,
@@ -115,11 +173,11 @@
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #6797ab57 !important;
+			color: #2ebaae !important;
 		}
 
 			a:hover:before {
-				color: #6797ab57 !important;
+				color: #2ebaae !important;
 			}
 
 	strong, b {
@@ -1280,11 +1338,7 @@
 					text-transform: uppercase;
 					white-space: nowrap;
 				}
-    
-    #content {
-      text-align: justify;
-    }
-    
+
 		#content img {
         max-width: 100%;
     }
@@ -2514,16 +2568,6 @@
 				/* Modern Browsers */
 				opacity: 0.6;
 		}
-		
-		#intro .icons	a:hover {
-			border-bottom-color: transparent;
-			color: #FEFEFE !important;
-		}
-
-			a:hover:before {
-				color: #FEFEFE !important;
-			}
-
 
 		#intro .intro-circle {
 		    border-radius: 50%;
@@ -2539,8 +2583,7 @@
 		}
 
 			#intro .logo:before {
-				background-image: url("main/logo.jpg");
-				border-radius:50%;
+				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100px' height='100px' viewBox='0 0 100 100' preserveAspectRatio='none' zoomAndPan='disable'%3E%3Cpolygon points='0,0 100,0 100,25 50,0 0,25' style='fill:%23f4f4f4' /%3E%3Cpolygon points='0,100 100,100 100,75 50,100 0,75' style='fill:%23f4f4f4' /%3E%3C/svg%3E");
 				background-position: top left;
 				background-repeat: no-repeat;
 				background-size: 100% 100%;
@@ -2557,7 +2600,6 @@
 				display: block;
 				margin-left: -0.25em;
 				width: 4.5em;
-				border-radius:60%;
 			}
 
 		#intro header h2 {

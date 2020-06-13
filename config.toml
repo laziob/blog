@@ -54,7 +54,7 @@ pluralizeListTitles = false
   # files by adding the value, "default".
   # customCSS            = ["default", "/path/to/file"]
   # customJS             = ["default", "/path/to/file"]
-  customCSS            = ["default","/css/personal.css"]
+  customCSS            = ["default","/css/personal.css", "/css/style.css"]
   customJS             = ["default"]
 
   # options for highlight.js (version, additional languages, and theme)
@@ -177,7 +177,7 @@ pluralizeListTitles = false
   snapchat         = ""
   pinterest        = ""
   telegram         = ""
-  vine             = ""
+  vine             = "lazio"
   googlescholar    = ""
   orcid            = ""
   researchgate     = ""    
