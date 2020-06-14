@@ -4,7 +4,7 @@ title = "Blog de LazioB"
 theme = "hugo-future-imperfect"
 preserveTaxonomyNames = true
 paginate = 3
-disqusShortname = "shortname"
+disqusShortname = ""
 googleAnalytics = "UA-27830219-2"
 pluralizeListTitles = false
 
