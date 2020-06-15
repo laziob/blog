@@ -1,0 +1,27 @@
+@font-face {
+  font-family: icomoon;
+  src:  url('../fonts/icomoon.eot?54jwlz');
+  src:  url('../fonts/icomoon.eot?54jwlz#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?54jwlz') format('truetype'),
+    url('../fonts/icomoon.woff?54jwlz') format('woff'),
+    url('../fonts/icomoon.svg?54jwlz#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.customicon {
+  display: inline-block;
+    font: normal normal normal 14px/1 icomoon;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+
+}
+
+.customicon-cup:before {
+  content: "\e901";
+}
+.customicon-cafecito:before {
+  content: "\e900";
+}

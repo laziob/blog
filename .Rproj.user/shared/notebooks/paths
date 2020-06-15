@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /Users/emelitonb/Documents/Repos/blog/content/about/_index.md="452ACAFA"
 /Users/emelitonb/Documents/Repos/blog/content/blog/2020-06-12-que-pasó-con-las-decisiones-basadas-en-datos.md="72B0EB05"
 /Users/emelitonb/Documents/Repos/blog/content/itemized/item1.md="53FB7D9F"
@@ -20,3 +21,23 @@
 /Users/emelitonb/Documents/Repos/blog/themes/hugo-future-imperfect/static/css/main.css="8C85B173"
 /Users/emelitonb/Documents/Repos/blog/themes/hugo-future-imperfect/static/js/util.js="D397B960"
 /Users/emelitonb/Documents/Repos/blog/themes/hugo-future-imperfect/theme.toml="BD9C7EF4"
+=======
+C:/Users/ezequ/Documents/Repos/blog/config.toml="C582A71A"
+C:/Users/ezequ/Documents/Repos/blog/public/css/academicons.min.css="1BF576F7"
+C:/Users/ezequ/Documents/Repos/blog/public/css/custom.css="EF03C0CA"
+C:/Users/ezequ/Documents/Repos/blog/public/css/main.css="6AA6A5F2"
+C:/Users/ezequ/Documents/Repos/blog/public/css/personal.css="D3F4B7A0"
+C:/Users/ezequ/Documents/Repos/blog/public/css/style.css="EC25998F"
+C:/Users/ezequ/Documents/Repos/blog/public/fonts/icomoon.svg="443DD89F"
+C:/Users/ezequ/Documents/Repos/blog/public/index.html="05A26863"
+C:/Users/ezequ/Documents/Repos/blog/static/js/add-on.js="1BAF8199"
+C:/Users/ezequ/Documents/Repos/blog/themes/hugo-future-imperfect/exampleSite/config.toml="7DF769E5"
+C:/Users/ezequ/Documents/Repos/blog/themes/hugo-future-imperfect/layouts/index.html="5B623F07"
+C:/Users/ezequ/Documents/Repos/blog/themes/hugo-future-imperfect/layouts/partials/header.html="C577DE6D"
+C:/Users/ezequ/Documents/Repos/blog/themes/hugo-future-imperfect/layouts/partials/img-path.html="EB6DBB8A"
+C:/Users/ezequ/Documents/Repos/blog/themes/hugo-future-imperfect/layouts/partials/navbar.html="EB73E0CC"
+C:/Users/ezequ/Documents/Repos/blog/themes/hugo-future-imperfect/layouts/partials/rss-icon.html="5B159424"
+C:/Users/ezequ/Documents/Repos/blog/themes/hugo-future-imperfect/layouts/partials/seo_schema.html="78065A4A"
+C:/Users/ezequ/Documents/Repos/blog/themes/hugo-future-imperfect/layouts/partials/sidebar.html="ADC22544"
+C:/Users/ezequ/Documents/Repos/blog/themes/hugo-future-imperfect/layouts/partials/social.html="357079E0"
+>>>>>>> 7bcd51f7aad770673b2f105f6526e97645c34381

@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'cafecito';
+  src:  url('../fonts/cafecito.eot?ag2yue');
+  src:  url('../fonts/cafecito.eot?ag2yue#iefix') format('embedded-opentype'),
+    url('../fonts/cafecito.ttf?ag2yue') format('truetype'),
+    url('../fonts/cafecito.woff?ag2yue') format('woff'),
+    url('../fonts/cafecito.svg?ag2yue#cafecito') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.customicon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'cafecito' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.customicon-cafecito:before {
+  content: "\e900";
+}

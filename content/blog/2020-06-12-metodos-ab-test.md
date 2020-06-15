@@ -13,7 +13,8 @@ linktitle: ''
 type: post
 ---
 
-Este articulo esta basado principalmente en los escritos y presentaciones de Matt Gershoff, fundador de Conductrics  https://conductrics.com quien me autorizó a utilizar sus ideas y material. Pueden encontrar su presentación sobre este tema en el siguiente link Los invito a que visiten su blog en el sitio de Conductrics, ya que contiene material didáctico sobre este tema y similares
+Este articulo esta basado principalmente en los escritos y presentaciones de Matt Gershoff, fundador de Conductrics  https://conductrics.com quien me autorizó a utilizar sus ideas y material. Pueden encontrar su presentación sobre este tema en el siguiente [link](https://docs.google.com/presentation/d/1mbRGTPe3cB1yvghARLbVg-h-oizq6fZfZg1MYriTzQk/edit, "Presentacion Matt"). Los invito a que visiten su blog en el sitio de Conductrics, ya que contiene material didáctico sobre este tema y similares.
+
 Hoy en día, cada vez más empresas se ven involucradas por una u otra razón en la realización de Tests A/B con el fin de poder tomar mejores decisiones. Ya sean por cambios en UX de páginas web o Apps, cambios en segmentación o mensajes de campañas publicitarias, e incluso en distintas selecciones de modelos de Machine Learning, decidir que versión es mejor que otra conlleva una gran cantidad de tareas, que aquellos que lo intentaron, sabrán que no son fáciles. 
 El objetivo de este articulo es poder darles una guía de pautas sobre distintos métodos de muestreo y evaluación  para poder realizar experimentos que se adecuen de la mejor manera posible al desafío que tienen por delante. 
 Para lograrlo revisaremos  los siguientes temas:
