@@ -16,6 +16,13 @@ pluralizeListTitles = false
   # Sets where "View More Posts" links
   viewMorePostLink     = "/blog/"
 
+# SEO
+enableRobotsTXT = true
+canonifyURLs = true
+# and if you think your md file names or locations might change:
+#[permalinks]
+#    post = "/blog/:title/"
+
 # Optional Params
   # Sets navbarTitle to match the section of the website
   dynamicTitles        = true
@@ -109,30 +116,28 @@ pluralizeListTitles = false
   url = "/"
   identifier = "fa fa-home"
   weight = 1
-  
-[[menu.main]]
-  name = "Blog"
-  url = "/blog/"
-  identifier = "fa fa-newspaper-o"
-  weight = 2
 
 [[menu.main]]
   name = "Sobre Mí"
   url = "/about/"
   identifier = "fa fa-id-card-o"
-  weight = 3
+  weight = 2
 
 [[menu.main]]
   name = "Proyectos"
-  url = "/itemized/"
+  url = "/proyectos/"
   identifier = "fa fa-list"
-  weight =4
+  weight = 3
 
 [[menu.main]]
   name = "Categorías"
   url = "/categories/"
   identifier = "fa fa-sitemap"
-  weight = 5  
+  weight = 4  
+
+[Taxonomies]
+  #tag = "tags"
+
 
 # Sets Social Media icons to appear and link to your account. Value should be your
 # username unless otherwise noted. These are the icons affected by socialAppearAtTop

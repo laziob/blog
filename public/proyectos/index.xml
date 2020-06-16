@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Itemized on Blog de LazioB</title>
-    <link>/itemized/</link>
-    <description>Recent content in Itemized on Blog de LazioB</description>
+    <title>Proyectos on Blog de LazioB</title>
+    <link>/proyectos/</link>
+    <description>Recent content in Proyectos on Blog de LazioB</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ar-es</language>
     <lastBuildDate>Sat, 16 May 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/itemized/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/proyectos/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Simulador A/B Test</title>
-      <link>/itemized/item1/</link>
+      <link>/proyectos/simulador_ab_test/</link>
       <pubDate>Sat, 16 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>/itemized/item1/</guid>
+      <guid>/proyectos/simulador_ab_test/</guid>
       <description>Link a la App Link</description>
     </item>
     
