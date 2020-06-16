@@ -338,8 +338,8 @@ if (!doNotTrack) {
 
   <div id="content">
     <p>Este articulo esta basado principalmente en los escritos y presentaciones de Matt Gershoff, fundador de Conductrics  <a href="https://conductrics.com">https://conductrics.com</a> quien me autorizó a utilizar sus ideas y material. Pueden encontrar su presentación sobre este tema en el siguiente <a href="https://docs.google.com/presentation/d/1mbRGTPe3cB1yvghARLbVg-h-oizq6fZfZg1MYriTzQk/edit," title="Presentacion Matt">link</a>. Los invito a que visiten su blog en el sitio de Conductrics, ya que contiene material didáctico sobre este tema y similares.</p>
-<p>Hoy en día, cada vez más empresas se ven involucradas por una u otra razón en la realización de Tests A/B con el fin de poder tomar mejores decisiones. Ya sean por cambios en UX de páginas web o Apps, cambios en segmentación o mensajes de campañas publicitarias, e incluso en distintas selecciones de modelos de Machine Learning, decidir que versión es mejor que otra conlleva una gran cantidad de tareas, que aquellos que lo intentaron, sabrán que no son fáciles.
-El objetivo de este articulo es poder darles una guía de pautas sobre distintos métodos de muestreo y evaluación  para poder realizar experimentos que se adecuen de la mejor manera posible al desafío que tienen por delante.
+<p>Hoy en día, cada vez más empresas se ven involucradas por una u otra razón en la realización de Tests A/B con el fin de poder tomar mejores decisiones. Ya sean por cambios en UX de páginas web o Apps, cambios en segmentación o mensajes de campañas publicitarias, e incluso en distintas selecciones de modelos de Machine Learning, decidir que versión es mejor que otra conlleva una gran cantidad de tareas, que aquellos que lo intentaron, sabrán que no son fáciles. 
+El objetivo de este articulo es poder darles una guía de pautas sobre distintos métodos de muestreo y evaluación  para poder realizar experimentos que se adecuen de la mejor manera posible al desafío que tienen por delante. 
 Para lograrlo revisaremos  los siguientes temas:</p>
 <p>Espero que luego de haber leído el articulo, tengan un mejor entendimiento de que no todos los tests o decisiones deben evaluarse de la misma manera, sino que existen alternativas más adecuadas a ciertos tipos de contextos,  y que sepan el funcionamiento elemental de dichas alternativas.</p>
 <p>Habiendo dicho eso, comencemos!</p>
@@ -472,7 +472,7 @@ Esto se traduce a la siguiente receta:</p>
 <ul>
 <li>Cuanto más bajo el Error Tipo 1 y Tipo 2, mejor</li>
 <li>Para lograr eso, uno debe &lsquo;pagar&rsquo; y en este caso, la moneda con la que se paga es el tamaño de la muestra.</li>
-<li>Por lo tanto para bajar alguna tasa de error uno debe:
+<li>Por lo tanto para bajar alguna tasa de error uno debe: 
 a) Aumentar la tasa del otro tipo de error
 b) Aumentar su presupuesto (tamaño muestral)</li>
 </ul>
@@ -975,7 +975,7 @@ b) Aumentar su presupuesto (tamaño muestral)</li>
 
 
 <p>Podemos ver que en este caso, la distribución de nuestros resultados (10 mil diferencias de Tasa de Conv B - Tasa de Conv A) se centra en 0, lo cual tiene sentido dado que pusimos tasas iguales de 0.04 para ambas variantes. Esto significa que en este caso, si luego de correr el experimento seleccionamos como variante ganadora aquella que tuvo la mayor tasa de conversión, estaremos seleccionando correctamente el 50% de las veces. Pero dado que en el contexto del problema, no nos interesaba controlar el riesgo de estar eligiendo una versión que pueda ser peor, este resultado no sería grave.</p>
-<p>En resumen, realizar selección Por Potencia, nos permite ejecutar un experimento con tamaños muestráles ampliamente menores al que necesitaríamos si decidiéramos niveles de significancia altos (alpha = 0.05 o 0.01), pero en caso de haber efecto, estaríamos seleccionando la versión correcta el 95% de las veces, o el % de las veces que determinemos con la Potencia que decidamos.
+<p>En resumen, realizar selección Por Potencia, nos permite ejecutar un experimento con tamaños muestráles ampliamente menores al que necesitaríamos si decidiéramos niveles de significancia altos (alpha = 0.05 o 0.01), pero en caso de haber efecto, estaríamos seleccionando la versión correcta el 95% de las veces, o el % de las veces que determinemos con la Potencia que decidamos. 
 Comparemos entonces el mismo experimento con las 3 metodologías en las que nos enfocamos:</p>
 
 
@@ -1030,8 +1030,9 @@ Comparemos entonces el mismo experimento con las 3 metodologías en las que nos 
   <div>
     <hr>
     <h3>Gracias por leer mi blog!</h3>
-    <p style="margin-bottom: 15px">Si te gustó lo que leiste te invito a que te sumes al newsletter para recibir un mail semanal con el nuevo contenido y novedades. Muchas gracias!</p>
-    <p style="text-align:center"><a style="border:1px solid #6797ab57;padding:10px;text-align:center;" href="https://tinyletter.com/eboehler" target="popup" onclick="window.open('https://tinyletter.com/eboehler','popup','width=600,height=600'); return false;"> Subscribirse </a>
+    <p style="margin-bottom: 15px">Si te gustó lo que leiste te invito a que te sumes al newsletter para recibir un mail semanal con el nuevo contenido y novedades. O podes apoyarme con su desarrollo invitandome un cafe :) Muchas gracias!</p>
+    <p style="text-align:center;position: relative;overflow: hidden;height: 60px;">
+      <a class="subscribe" href="https://tinyletter.com/eboehler" target="popup" onclick="window.open('https://tinyletter.com/eboehler','popup','width=600,height=600'); return false;"> Subscribirse </a> <a class="cafecito" href='https://cafecito.app/lazio' rel='noopener' target='_blank'><img src='https://cdn.cafecito.app/imgs/buttons/button_4.png' alt='Invitame un café en cafecito.app'/></a>
     </p>
 </div>
   <footer>

@@ -232,6 +232,30 @@
 		hr.major {
 			margin: 3em 0;
 		}
+		
+	a.cafecito {
+	  position: relative;
+    top: 24%;
+    margin: 5px;
+    border-bottom:none;
+	}
+	a.subscribe {
+    border: 1px solid #80a9ba;
+    padding: 9px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #80a9ba;
+    color: white;
+    font-family: Nunito;
+    height: 40px;
+    letter-spacing: 1px;
+	}
+	
+	a.subscribe:hover {
+	  color: white !important;
+	}
+	
 
 	.align-left {
 		text-align: left;

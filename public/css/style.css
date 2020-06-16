@@ -28,3 +28,11 @@
 .customicon-cafecito:before {
   content: "\e900";
 }
+
+@font-face {
+  font-family: 'Nunito';
+  src:  url('../fonts/Nunito-SemiBold.ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
