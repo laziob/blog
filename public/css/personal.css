@@ -234,22 +234,21 @@
 		}
 		
 	a.cafecito {
-	  position: relative;
-    top: 24%;
-    margin: 5px;
-    border-bottom:none;
+    border-bottom: none;
+    margin-left: 10px;
 	}
 	a.subscribe {
     border: 1px solid #80a9ba;
-    padding: 9px;
-    text-align: center;
-    margin: 10px;
-    border-radius: 10px;
+    padding: 10px;
+    border-radius: 6px;
     background-color: #80a9ba;
     color: white;
     font-family: Nunito;
     height: 40px;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 	}
 	
 	a.subscribe:hover {
