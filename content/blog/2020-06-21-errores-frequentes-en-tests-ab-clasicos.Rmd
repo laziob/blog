@@ -3,7 +3,7 @@ title: Errores frequentes en Tests AB clásicos
 author: Ezequiel Boehler
 date: '2020-06-21'
 type: post
-slug: errores-frequentes-en-tests-ab-clásicos
+slug: errores-frequentes-en-tests-ab-clasicos
 categories: [ab test]
 tags: [ab test, estadistica]
 description: Muchos equipos suelen cometer errores a al hora de hacer A/B Tests. Aquí encontraran una explicación de los que yo considero más frecuentes y sus efectos en la validez del experimento

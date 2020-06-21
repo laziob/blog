@@ -3,7 +3,7 @@ title: Errores frequentes en Tests AB clásicos
 author: Ezequiel Boehler
 date: '2020-06-21'
 type: post
-slug: errores-frequentes-en-tests-ab-clásicos
+slug: errores-frequentes-en-tests-ab-clasicos
 categories: [ab test]
 tags: [ab test, estadistica]
 description: Muchos equipos suelen cometer errores a al hora de hacer A/B Tests. Aquí encontraran una explicación de los que yo considero más frecuentes y sus efectos en la validez del experimento
@@ -64,7 +64,7 @@ Se decidió que se quería hacer un experimento. Se crea el grupo de tratamiento
 <li>“El p-value representa la probabilidad de obtener el valor que observamos, asumiendo que la hipótesis nula es verdadera”. Esto tampoco es cierto porque, si vuelven a la definición del p-value que puse antes, fijense que dice que es la probabilidad de que el valor observado sea AL MENOS de ese tamaño. Pero ese p-value tambíen cubre todos los tamaños mayores al que observamos.</li>
 </ol>
 <p>Estas son solo algunas de las interpretaciones erradas sobre p-values, pero en mi experiencia las más frecuentes.</p>
-<p><img src="/blog/2020-06-21-errores-frequentes-en-tests-ab-cl%C3%A1sicos_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<p><img src="/blog/2020-06-21-errores-frequentes-en-tests-ab-clasicos_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
 <p>Visualmente, un p-value representa lo mostrado en el gráfico anterior. En ese ejemplo, asumiendo que la hipótesis nula es verdadera, hay un 95% de probabilidad de que el estadístico de prueba observado se encuentran en el área verde, y un 5% de probabilidad que se encuentre en el área gris. Cuando decimos que un test es “significante” al 5%, estamos diciendo que el valor observado se encuentra efectivamente en el área gris. Cuando modificamos la significancia, el alpha, de 5% a 1% por ejemplo, lo que estamos haciendo es achicar el área gris, moverla más hacia la derecha (en los casos de tests de una sola cola)</p>
 <p>Otra equivocación muy frecuente en A/B tests de este tipo es reportar solamente significancia y los p-values (estén estos siendo bien interpretados o no).</p>
 </div>
@@ -112,7 +112,7 @@ Se decidió que se quería hacer un experimento. Se crea el grupo de tratamiento
 <p>¿Pero qué significa la potencia del experimento? Si nuestro ß es por ejemplo 0,1 o 10%, quiere decir que <strong>queremos controlar que en repetidos experimentos válidos, la probabilidad de no rechazar la hipótesis nula cuando en verdad si había efecto, sea solo el 10%</strong>. Entonces la potencia del experimento en este caso sería 100 - 10% = 90%. Diríamos que nuestro test se realizó a una potencia de 90%.</p>
 <p>Y se preguntaran cómo está esto relacionado con el tamaño de los efectos. Resulta que un diseño experimental de este tipo bien hecho requiere que antes de que recolectemos los datos, es necesario haber establecido tanto una hipótesis nula, una hipótesis alternativa, el efecto mínimo que nos interesa poder observar, un alpha para controlar riesgo de error tipo 1, y un beta para controlar riesgo de error tipo 2. Al tener todos esos parámetros definidos, recién ahí podremos, a través de un test de potencia, calcular el tamaño muestral necesario, para que el experimento pueda controlar por todas esas definiciones.</p>
 <p>¿Cuántos tests que realizaron hasta ahora, los diseñaron con un test de potencia previo? Todos aquellos que no tuvieron test de potencia previo, no controlaron entonces por el efecto mínimo a identificar, ni la potencia necesaria. Y por lo tanto muchos de ellos quizás no es que no tuvieron efecto, sino que <strong>no tuvieron el tamaño muestral suficiente para detectar un efecto como el observado con una determinada probabilidad. Realizaron un test sub potenciado.</strong></p>
-<p><img src="/blog/2020-06-21-errores-frequentes-en-tests-ab-cl%C3%A1sicos_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<p><img src="/blog/2020-06-21-errores-frequentes-en-tests-ab-clasicos_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
 <p>Como podrán ver en el gráfico anterior, con un determinado tamaño muestral y a una determinada potencia, hay un efecto mínimo detectable. Efectos menores a esos no serán detectados por el experimento con el fín de poder rechazar la hipótesis nula. Cuando se busca disminuir el riesgo de error tipo 2, osea aumentar la potencia, verán que el tamaño muestral necesario aumenta. O a una potencia fija, el tamaño muestral necesario aumenta a medida que me interesa detectar efectos más chicos.</p>
 </div>
 <div id="frenar-el-experimento-antes-o-no-frenarlo-hasta-obtener-significancia." class="section level3">
@@ -126,10 +126,10 @@ de experimento de este tipo, requiere definir ciertos parámetros, y eso nos dev
 <p>Bajo esa misma línea nos encontramos con el típico caso de frenar los experimentos antes, sea por significancia o no. Fijense que recien les comenté que los p-values varían en el tiempo. Por lo tanto es esperable también que en un experimento cualquiera, una variante sea significativa (p-value menor al alpha que decidimos) en algún momento previo a las observaciones totales necesarias.</p>
 <p>Eso no quiere decir que debemos frenar el experimento! De hecho, <strong>cuantas más veces miramos los datos recolectados por el experimento con intención de frenarlo, más probable es que nuestro experimento resulte en un Error de Tipo 1 (falso positivo).</strong></p>
 <p>Supongamos un experimento que luego del test de potencia, requiere 10000 observaciones, con un riesgo de falso positivo del 5%. Pero en este caso, sabemos de verdad que no hay efecto, dado que las dos variantes son idénticas. Ahora bien, decidimos mirar el experimento cada vez que se obtienen 100 observaciones, por un total de 100 miradas. Si al empezar el experimento teníamos solo un 5% de probabilidad de que resulte en un falso positivo, ahora cada vez que lo miramos tenemos un 5% de probabilidad de observar un falso positivo, por lo tanto cuanto más miremos, más aumentamos nuestro riesgo de cometer un error de tipo 1. Generalmente mirar solo 2 veces duplica el riesgo seleccionado. Mirar 5 veces multiplica el riesgo por 3, y mirar ya 10 veces lo cuadriplica. El cálculo de este efecto se puede verificar por simulaciones como en el trabajo de Armitage et. al. “Repeated Significance Tests on Accumulating Data”.</p>
-<p><img src="/blog/2020-06-21-errores-frequentes-en-tests-ab-cl%C3%A1sicos_files/figure-html/plot_paths_pvalue-1.png" width="672" /></p>
+<p><img src="/blog/2020-06-21-errores-frequentes-en-tests-ab-clasicos_files/figure-html/plot_paths_pvalue-1.png" width="672" /></p>
 <p>En el anterior gráfico podemos observar la evolución del p-value de muchas simulaciones de experimentos donde no había efecto. Si nos fijamos el p-value final, vemos como solo el 5% resultó significativo, que es el 5% de riesgo error tipo 1 que determinamos.</p>
 <p>Pero miren que pasa en el siguiente gráfico, donde frenamos cada experimento cuando alcanzó significancia en algún momento de la recolección.</p>
-<p><img src="/blog/2020-06-21-errores-frequentes-en-tests-ab-cl%C3%A1sicos_files/figure-html/plot_paths_pvalue_stopping-1.png" width="672" /></p>
+<p><img src="/blog/2020-06-21-errores-frequentes-en-tests-ab-clasicos_files/figure-html/plot_paths_pvalue_stopping-1.png" width="672" /></p>
 <p>Como podrán ver, muchos más experimentos ahora son significantes. De hecho, <strong>el 22,68% de los experimentos simulados nos dan significantes, cuando en verdad ninguno tenía efecto!</strong></p>
 <p>Es por eso que en este tipo de tests, la decisión de cuándo se debe frenar el experimento es obtenida por el test de potencia y el tamaño muestral que nos devuelve dado los parámetros seleccionados.</p>
 </div>

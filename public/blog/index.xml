@@ -13,10 +13,10 @@
     
     <item>
       <title>Errores frequentes en Tests AB clásicos</title>
-      <link>/blog/errores-frequentes-en-tests-ab-cl%C3%A1sicos/</link>
+      <link>/blog/errores-frequentes-en-tests-ab-clasicos/</link>
       <pubDate>Sun, 21 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blog/errores-frequentes-en-tests-ab-cl%C3%A1sicos/</guid>
+      <guid>/blog/errores-frequentes-en-tests-ab-clasicos/</guid>
       <description>En mi primer posteo, que pueden encontrar acá , mencioné algunos errores comunes que los equipos cometen a la hora de hacer A/B tests. En este post voy a profundizar en algunos de estos errores. Mi objetivo es que ganen un mejor entendimiento de por qué el error es en efecto un error, y de qué forma altera o invalida la interpretación de resultados de ese experimento.
 TL:DR Los 4 errores más frecuentes y que hay que tratar de evitar son:</description>
     </item>
