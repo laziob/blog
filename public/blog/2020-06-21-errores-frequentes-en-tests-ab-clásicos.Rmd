@@ -223,7 +223,7 @@ plot_paths <- function(dat, color_by = "pass_end", hline = .05,
 ```
 
 
-En mi primer posteo, que pueden encontrar [acá](/blog/la-falacia-de-la-analitica-digital/ "primer post") , mencione algunos errores comunes que los equipos cometen a la hora de hacer A/B tests. En este post voy a profundizar en algunos de estos errores. Mi objetivo es que ganen un mejor entendimiento de porqué el error es en efecto un error, y de qué forma altera o invalida la interpretación de resultados de ese experimento.
+En mi primer posteo, que pueden encontrar [acá](/blog/la-falacia-de-la-analitica-digital/ "primer post") , mencioné algunos errores comunes que los equipos cometen a la hora de hacer A/B tests. En este post voy a profundizar en algunos de estos errores. Mi objetivo es que ganen un mejor entendimiento de por qué el error es en efecto un error, y de qué forma altera o invalida la interpretación de resultados de ese experimento.
 
 ### TL:DR
 
@@ -242,7 +242,7 @@ Los 4 errores más frecuentes y que hay que tratar de evitar son:
 Muchas veces uno se encuentra con la siguiente situación:
 Se decidió que se quería hacer un experimento. Se crea el grupo de tratamiento y el grupo de control, se espera un tiempo determinado, y después se calcula la significancia de la métrica objetivo.
 
-Para un ejemplo supongamos un caso donde la métrica objetivo es una tasa de conversión, y que los grupos son visitas a un sitio web.Durante una semana, se divide el tráfico al sitio web y al terminar la semana obtenemos lo siguiente:
+Para un ejemplo supongamos un caso donde la métrica objetivo es una tasa de conversión, y que los grupos son visitas a un sitio web. Durante una semana, se divide el tráfico al sitio web y al terminar la semana obtenemos lo siguiente:
 
 
 Grupo   | Visitas     | Tasa de Conversion
@@ -259,9 +259,9 @@ La respuesta correcta es que **con la información que tenemos, ese p-value no s
 
 Pero como verán, en nuestro ejemplo no tenemos ninguna hipótesis! Ni nula ni alternativa, nada. Entonces nada puede interpretarse de un p-value obtenido de esa manera.
 
-Ahora, si cuando les pregunte que significaba un p-value de 0,28, habían llegado a una respuesta, distinta a la que mencione recien, es probable que hayan caído en alguna de las interpretaciones erróneas del p-value que listare a continuación:
+Ahora, si cuando les pregunte que significaba un p-value de 0,28, habían llegado a una respuesta, distinta a la que mencioné recién, es probable que hayan caído en alguna de las interpretaciones erróneas del p-value que listare a continuación:
 
-1. “El p-value es la probabilidad de que la hipótesis nula sea verdadera”: Esto es incorrecto porque desde el comienzo, el p-value ya asume, dentro de muchas cosas, que la hipótesis nula ES verdadera. Recuerden, el p-value solo indica el grado en el que la data observada se adecua a los supuestos de nuestro test, uno de ellos, la hipótesis nula. Por lo tanto, a más alto el p-value (cercano a 1), más se adecua el valor observado a nuestra hipótesis nula, y a más bajo el p-value (cercano a 0), menos se adecua nuestr hipótesis nula.
+1. “El p-value es la probabilidad de que la hipótesis nula sea verdadera”: Esto es incorrecto porque desde el comienzo, el p-value ya asume, dentro de muchas cosas, que la hipótesis nula ES verdadera. Recuerden, el p-value solo indica el grado en el que la data observada se adecua a los supuestos de nuestro test, uno de ellos, la hipótesis nula. Por lo tanto, a más alto el p-value (cercano a 1), más se adecua el valor observado a nuestra hipótesis nula, y a más bajo el p-value (cercano a 0), menos se adecua nuestra hipótesis nula.
 2. “Un resultado significativo (p-value menor a 0,05 por ejemplo) significa que la hipótesis nula es falsa”: Esto no es cierto, porque como venía diciendo, un p-value pequeño solo nos indica que la data observada es inusual, dada nuestra hipótesis nula y asumiendo que todo el experimento y sus supuestos son válidos. Puede pasar que el p-value obtenido haya sido pequeño no porque la hipótesis sea falsa, sino porque violamos alguno de los supuestos. 
 3. “Un resultado no significativo (p-value mayor a 0,05 por ejemplo) significa que la hipótesis nula es verdadera”. Mismo caso que el punto anterior, pero al revés. Un p-value más cercano a 1 solo nos indica que la data observada no es inusual bajo esta hipótesis. Una variante de esta interpretación es creer que un resultado no significativo es creer que no hay efecto. En estos casos el problema pudo venir de un diseño sin la potencia suficiente para detectar determinado efecto, algo que explico más adelante. 
 4. “El p-value representa la probabilidad de obtener el valor que observamos, asumiendo que la hipótesis nula es verdadera”. Esto tampoco es cierto porque, si vuelven a la definición del p-value que puse antes, fijense que dice que es la probabilidad de que el valor observado sea AL MENOS de ese tamaño. Pero ese p-value tambíen cubre todos los tamaños mayores al que observamos.
@@ -301,7 +301,7 @@ Otra equivocación muy frecuente en A/B tests de este tipo es reportar solamente
 
 ### No reportar intervalos de confianza
 
-¿Por que esto se puede considerar un error? Porque **los p-values por sí solos no nos ayudan a entender el posible tamaño del impacto de nuestro experimento.** Aquí es donde entran los intervalos de confianza. 
+¿Por qué esto se puede considerar un error? Porque **los p-values por sí solos no nos ayudan a entender el posible tamaño del impacto de nuestro experimento.** Aquí es donde entran los intervalos de confianza. 
 
 Un intervalo de confianza es un rango de valores “atados” a un nivel de confianza, que suele ser el mismo que se utilizó para determinar significancia, por ejemplo 95% (1 - alpha con alpha = 0,05). Lo que caracteriza a un intervalo de confianza es la siguiente propiedad: __si uno calcula un intervalo de confianza al 95% repetidamente en varios experimentos iguales y válidos, en promedio el 95% de las veces el rango de confianza va a contener el efecto real del tratamiento__.
 
@@ -318,7 +318,7 @@ Con una alpha = 0,05 para un test de una sola cola, donde la hipótesis nula es 
 
 IC = [0.01, +∞)
 
-Entonces ¿qué nos dice este IC? Que los datos observados bajo el procedimiento experimental que hice no me dan evidencia para creer en una hipótesis nula donde esperaría que la diferencia entre las tasas de conversión sea menor a 0.01. Acuerdense, que partimos con una hipótesis nula donde la diferencia entre las tasas de conversión se suponía menor o igual a 0, y ahora tenemos evidencias de que la hipótesis nula no debiera ser menor o igual a 0,01. Si hiciéramos el experimento con los mismos datos , y una hipótesis nula de diferencia menor a 0.01, es muy probable que la rechazamos nuevamente (que no quiere decir que valores menores sean imposibles)
+Entonces ¿qué nos dice este IC? Que los datos observados bajo el procedimiento experimental que hice no me dan evidencia para creer en una hipótesis nula donde esperaría que la diferencia entre las tasas de conversión sea menor a 0.01. Acuérdense, que partimos con una hipótesis nula donde la diferencia entre las tasas de conversión se suponía menor o igual a 0, y ahora tenemos evidencias de que la hipótesis nula no debiera ser menor o igual a 0,01. Si hiciéramos el experimento con los mismos datos , y una hipótesis nula de diferencia menor a 0.01, es muy probable que la rechazamos nuevamente (que no quiere decir que valores menores sean imposibles)
 
 La interpretación errónea más frecuente de los intervalos de confianza suele ser:
 
@@ -338,7 +338,7 @@ El riesgo de error tipo 2 es __la probabilidad de no rechazar la hipótesis nula
 
 Y se preguntaran cómo está esto relacionado con el tamaño de los efectos. Resulta que un diseño experimental de este tipo bien hecho requiere que antes de que recolectemos los datos, es necesario haber establecido tanto una hipótesis nula, una hipótesis alternativa, el efecto mínimo que nos interesa poder observar, un alpha para controlar riesgo de error tipo 1, y un beta para controlar riesgo de error tipo 2. Al tener todos esos parámetros definidos, recién ahí podremos, a través de un test de potencia, calcular el tamaño muestral necesario, para que el experimento pueda controlar por todas esas definiciones. 
 
-¿Cuantos tests que realizaron hasta ahora, los diseñaron con un test de potencia previo? Todos aquellos que no tuvieron test de potencia previo, no controlaron entonces por el efecto mínimo a identificar, ni la potencia necesaria. Y por lo tanto muchos de ellos quizá no es que no tuvieron efecto, sino que **no tuvieron el tamaño muestral suficiente para detectar un efecto como el observado con una determinada probabilidad. Realizaron un test sub potenciado.**
+¿Cuántos tests que realizaron hasta ahora, los diseñaron con un test de potencia previo? Todos aquellos que no tuvieron test de potencia previo, no controlaron entonces por el efecto mínimo a identificar, ni la potencia necesaria. Y por lo tanto muchos de ellos quizás no es que no tuvieron efecto, sino que **no tuvieron el tamaño muestral suficiente para detectar un efecto como el observado con una determinada probabilidad. Realizaron un test sub potenciado.**
 
 
 ```{r}
@@ -426,11 +426,11 @@ Dejarlo correr más tiempo, con el fin de frenarlo sólo cuando se obtenga una s
 
 ¿Por qué? Porque **los p-values no son fijos, van cambiando a medida que se obtienen las observaciones**, y por lo tanto, la probabilidad de que un p-value sea del valor que nos interesa, en un tiempo infinito, es 1. Si yo dejo correr un experimento por tiempo indefinido, es seguro que en algún momento llegara al p-value que me interesa, pero eso no genera ningún tipo de validez sobre el procedimiento experimental que diseñamos.
 
-Bajo esa misma línea nos encontramos con el típico caso de frenar los experimentos antes, sea por significancia o no. Fijense que recien les comente que los p-values varían en el tiempo. Por lo tanto es esperable también que en un experimento cualquiera, una variante sea significativa (p-value menor al alpha que decidimos) en algún momento previo a las observaciones totales necesarias. 
+Bajo esa misma línea nos encontramos con el típico caso de frenar los experimentos antes, sea por significancia o no. Fijense que recien les comenté que los p-values varían en el tiempo. Por lo tanto es esperable también que en un experimento cualquiera, una variante sea significativa (p-value menor al alpha que decidimos) en algún momento previo a las observaciones totales necesarias. 
 
 Eso no quiere decir que debemos frenar el experimento! De hecho, **cuantas más veces miramos los datos recolectados por el experimento con intención de frenarlo, más probable es que nuestro experimento resulte en un Error de Tipo 1 (falso positivo).**
 
-Supongamos un experimento que luego del test de potencia, requiere 10000 observaciones, con un riesgo de falso positivo del 5%. Pero en este caso, sabemos de verdad que no hay efecto, dado que las dos variantes son idénticas. Ahora bien, decidimos mirar el experimento cada vez que se obtienen 100 observaciones, por un total de 100 miradas. Si al empezar el experimento teníamos solo un 5% de probabilidad de que resulte en un falso positivo, ahora cada vez que lo miramos tenemos un 5% de probabilidad de observar un falso positivo, por lo tanto cuanto más miremos, más aumentamos nuestro riesgo de cometer un error de tipo 1. Por lo general mirar solo 2 veces resulta en duplicar el riesgo seleccionado. Mirar 5 veces multiplica el riesgo por 3, y mirar ya 10 veces lo cuadriplica. El cálculo de este efecto se puede verificar por simulaciones como en el trabajo de Armitage et. al. "Repeated Significance Tests on Accumulating Data".
+Supongamos un experimento que luego del test de potencia, requiere 10000 observaciones, con un riesgo de falso positivo del 5%. Pero en este caso, sabemos de verdad que no hay efecto, dado que las dos variantes son idénticas. Ahora bien, decidimos mirar el experimento cada vez que se obtienen 100 observaciones, por un total de 100 miradas. Si al empezar el experimento teníamos solo un 5% de probabilidad de que resulte en un falso positivo, ahora cada vez que lo miramos tenemos un 5% de probabilidad de observar un falso positivo, por lo tanto cuanto más miremos, más aumentamos nuestro riesgo de cometer un error de tipo 1. Generalmente mirar solo 2 veces duplica el riesgo seleccionado. Mirar 5 veces multiplica el riesgo por 3, y mirar ya 10 veces lo cuadriplica. El cálculo de este efecto se puede verificar por simulaciones como en el trabajo de Armitage et. al. "Repeated Significance Tests on Accumulating Data".
 
 ```{r plot_paths_pvalue, dependson = "plot_paths_function"}
 alpha <- .05
@@ -472,5 +472,5 @@ Es por eso que en este tipo de tests, la decisión de cuándo se debe frenar el 
 
 ### Conclusiones
 
-En el transcurso de este post vimos los 4 errores respecto a A/B tests más frecuentes en mi experiencia. Habran notado que los mismos pueden darse tanto antes de empezar el experimento, como durante y hasta despues de haberlo terminado. Experimentar es dificil, y es lógico que lo sea dado qeu se está tratando de inferir una verdad de comportamiento respecto a una población que no podemos observar en su totalidad. Pero eso no quiere decir que no se deberia experimentar. Por eso creo que es importante saber donde es que podemos equivocarnos, para mitigar la posibilidad de perder tiempo y esfuerzo en experimentos no validos. Espero que esta nota haya ayudado a lograr ese objetivo. 
+En el transcurso de este post vimos los 4 errores respecto a A/B tests más frecuentes en mi experiencia. Habran notado que los mismos pueden darse tanto antes de empezar el experimento, como durante y hasta después de haberlo terminado. Experimentar es dificil, y es lógico que lo sea dado que se está tratando de inferir una verdad de comportamiento respecto a una población que no podemos observar en su totalidad. Pero eso no quiere decir que no se debería experimentar. Por eso creo que es importante saber dónde es que podemos equivocarnos, para mitigar la posibilidad de perder tiempo y esfuerzo en experimentos no válidos. Espero que esta nota haya ayudado a lograr ese objetivo. 
 
