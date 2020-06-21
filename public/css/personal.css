@@ -372,8 +372,8 @@
 		input[type="reset"]:hover,
 		input[type="button"]:hover,
 		.button:hover {
-			border: solid 1px #2ebaae;
-			color: #2ebaae !important;
+			border: solid 1px #6797ab57;
+			color: #6797ab57 !important;
 		}
 
 			input[type="submit"]:hover:active,

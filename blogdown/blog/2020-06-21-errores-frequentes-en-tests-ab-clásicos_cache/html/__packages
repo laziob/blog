@@ -1,0 +1,9 @@
+base
+knitr
+plyr
+dplyr
+tidyr
+broom
+ggplot2
+scales
+data.table

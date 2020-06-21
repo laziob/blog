@@ -6,10 +6,20 @@
     <description>Recent content on Blog de LazioB</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ar-es</language>
-    <lastBuildDate>Fri, 12 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 21 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Errores frequentes en Tests AB clásicos</title>
+      <link>/blog/errores-frequentes-en-tests-ab-cl%C3%A1sicos/</link>
+      <pubDate>Sun, 21 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/errores-frequentes-en-tests-ab-cl%C3%A1sicos/</guid>
+      <description>En mi primer posteo, que pueden encontrar acá , mencione algunos errores comunes que los equipos cometen a la hora de hacer A/B tests. En este post voy a profundizar en algunos de estos errores. Mi objetivo es que ganen un mejor entendimiento de porqué el error es en efecto un error, y de qué forma altera o invalida la interpretación de resultados de ese experimento.
+TL:DR Los 4 errores más frecuentes y que hay que tratar de evitar son:</description>
+    </item>
     
     <item>
       <title>Test A/B: Ajuste su método al contexto del problema que quiere resolver</title>
