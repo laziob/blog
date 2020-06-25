@@ -4,7 +4,7 @@ author: ~
 date: '2020-06-12'
 slug: metodos-ab-test
 categories: [ab test]
-tags: [ab test, estadistica, bayes, hipotesis]
+tags: [ab test, estadistica, bayes, hipotesis, test de hipotesis, test de hipotesis bayesiano, muestreo adaptivo, thompson sampling]
 description: 'Existen muchas alternativas a la hora de experimentar. Elegir el método correcto de experimentación según el contexto es crítico para una toma de decisiones eficaz.'
 featured: ''
 featuredalt: ''

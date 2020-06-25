@@ -1,6 +1,6 @@
 baseurl = "/"
-languageCode = "ar-es"
-title = "Blog de LazioB"
+languageCode = "es-AR"
+title = "Blog de Ezequiel Boehler"
 theme = "hugo-future-imperfect"
 preserveTaxonomyNames = true
 paginate = 3
@@ -48,12 +48,12 @@ canonifyURLs = true
   socialShare          = false
   # Sets specific share to appear on posts (default behavior is to appear)
   socialShareTwitter   = true
-  socialShareGoogleplus = true
+  socialShareGoogleplus = false
   socialShareFacebook  = true
   socialShareReddit    = true
   socialShareLinkedin  = true
-  socialShareStumbleupon = true
-  socialSharePinterest = true
+  socialShareStumbleupon = false
+  socialSharePinterest = false
   socialShareEmail     = true
 
   # Load custom CSS or JavaScript files. The variable is an array so that you
@@ -112,7 +112,7 @@ canonifyURLs = true
 # Sets the menu items in the navigation bar
 # Identifier prepends a Font Awesome icon to the menu item
 [[menu.main]]
-  name = "Home"
+  name = "Inicio"
   url = "/"
   identifier = "fa fa-home"
   weight = 1

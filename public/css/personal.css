@@ -1357,6 +1357,7 @@
 		}
 
 			.post > footer .actions {
+			  margin-right: 30px;
 				-moz-flex-grow: 1;
 				-webkit-flex-grow: 1;
 				-ms-flex-grow: 1;
@@ -1364,6 +1365,7 @@
 			}
 
 			.post > footer .stats {
+			  margin-top: 15px;
 				cursor: default;
 				list-style: none;
 				padding: 0;

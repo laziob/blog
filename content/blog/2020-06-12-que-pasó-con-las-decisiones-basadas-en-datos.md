@@ -4,10 +4,7 @@ author: 'Ezequiel Boehler'
 date: '2020-06-11'
 categories:
   - analytics
-tags:
-  - analytics
-  - decisiones
-  - estadistica
+tags: [analytics, decisiones, estadistica, test hipotesis, test ab, business intelligence, inteligencia de negocio]
 slug: la-falacia-de-la-analitica-digital
 type: post
 description: Las empresas no están obteniendo el valor deseado de su inversión en datos. La clave para solucionar ese problema se encuentra en tener personas en el equipo con los conocimientos estadísticos necesarios.
