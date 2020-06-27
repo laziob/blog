@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>test de hipotesis on Blog de Ezequiel Boehler</title>
+    <link>/tags/test-de-hipotesis/</link>
+    <description>Recent content in test de hipotesis on Blog de Ezequiel Boehler</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-AR</language>
+    <lastBuildDate>Sun, 21 Jun 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/test-de-hipotesis/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Errores frequentes en Tests AB clásicos</title>
+      <link>/blog/errores-frequentes-en-tests-ab-clasicos/</link>
+      <pubDate>Sun, 21 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/errores-frequentes-en-tests-ab-clasicos/</guid>
+      <description>En mi primer posteo, que pueden encontrar acá , mencioné algunos errores comunes que los equipos cometen a la hora de hacer A/B tests. En este post voy a profundizar en algunos de estos errores. Mi objetivo es que ganen un mejor entendimiento de por qué el error es en efecto un error, y de qué forma altera o invalida la interpretación de resultados de ese experimento.
+TL:DR Los 4 errores más frecuentes y que hay que tratar de evitar son:</description>
+    </item>
+    
+    <item>
+      <title>Test A/B: Ajuste su método al contexto del problema que quiere resolver</title>
+      <link>/blog/metodos-ab-test/</link>
+      <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/metodos-ab-test/</guid>
+      <description>Este articulo esta basado principalmente en los escritos y presentaciones de Matt Gershoff, fundador de Conductrics https://conductrics.com quien me autorizó a utilizar sus ideas y material. Pueden encontrar su presentación sobre este tema en el siguiente link. Los invito a que visiten su blog en el sitio de Conductrics, ya que contiene material didáctico sobre este tema y similares.
+Hoy en día, cada vez más empresas se ven involucradas por una u otra razón en la realización de Tests A/B con el fin de poder tomar mejores decisiones.</description>
+    </item>
+    
+  </channel>
+</rss>

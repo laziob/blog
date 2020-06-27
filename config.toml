@@ -1,4 +1,4 @@
-baseurl = "/"
+baseurl = "https://eboehler.com"
 languageCode = "es-AR"
 title = "Blog de Ezequiel Boehler"
 theme = "hugo-future-imperfect"
@@ -136,7 +136,8 @@ canonifyURLs = true
   weight = 4  
 
 [Taxonomies]
-  #tag = "tags"
+  tag = "tags"
+  category = "categories"
 
 
 # Sets Social Media icons to appear and link to your account. Value should be your

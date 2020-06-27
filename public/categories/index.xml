@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Blog de LazioB</title>
+    <title>Categorias on Blog de Ezequiel Boehler</title>
     <link>/categories/</link>
-    <description>Recent content in Categories on Blog de LazioB</description>
+    <description>Recent content in Categorias on Blog de Ezequiel Boehler</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ar-es</language>
-    <lastBuildDate>Fri, 12 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <language>es-AR</language>
+    <lastBuildDate>Sun, 21 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>ab test</title>
       <link>/categories/ab-test/</link>
-      <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 21 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>/categories/ab-test/</guid>
       <description></description>
