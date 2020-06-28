@@ -10,7 +10,7 @@ tags:
   - decisiones
   - hipotesis
   - test ab
-description: ''
+description: 'No existe una sola hipótesis que sea la mejor para todos los casos de experimentación posibles. Conocer y entender las distintas alternativas nos permite ser más eficientes y certeros a la hora de reducir la incertidumbre para nuestras futuras decisiones.'
 featured: 'hipotesis_superioridad_fuerte.png'
 featuredalt: 'feature_hipotesis_superioridad.png'
 featuredpath: '/img/main/'
@@ -18,7 +18,7 @@ linktitle: ''
 type: post
 ---
 
-A  la hora de hacer Tests de Hipótesis Nula, uno de los factores más importantes es seleccionar la hipótesis correcta. En posts anteriores explique que casi todos los valores resultantes de un test de hipótesis nula, como el p-value y los intervalos de confianza, solo pueden ser interpretados en relación a la hipótesis nula seleccionada. 
+A la hora de hacer Tests de Hipótesis Nula, uno de los factores más importantes es seleccionar la hipótesis correcta. En posts anteriores explique que casi todos los valores resultantes de un test de hipótesis nula, como el p-value y los intervalos de confianza, solo pueden ser interpretados en relación a la hipótesis nula seleccionada. 
 
 Muchos equipos suelen seleccionar por defecto la hipótesis nula de que la diferencia entre el grupo tratamiento y el grupo control es igual a 0.
 
