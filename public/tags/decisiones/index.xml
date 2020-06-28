@@ -6,10 +6,20 @@
     <description>Recent content in decisiones on Blog de Ezequiel Boehler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-AR</language>
-    <lastBuildDate>Thu, 11 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 28 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/decisiones/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Hipótesis. Distintas opciones y cómo elegir la más adecuada.</title>
+      <link>/blog/hipotesis-distintas-opciones-y-como-elegir-la-mas-adecuada/</link>
+      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/hipotesis-distintas-opciones-y-como-elegir-la-mas-adecuada/</guid>
+      <description>A la hora de hacer Tests de Hipótesis Nula, uno de los factores más importantes es seleccionar la hipótesis correcta. En posts anteriores explique que casi todos los valores resultantes de un test de hipótesis nula, como el p-value y los intervalos de confianza, solo pueden ser interpretados en relación a la hipótesis nula seleccionada.
+Muchos equipos suelen seleccionar por defecto la hipótesis nula de que la diferencia entre el grupo tratamiento y el grupo control es igual a 0.</description>
+    </item>
     
     <item>
       <title>¿Que pasó con las decisiones basadas en datos?</title>
