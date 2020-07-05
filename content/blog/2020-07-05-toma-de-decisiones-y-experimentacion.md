@@ -52,7 +52,7 @@ Decidir la acción por defecto es una condición excluyente de la metodología. 
 
 En cambio, tener una definida una decisión por defecto, nos permite entender mejor cuál es la evidencia que debemos encontrar para querer tomar una decisión distinta. Es un punto que a muchos DM les cuesta, dado que antes de querer comprometerse a una acción, hoy en día más que nunca es fácil darse media vuelta y buscar primero en los datos. 
 
-Un ejemplo aplicado en Marketing digital por ejemplo podría ser:
+Un ejemplo aplicado en Marketing digital por ejemplo podría ser el siguiente, donde nos ponemos en el lugar del Decision Maker (DM):
 Tenemos la posibilidad de lanzar una nueva campaña en Facebook Ads y Google Ads.
 Pero por temas financieros, lanzarla conlleva cierto riesgo, por lo que nos gustaría hacerlo solo si podemos estar confiados de un determinado retorno de la inversión. Un DM podría decir: Vayamos a buscar los costos y retornos de las campañas anteriores, y en base a eso decidir si lanzamos o no. 
 
