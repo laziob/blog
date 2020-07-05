@@ -6,24 +6,33 @@
     <description>Recent content in Tags on Blog de Ezequiel Boehler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-AR</language>
-    <lastBuildDate>Sun, 28 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 05 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>ab test</title>
-      <link>/tags/ab-test/</link>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <title>business intelligence</title>
+      <link>/tags/business-intelligence/</link>
+      <pubDate>Sun, 05 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/ab-test/</guid>
+      <guid>/tags/business-intelligence/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>data driven</title>
+      <link>/tags/data-driven/</link>
+      <pubDate>Sun, 05 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/data-driven/</guid>
       <description></description>
     </item>
     
     <item>
       <title>decisiones</title>
       <link>/tags/decisiones/</link>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 05 Jul 2020 00:00:00 +0000</pubDate>
       
       <guid>/tags/decisiones/</guid>
       <description></description>
@@ -32,9 +41,18 @@
     <item>
       <title>hipotesis</title>
       <link>/tags/hipotesis/</link>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 05 Jul 2020 00:00:00 +0000</pubDate>
       
       <guid>/tags/hipotesis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ab test</title>
+      <link>/tags/ab-test/</link>
+      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/ab-test/</guid>
       <description></description>
     </item>
     
@@ -125,15 +143,6 @@
       <pubDate>Thu, 11 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>/tags/analytics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>business intelligence</title>
-      <link>/tags/business-intelligence/</link>
-      <pubDate>Thu, 11 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/business-intelligence/</guid>
       <description></description>
     </item>
     
