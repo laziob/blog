@@ -7,7 +7,7 @@
     url('../fonts/cafecito.svg?ag2yue#cafecito') format('svg');
   font-weight: normal;
   font-style: normal;
-  font-display: block;
+  font-display: swap;
 }
 
 .customicon {
@@ -34,5 +34,5 @@
   src:  url('../fonts/Nunito-SemiBold.ttf');
   font-weight: normal;
   font-style: normal;
-  font-display: block;
+  font-display: swap;
 }
