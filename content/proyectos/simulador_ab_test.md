@@ -9,7 +9,7 @@ featuredalt: ""
 featuredpath: ""
 format: Shiny Web App
 link: "https://laziob.shinyapps.io/Clinical_AB_Test/"
-linktitle: ""
+linktitle: "Link a la app"
 title: Simulador A/B Test
 type: itemized
 ---

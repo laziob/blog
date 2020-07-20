@@ -1,0 +1,1051 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+    <head>
+        <script type="application/ld+json">
+    {
+        "@context" : "http://schema.org",
+        "@type" : "BlogPosting",
+        "mainEntityOfPage": {
+             "@type": "WebPage",
+             "@id": "\/"
+        },
+        "articleSection" : "blog",
+        "name" : "Calculadora de AB Test y guia de uso",
+        "headline" : "Calculadora de AB Test y guia de uso",
+        "description" : "Cree una calculadora en Google Sheets para realizar Tests AB de tamaño de muestra fijo, desde su diseño hasta su evaluación de resultados. En esta nota pueden obtener el link a la misma y un video de como usarla.",
+        "inLanguage" : "es",
+        "author" : "",
+        "creator" : "",
+        "publisher": "",
+        "accountablePerson" : "",
+        "copyrightHolder" : "",
+        "copyrightYear" : "2020",
+        "datePublished": "2020-07-19 00:00:00 \u002b0000 UTC",
+        "dateModified" : "2020-07-19 00:00:00 \u002b0000 UTC",
+        "url" : "\/blog\/calculadora-de-ab-test-y-guia-de-uso\/",
+        "wordCount" : "628",
+        "keywords" : [ "ab test","estadistica","test ab","test de hipotesis","calculadora ab test","ab test calculator","Blog" ]
+    }
+    </script>
+        
+            
+                <title>Calculadora de AB Test y guia de uso</title>
+            
+        
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="generator" content="Hugo 0.72.0" />
+        
+  
+    
+  
+
+  
+
+  <link rel="apple-touch-icon-precomposed" href='/favicon/apple-touch-icon-precomposed.png'>
+  <link rel="icon" href='/favicon/favicon.png'>
+  
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content='/favicon/mstile.png'>
+  <meta name="application-name" content="Blog de Ezequiel Boehler">
+  <meta name="msapplication-tooltip" content="Blog sobre experimentación (A/B Tests) en marketing y productos digitales. Diseño de experimentos, buenas practicas, explicación de conceptos y metodologías diversas.">
+  <meta name="msapplication-config" content='/favicon/ieconfig.xml'>
+
+
+
+        
+            <meta name="author" content="Ezequiel Boehler">
+        
+        
+            <meta name="description" content="Cree una calculadora en Google Sheets para realizar Tests AB de tamaño de muestra fijo, desde su diseño hasta su evaluación de resultados. En esta nota pueden obtener el link a la misma y un video de como usarla.">
+        
+
+        <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Calculadora de AB Test y guia de uso"/>
+<meta name="twitter:description" content="Cree una calculadora en Google Sheets para realizar Tests AB de tamaño de muestra fijo, desde su diseño hasta su evaluación de resultados. En esta nota pueden obtener el link a la misma y un video de como usarla."/>
+<meta name="twitter:site" content="@LazioB"/>
+
+        <meta property="og:title" content="Calculadora de AB Test y guia de uso" />
+<meta property="og:description" content="Cree una calculadora en Google Sheets para realizar Tests AB de tamaño de muestra fijo, desde su diseño hasta su evaluación de resultados. En esta nota pueden obtener el link a la misma y un video de como usarla." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/blog/calculadora-de-ab-test-y-guia-de-uso/" />
+<meta property="article:published_time" content="2020-07-19T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-07-19T00:00:00+00:00" />
+
+        <meta property="og:image" content="//images/logo.png">
+        <meta property="og:image:type" content="image/png">
+        <meta property="og:image:width" content="512">
+        <meta property="og:image:height" content="512">
+        <meta itemprop="name" content="Calculadora de AB Test y guia de uso">
+<meta itemprop="description" content="Cree una calculadora en Google Sheets para realizar Tests AB de tamaño de muestra fijo, desde su diseño hasta su evaluación de resultados. En esta nota pueden obtener el link a la misma y un video de como usarla.">
+<meta itemprop="datePublished" content="2020-07-19T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2020-07-19T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="628">
+
+
+
+<meta itemprop="keywords" content="ab test,estadistica,test ab,test de hipotesis,calculadora ab test,ab test calculator," />
+        
+
+        
+            
+        
+
+        
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800,900|Source+Sans+Pro:400,700">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.css">
+            <link rel="stylesheet" href="/css/main.css">
+            <link rel="stylesheet" href="/css/add-on.css">
+            <link rel="stylesheet" href="/css/academicons.min.css">
+        
+
+        
+            
+                
+            
+                
+                    <link rel="stylesheet" href="/css/personal.css">
+                
+            
+                
+                    <link rel="stylesheet" href="/css/style.css">
+                
+            
+        
+
+
+  
+    
+    <link href='//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+  
+
+
+      
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-27830219-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+    </head>
+    <body>
+
+      
+      <div id="wrapper">
+
+    
+    
+<header id="header">
+    
+      <h1><a href="/">blog</a></h1>
+    
+
+    <nav class="links">
+        <ul>
+            
+                <li>
+                    <a href="/">
+                            <i class="fa fa-home">&nbsp;</i>Inicio
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/about/">
+                            <i class="fa fa-id-card-o">&nbsp;</i>Sobre Mí
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/proyectos/">
+                            <i class="fa fa-list">&nbsp;</i>Proyectos
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/categories/">
+                            <i class="fa fa-sitemap">&nbsp;</i>Categorías
+                    </a>
+                </li>
+            
+        </ul>
+    </nav>
+    <nav class="main">
+        <ul>
+            
+            <li id="share-nav" class="share-menu" style="display:none;">
+                <a class="fa-share-alt" href="#share-menu">Share</a>
+            </li>
+            
+            <li class="search">
+                <a class="fa-search" href="#search">Search</a>
+                <form id="search" method="get" action="//google.com/search">
+                    <input type="text" name="q" placeholder="Search" />
+                    <input type="hidden" name="as_sitesearch" value="/">
+                </form>
+            </li>
+            <li class="menu">
+                <a class="fa-bars" href="#menu">Menu</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+<section id="menu">
+
+    
+        <section>
+            <form class="search" method="get" action="//google.com/search">
+                <input type="text" name="q" placeholder="Search" />
+                <input type="hidden" name="as_sitesearch" value="/">
+            </form>
+        </section>
+
+    
+        <section>
+            <ul class="links">
+                
+                    <li>
+                        <a href="/">
+                            <h3>
+                                <i class="fa fa-home">&nbsp;</i>Inicio
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/about/">
+                            <h3>
+                                <i class="fa fa-id-card-o">&nbsp;</i>Sobre Mí
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/proyectos/">
+                            <h3>
+                                <i class="fa fa-list">&nbsp;</i>Proyectos
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/">
+                            <h3>
+                                <i class="fa fa-sitemap">&nbsp;</i>Categorías
+                            </h3>
+                        </a>
+                    </li>
+                
+            </ul>
+        </section>
+
+    
+        <section class="recent-posts">
+            <div class="mini-posts">
+                <header>
+                    <h3>Recent Posts</h3>
+                </header>
+                
+
+                
+                    
+                
+
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="/blog/calculadora-de-ab-test-y-guia-de-uso/">Calculadora de AB Test y guia de uso</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2020-07-19'>
+                                    July 19, 2020</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="/blog/toma-de-decisiones-y-experimentacion/">Toma de decisiones y experimentación</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2020-07-05'>
+                                    July 5, 2020</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="/blog/hipotesis-distintas-opciones-y-como-elegir-la-mas-adecuada/">Hipótesis. Distintas opciones y cómo elegir la más adecuada.</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2020-06-28'>
+                                    June 28, 2020</time>
+                            </header>
+                            
+    
+
+    
+        
+        
+
+
+
+
+
+
+
+  
+
+
+        
+        
+        
+
+        <a href="/blog/hipotesis-distintas-opciones-y-como-elegir-la-mas-adecuada/" class="image featured">
+            <img src="/img/main//hipotesis_superioridad_fuerte.png" alt="">
+        </a>
+    
+
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="/blog/errores-frequentes-en-tests-ab-clasicos/">Errores frequentes en Tests AB clásicos</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2020-06-21'>
+                                    June 21, 2020</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="/blog/metodos-ab-test/">Test A/B: Ajuste su método al contexto del problema que quiere resolver</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2020-06-12'>
+                                    June 12, 2020</time>
+                            </header>
+                            
+
+                        </article>
+                
+
+                
+                    <a href=
+                        
+                            /blog/
+                        
+                        class="button">View more posts</a>
+                
+            </div>
+        </section>
+
+    
+        
+</section>
+
+    <section id="share-menu">
+    <section id="social-share-nav">
+        <ul class="links">
+            <header>
+                <h3>Share this post <i class="fa fa-smile-o"></i></h3>
+            </header>
+            
+
+
+
+<li>
+  <a href="//twitter.com/share?url=%2fblog%2fcalculadora-de-ab-test-y-guia-de-uso%2f&amp;text=Calculadora%20de%20AB%20Test%20y%20guia%20de%20uso&amp;via=LazioB" target="_blank" class="share-btn twitter">
+    <i class="fa fa-twitter"></i>
+    <p>Twitter</p>
+    </a>
+</li>
+
+
+
+
+
+
+
+
+<li>
+  <a href="//www.facebook.com/sharer/sharer.php?u=%2fblog%2fcalculadora-de-ab-test-y-guia-de-uso%2f" target="_blank" class="share-btn facebook">
+    <i class="fa fa-facebook"></i>
+    <p>Facebook</p>
+    </a>
+</li>
+
+
+
+
+<li>
+  <a href="//reddit.com/submit?url=%2fblog%2fcalculadora-de-ab-test-y-guia-de-uso%2f&amp;title=Calculadora%20de%20AB%20Test%20y%20guia%20de%20uso" target="_blank" class="share-btn reddit">
+    <i class="fa fa-reddit-alien"></i>
+    <p>Reddit</p>
+  </a>
+</li>
+
+
+
+
+<li>
+  <a href="//www.linkedin.com/shareArticle?url=%2fblog%2fcalculadora-de-ab-test-y-guia-de-uso%2f&amp;title=Calculadora%20de%20AB%20Test%20y%20guia%20de%20uso" target="_blank" class="share-btn linkedin">
+      <i class="fa fa-linkedin"></i>
+      <p>LinkedIn</p>
+    </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="mailto:?subject=Check out this post by Ezequiel%20Boehler&amp;body=%2fblog%2fcalculadora-de-ab-test-y-guia-de-uso%2f" target="_blank" class="share-btn email">
+    <i class="fa fa-envelope"></i>
+    <p>Email</p>
+  </a>
+</li>
+
+
+        </ul>
+    </section>
+</section>
+
+    
+    <div id="main">
+        
+        
+        <article class="post">
+  <header>
+    <div class="title">
+        
+            <h1><a href="/blog/calculadora-de-ab-test-y-guia-de-uso/">Calculadora de AB Test y guia de uso</a></h1>
+            
+        
+        
+            <p>Cree una calculadora en Google Sheets para realizar Tests AB de tamaño de muestra fijo, desde su diseño hasta su evaluación de resultados. En esta nota pueden obtener el link a la misma y un video de como usarla.</p>
+        
+    </div>
+    <div class="meta">
+        
+
+        <time class="published"
+            datetime='2020-07-19'>
+            July 19, 2020</time>
+        <span class="author">Ezequiel Boehler</span>
+        
+            <p>3 minute read</p>
+        
+        
+    </div>
+</header>
+
+
+  
+  <div id="content">
+    <h1 id="si-otra-calculadora-para-tests-ab-clásicos">Si, otra calculadora para tests A/B clásicos</h1>
+<p>Existen muchas calculadoras para tests A/B en internet. Pero la mayoría no solo está en inglés, si no que además se centran solo en la evaluación de los resultados, sin tener en cuenta el diseño experimental detrás del mismo. Por último, los cálculos que utilizan suele estar escondidos dentro del código, lo que hace difícil tener un entendimiento claro de cómo llegó a sus resultados.</p>
+<p>Con eso en mente, y dado los resultados de una pequeña encuesta que realice en Linkedin, me propuse crear <a href="https://docs.google.com/spreadsheets/d/1OqSqwUqPoiBnm6kDI7OTCyttLp5EP3ZW8IIvRJW__lg/edit?usp=sharing" title="Plantilla Test AB">esta plantilla en Google Sheets</a> que resuelva esos temas. Está en español, dividida en 3 pasos desde diseño del experimento, evaluación de la recolección, y evaluación de los resultados. Y como es un spreadsheet, las fórmulas están visibles para todos.</p>
+<p>El objetivo de este artículo es guiarlos por el uso de la plantilla para que puedan sacarle el máximo provecho y brindar un par de recomendaciones sobre su uso. Separe el artículo en 2 partes, una en texto y otra en video. La parte de texto es sobre la estructura de la plantilla y algunas recomendaciones generales. El video es un ejemplo sobre el uso específico de la plantilla, dado que en texto se volvía extenso y poco claro.</p>
+<p>Comencemos.</p>
+<h3 id="estructura-de-la-plantilla">Estructura de la plantilla</h3>
+<p>La plantilla contiene 2 hojas distintas:
+Test de Proporciones
+Test de Medias</p>
+<p>La hoja de Test de Proporciones es la que deben usar cuando la métrica objetivo sea alguna proporción, como por ejemplo Tasa de Conversión o CTR. Esto es así dado que sus cálculos están ajustados para este tipo de métricas.</p>
+<p>La hoja de Test de Medias a su vez, tiene algunos campos necesarios adicionales y algunas celdas con cálculos distintos para adecuarse a aquellos tests donde la métrica objetivo sea alguna media, como por ejemplo Valor de compra promedio, Cantidad de productos en el carrito, etc.</p>
+<p>A su vez cada hoja está compuesta por 3 pasos.
+Test de Potencia
+Evaluación de la recolección de datos
+Evaluación de los resultados</p>
+<p>Cada paso en sí tiene 3 tipos de celdas:
+Fondo azul: Son las que el usuario debe llenar con valores
+Fondo blanco: Son cálculos adicionales necesarios para obtener los resultados
+Fondo verde: Son los resultados de dicho paso</p>
+<p>Por lo tanto, en cada paso el usuario solo debe ocuparse de llenar los valores de las celdas de fondo azul, y observar el resultado de las celdas de fondo verde.</p>
+<h3 id="recomendaciones-generales">Recomendaciones generales</h3>
+<p>La plantilla está diseñada de forma tal que si o si haya que pasar por los 3 pasos para cada experimento. Esto es así porque las fórmulas de un paso requieren de los valores en celdas de pasos anteriores. El motivo por el que la diseñe de esa forma, es para disminuir la probabilidad de un experimento inválido. Recuerden que en <a href="https://eboehler.com/blog/errores-frequentes-en-tests-ab-clasicos/" title="Errores frecuentes en Test AB">este articulo</a> les comente que uno de los errores más frecuentes es realizar test A/B sin un diseño experimental previo y por consiguiente, sin un test de potencia. Esto resulta en tests de tamaños muestrales que no controlan debidamente por el riesgo del error de tipo 1 y tipo 2, y por lo tanto la interpretación de sus resultados no es válida.</p>
+<p>Dado que entre el paso 1 y el paso 2 debe pasar el tiempo entre que lanzan el experimento y se recolectan las observaciones, recomiendo que para cada experimento que realicen, hagan una copia nueva de la plantilla y la llenen con los valores de ese experimento.  De esa forma cuando el experimento finalicen, tienen ya documentado el diseño experimental que decidieron, y luego cuando completan los pasos 2 y 3, les queda documentado todo el experimento de principio a fin.</p>
+<h3 id="video-del-uso-de-la-plantilla">Video del uso de la plantilla</h3>
+<p>Aquí les dejo un video donde explico como utilizar la plantilla:</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/tNFPl8a6vmE" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+  </div>
+  <div>
+    <hr>
+    <h3>Gracias por leer mi blog!</h3>
+    <p style="margin-bottom: 15px">Si te gustó lo que leiste te invito a que te sumes al newsletter para recibir un mail semanal con el nuevo contenido y novedades. O podes apoyarme con su desarrollo invitandome un cafe :) Muchas gracias!</p>
+    <p style="display: flex;justify-content: center;">
+      <a class="subscribe" href="https://tinyletter.com/eboehler" target="popup" onclick="window.open('https://tinyletter.com/eboehler','popup','width=600,height=600'); return false;"> Subscribirse </a> <a class="cafecito" href='https://cafecito.app/lazio' rel='noopener' target='_blank'><img srcset='https://cdn.cafecito.app/imgs/buttons/button_4.png 1x, https://cdn.cafecito.app/imgs/buttons/button_4_2x.png 2x, https://cdn.cafecito.app/imgs/buttons/button_4_3.75x.png 3.75x' src='https://cdn.cafecito.app/imgs/buttons/button_4.png' alt='Invitame un café en cafecito.app' /></a>
+    </p>
+</div>
+  <footer>
+    <ul class="stats">
+  <li class="categories">
+    <ul>
+        
+            
+            
+                <i class="fa fa-folder"></i>
+                
+                
+                <li><a class="article-category-link" href="/categories/ab-test">ab test</a></li>
+                
+            
+        
+    </ul>
+  </li>
+  <li class="tags">
+    <ul>
+        
+            
+            
+                <i class="fa fa-tags"></i>
+                
+                
+                <li><a class="article-category-link" href="/tags/ab-test">ab test</a></li>
+                
+                
+                <li><a class="article-category-link" href="/tags/estadistica">estadistica</a></li>
+                
+                
+                <li><a class="article-category-link" href="/tags/test-ab">test ab</a></li>
+                
+                
+                <li><a class="article-category-link" href="/tags/test-de-hipotesis">test de hipotesis</a></li>
+                
+                
+                <li><a class="article-category-link" href="/tags/calculadora-ab-test">calculadora ab test</a></li>
+                
+                
+                <li><a class="article-category-link" href="/tags/ab-test-calculator">ab test calculator</a></li>
+                
+            
+        
+    </ul>
+  </li>
+</ul>
+
+  </footer>
+
+</article>
+
+    <article class="post">
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "eboehler" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </article>
+
+
+<ul class="actions pagination">
+    
+        <li><a href="/blog/toma-de-decisiones-y-experimentacion/"
+                class="button big previous">Toma de decisiones y experimentación</a></li>
+    
+
+    
+</ul>
+
+
+    </div>
+    
+<section id="sidebar">
+
+  
+  <section id="intro">
+    
+    
+      
+        <a href='/' class="logo"><img src="/img/main/foto-lazio.jpg" alt="perfil_laziob" /></a>
+      
+    
+    
+      <header>
+        <h2>Blog de LazioB</h2>
+        <p>Blog sobre experimentación (A/B Tests) en marketing y productos digitales. Diseño de experimentos, buenas practicas, explicación de conceptos y metodologías diversas. <i class='fa fa-hand-peace-o'></i></p>
+      </header>
+    
+    
+      <ul class="icons">
+        
+        
+  <li><a href="//github.com/laziob" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//linkedin.com/in/ezequiel-boehler-1b01783b" target="_blank" title="LinkedIn" class="fa fa-linkedin"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//twitter.com/LazioB" target="_blank" title="Twitter" class="fa fa-twitter"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//cafecito.app/lazio" target="_blank" title="Cafecito" class="customicon customicon-cafecito"></a></li>
+
+
+
+
+
+
+
+
+
+  <li><a href="mailto:ezequielboehler@gmail.com" title="Email" class="fa fa-envelope"></a></li>
+
+
+      </ul>
+    
+  </section>
+
+  
+  <section class="recent-posts">
+    <div class="mini-posts">
+      <header>
+        <h3>Recent Posts</h3>
+      </header>
+      <div class="posts-container">
+        
+
+        
+          
+        
+
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="/blog/calculadora-de-ab-test-y-guia-de-uso/">Calculadora de AB Test y guia de uso</a>
+              </h3>
+              
+              <time class="published" datetime='2020-07-19'>
+                July 19, 2020
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="/blog/toma-de-decisiones-y-experimentacion/">Toma de decisiones y experimentación</a>
+              </h3>
+              
+              <time class="published" datetime='2020-07-05'>
+                July 5, 2020
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="/blog/hipotesis-distintas-opciones-y-como-elegir-la-mas-adecuada/">Hipótesis. Distintas opciones y cómo elegir la más adecuada.</a>
+              </h3>
+              
+              <time class="published" datetime='2020-06-28'>
+                June 28, 2020
+              </time>
+            </header>
+            
+    
+
+    
+        
+        
+
+
+
+
+
+
+
+  
+
+
+        
+        
+        
+
+        <a href="/blog/hipotesis-distintas-opciones-y-como-elegir-la-mas-adecuada/" class="image featured">
+            <img src="/img/main//hipotesis_superioridad_fuerte.png" alt="">
+        </a>
+    
+
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="/blog/errores-frequentes-en-tests-ab-clasicos/">Errores frequentes en Tests AB clásicos</a>
+              </h3>
+              
+              <time class="published" datetime='2020-06-21'>
+                June 21, 2020
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="/blog/metodos-ab-test/">Test A/B: Ajuste su método al contexto del problema que quiere resolver</a>
+              </h3>
+              
+              <time class="published" datetime='2020-06-12'>
+                June 12, 2020
+              </time>
+            </header>
+            
+
+          </article>
+        
+      </div>
+
+      
+        <a href=
+          
+            /blog/
+          
+        class="button">View more posts</a>
+      
+    </div>
+  </section>
+
+  
+  
+  
+  
+  
+    <section id="categories">
+      <header>
+        <h3>
+          <a href="/categories/">Categorias</a>
+        </h3>
+      </header>
+        
+          
+        
+
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/ab-test/">ab-test</a>
+                <span style="float:right;">5</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/analytics/">analytics</a>
+                <span style="float:right;">1</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/toma-de-decisiones/">toma-de-decisiones</a>
+                <span style="float:right;">1</span>
+              
+            </header>
+          </article>
+        </p>
+        
+    </section>
+  
+  
+
+  
+  
+    <section id="mini-bio">
+      <h3>
+        <a href="/about/">About</a>
+      </h3>
+      <p>Data Scientist en Falabella Retail. Apasionado por los datos, buscando formas de mejorar la toma de decisiones de equipos y disminuir sus sesgos.</p>
+    </section>
+  
+
+  
+  <section id="footer">
+    
+      <ul class="icons">
+        
+        
+  <li><a href="//github.com/laziob" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//linkedin.com/in/ezequiel-boehler-1b01783b" target="_blank" title="LinkedIn" class="fa fa-linkedin"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//twitter.com/LazioB" target="_blank" title="Twitter" class="fa fa-twitter"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//cafecito.app/lazio" target="_blank" title="Cafecito" class="customicon customicon-cafecito"></a></li>
+
+
+
+
+
+
+
+
+
+  <li><a href="mailto:ezequielboehler@gmail.com" title="Email" class="fa fa-envelope"></a></li>
+
+
+      </ul>
+    
+    <p class="copyright">
+      
+        &copy; 2020
+        
+          Blog de Ezequiel Boehler
+        
+      .
+      Powered by <a href="//gohugo.io" target="_blank">Hugo</a>
+    </p>
+  </section>
+</section>
+
+    </div>
+    <a id="back-to-top" href="#" class="fa fa-arrow-up fa-border fa-2x"></a>
+    
+
+    
+      
+    
+
+    
+      
+      
+      
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+        
+        
+        
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/yaml.min.js"></script>
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/css.min.js"></script>
+        <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+      
+    
+    
+    
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>
+      <script src="/js/util.js"></script>
+      <script src="/js/main.js"></script>
+      <script src="/js/backToTop.js"></script>
+    
+
+    
+      
+        
+      
+    
+
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+      <script src="//yihui.name/js/math-code.js"></script>
+<script async
+src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+  </body>
+</html>
+

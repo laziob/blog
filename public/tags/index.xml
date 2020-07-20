@@ -6,10 +6,73 @@
     <description>Recent content in Tags on Blog de Ezequiel Boehler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-AR</language>
-    <lastBuildDate>Sun, 05 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 19 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ab test</title>
+      <link>/tags/ab-test/</link>
+      <pubDate>Sun, 19 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/ab-test/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ab test calculator</title>
+      <link>/tags/ab-test-calculator/</link>
+      <pubDate>Sun, 19 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/ab-test-calculator/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>calculadora ab test</title>
+      <link>/tags/calculadora-ab-test/</link>
+      <pubDate>Sun, 19 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/calculadora-ab-test/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>estadistica</title>
+      <link>/tags/estadistica/</link>
+      <pubDate>Sun, 19 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/estadistica/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>herramientas</title>
+      <link>/tags/herramientas/</link>
+      <pubDate>Sun, 19 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/herramientas/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>test ab</title>
+      <link>/tags/test-ab/</link>
+      <pubDate>Sun, 19 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/test-ab/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>test de hipotesis</title>
+      <link>/tags/test-de-hipotesis/</link>
+      <pubDate>Sun, 19 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/test-de-hipotesis/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>business intelligence</title>
@@ -48,47 +111,11 @@
     </item>
     
     <item>
-      <title>ab test</title>
-      <link>/tags/ab-test/</link>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/ab-test/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>test ab</title>
-      <link>/tags/test-ab/</link>
-      <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/test-ab/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>estadistica</title>
-      <link>/tags/estadistica/</link>
-      <pubDate>Sun, 21 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/estadistica/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>p-value</title>
       <link>/tags/p-value/</link>
       <pubDate>Sun, 21 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>/tags/p-value/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>test de hipotesis</title>
-      <link>/tags/test-de-hipotesis/</link>
-      <pubDate>Sun, 21 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/test-de-hipotesis/</guid>
       <description></description>
     </item>
     

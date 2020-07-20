@@ -6,10 +6,19 @@
     <description>Recent content in estadistica on Blog de Ezequiel Boehler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-AR</language>
-    <lastBuildDate>Sun, 21 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 19 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/estadistica/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Calculadora de AB Test y guia de uso</title>
+      <link>/blog/calculadora-de-ab-test-y-guia-de-uso/</link>
+      <pubDate>Sun, 19 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/calculadora-de-ab-test-y-guia-de-uso/</guid>
+      <description>Si, otra calculadora para tests A/B clásicos Existen muchas calculadoras para tests A/B en internet. Pero la mayoría no solo está en inglés, si no que además se centran solo en la evaluación de los resultados, sin tener en cuenta el diseño experimental detrás del mismo. Por último, los cálculos que utilizan suele estar escondidos dentro del código, lo que hace difícil tener un entendimiento claro de cómo llegó a sus resultados.</description>
+    </item>
     
     <item>
       <title>Errores frequentes en Tests AB clásicos</title>
