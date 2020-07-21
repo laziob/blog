@@ -21,6 +21,6 @@
         "dateModified" : "{{ .Date }}",
         "url" : "{{ .Permalink }}",
         "wordCount" : "{{ .WordCount }}",
-        "keywords" : [ {{ if isset .Params "tags" }}{{ range .Params.tags }}"{{ . }}",{{ end }}{{ end }}"Blog" ]
+        "keywords" : [{{ if .IsHome }}"blog de laziob", "ab test", "test de hipotesis", "online ab test", "cro", "eboehler", "blog de eboehler", "ezequiel boehler"{{else}}{{ if isset .Params "tags" }}{{ range .Params.tags }}"{{ . }}",{{ end }}{{ end }}"blog"{{ end }}]
     }
     </script>
