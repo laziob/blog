@@ -1,0 +1,24 @@
+{{ partial "general-title" . }}
+
+{{ partial "header" . }}
+    {{ partial "navbar" . }}
+    <!-- Main -->
+    <div id="main">
+        <article class="post">
+          <header style="margin-bottom: 0">
+              <div class="title">
+                <h1>Consultoria</h1>
+                <p>Si tenés dudas sobre analytics o experimentación online, o simplemente te gustaría conversar del tema, podés agendar una reunión sin costo de 15 o 30 minutos conmigo en estos links</p>
+              </div>
+          </header>
+            <div id="content">
+                {{ .Content }}
+                <!-- Principio del widget integrado de Calendly -->
+<div class="calendly-inline-widget" data-url="https://calendly.com/laziob?hide_landing_page_details=1" style="min-width:320px;height:630px;"></div>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+<!-- Final del widget integrado de Calendly -->
+            </div>
+        </article>
+    </div>
+    {{ partial "sidebar" . }}
+{{ partial "footer" . }}
