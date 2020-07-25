@@ -130,9 +130,9 @@ canonifyURLs = true
   weight = 3
 
 [[menu.main]]
-  name = "Consultoría"
+  name = "Consultoria"
   url = "/consultoria/"
-  identifier = "fa fa-sitemap"
+  identifier = "fa fa-comments-o"
   weight = 4
   
 [Taxonomies]
