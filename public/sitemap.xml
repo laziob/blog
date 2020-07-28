@@ -3,27 +3,77 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/categories/ab-test/</loc>
+    <lastmod>2020-07-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/bayes/</loc>
+    <lastmod>2020-07-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/</loc>
+    <lastmod>2020-07-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2020-07-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <lastmod>2020-07-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/estadistica/</loc>
+    <lastmod>2020-07-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/hipotesis/</loc>
+    <lastmod>2020-07-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/p-value/</loc>
+    <lastmod>2020-07-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-07-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/test-ab/</loc>
+    <lastmod>2020-07-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/test-bayesiano-vs-frecuentista/</loc>
+    <lastmod>2020-07-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/test-de-hipotesis/</loc>
+    <lastmod>2020-07-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/test-de-hipotesis-bayesiano/</loc>
+    <lastmod>2020-07-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tags/ab-test/</loc>
     <lastmod>2020-07-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/ab-test/</loc>
-    <lastmod>2020-07-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tags/ab-test-calculator/</loc>
-    <lastmod>2020-07-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/</loc>
-    <lastmod>2020-07-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/</loc>
     <lastmod>2020-07-19T00:00:00+00:00</lastmod>
   </url>
   
@@ -34,16 +84,6 @@
   
   <url>
     <loc>/blog/calculadora-de-ab-test-y-guia-de-uso/</loc>
-    <lastmod>2020-07-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/</loc>
-    <lastmod>2020-07-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/estadistica/</loc>
     <lastmod>2020-07-19T00:00:00+00:00</lastmod>
   </url>
   
@@ -63,21 +103,6 @@
   </url>
   
   <url>
-    <loc>/tags/</loc>
-    <lastmod>2020-07-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/test-ab/</loc>
-    <lastmod>2020-07-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/test-de-hipotesis/</loc>
-    <lastmod>2020-07-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tags/business-intelligence/</loc>
     <lastmod>2020-07-05T00:00:00+00:00</lastmod>
   </url>
@@ -89,11 +114,6 @@
   
   <url>
     <loc>/tags/decisiones/</loc>
-    <lastmod>2020-07-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/hipotesis/</loc>
     <lastmod>2020-07-05T00:00:00+00:00</lastmod>
   </url>
   
@@ -118,18 +138,8 @@
   </url>
   
   <url>
-    <loc>/tags/p-value/</loc>
-    <lastmod>2020-06-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tags/test-de-potencia/</loc>
     <lastmod>2020-06-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/bayes/</loc>
-    <lastmod>2020-06-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -139,11 +149,6 @@
   
   <url>
     <loc>/blog/metodos-ab-test/</loc>
-    <lastmod>2020-06-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/test-de-hipotesis-bayesiano/</loc>
     <lastmod>2020-06-12T00:00:00+00:00</lastmod>
   </url>
   

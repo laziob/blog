@@ -1,0 +1,1175 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+    <head>
+        <script type="application/ld+json">
+    {
+        "@context" : "http://schema.org",
+        "@type" : "BlogPosting",
+        "mainEntityOfPage": {
+             "@type": "WebPage",
+             "@id": "\/"
+        },
+        "articleSection" : "blog",
+        "name" : "Test Bayesiano vs Frecuentista",
+        "headline" : "Test Bayesiano vs Frecuentista",
+        "description" : "Es importante entender las diferencias fundamentales entre ambos, en especial que cada metodología busca contestar preguntas distintas, y que por eso muchos argumentos brindados por los vendors sobre porque uno es mejor que el otro son erróneos",
+        "inLanguage" : "es",
+        "author" : "",
+        "creator" : "",
+        "publisher": "",
+        "accountablePerson" : "",
+        "copyrightHolder" : "",
+        "copyrightYear" : "2020",
+        "datePublished": "2020-07-27 00:00:00 \u002b0000 UTC",
+        "dateModified" : "2020-07-27 00:00:00 \u002b0000 UTC",
+        "url" : "\/blog\/test-bayesiano-vs-frecuentista\/",
+        "wordCount" : "3911",
+        "keywords" : ["bayes","estadistica","hipotesis","test de hipotesis bayesiano","test de hipotesis","test ab","p-value","blog"]
+    }
+    </script>
+        
+            
+                <title>Test Bayesiano vs Frecuentista</title>
+            
+        
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="generator" content="Hugo 0.72.0" />
+        
+  
+    
+  
+
+  
+
+  <link rel="apple-touch-icon-precomposed" href='/favicon/apple-touch-icon-precomposed.png'>
+  <link rel="icon" href='/favicon/favicon.png'>
+  
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content='/favicon/mstile.png'>
+  <meta name="application-name" content="Blog de Ezequiel Boehler">
+  <meta name="msapplication-tooltip" content="Blog sobre experimentación (A/B Tests) en marketing y productos digitales. Diseño de experimentos, buenas practicas, explicación de conceptos y metodologías diversas.">
+  <meta name="msapplication-config" content='/favicon/ieconfig.xml'>
+
+
+
+        
+            <meta name="author" content="Ezequiel Boehler">
+        
+        
+            <meta name="description" content="Es importante entender las diferencias fundamentales entre ambos, en especial que cada metodología busca contestar preguntas distintas, y que por eso muchos argumentos brindados por los vendors sobre porque uno es mejor que el otro son erróneos">
+        
+
+        <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Test Bayesiano vs Frecuentista"/>
+<meta name="twitter:description" content="Es importante entender las diferencias fundamentales entre ambos, en especial que cada metodología busca contestar preguntas distintas, y que por eso muchos argumentos brindados por los vendors sobre porque uno es mejor que el otro son erróneos"/>
+<meta name="twitter:site" content="@LazioB"/>
+
+        <meta property="og:title" content="Test Bayesiano vs Frecuentista" />
+<meta property="og:description" content="Es importante entender las diferencias fundamentales entre ambos, en especial que cada metodología busca contestar preguntas distintas, y que por eso muchos argumentos brindados por los vendors sobre porque uno es mejor que el otro son erróneos" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/blog/test-bayesiano-vs-frecuentista/" />
+<meta property="article:published_time" content="2020-07-27T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-07-27T00:00:00+00:00" />
+
+        <meta property="og:image" content="//images/logo.png">
+        <meta property="og:image:type" content="image/png">
+        <meta property="og:image:width" content="512">
+        <meta property="og:image:height" content="512">
+        <meta itemprop="name" content="Test Bayesiano vs Frecuentista">
+<meta itemprop="description" content="Es importante entender las diferencias fundamentales entre ambos, en especial que cada metodología busca contestar preguntas distintas, y que por eso muchos argumentos brindados por los vendors sobre porque uno es mejor que el otro son erróneos">
+<meta itemprop="datePublished" content="2020-07-27T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2020-07-27T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="3911">
+
+
+
+<meta itemprop="keywords" content="bayes,estadistica,hipotesis,test de hipotesis bayesiano,test de hipotesis,test ab,p-value," />
+        
+
+        
+            
+        
+
+        
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800,900|Source+Sans+Pro:400,700">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.css">
+            <link rel="stylesheet" href="/css/main.css">
+            <link rel="stylesheet" href="/css/add-on.css">
+            <link rel="stylesheet" href="/css/academicons.min.css">
+        
+
+        
+            
+                
+            
+                
+                    <link rel="stylesheet" href="/css/personal.css">
+                
+            
+                
+                    <link rel="stylesheet" href="/css/style.css">
+                
+            
+        
+
+
+  
+    
+    <link href='//cdn.bootcss.com/highlight.js/9.11.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+  
+
+
+      
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-27830219-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+    </head>
+    <body>
+
+      
+      <div id="wrapper">
+
+    
+    
+<header id="header">
+    
+      <h1><a href="/">blog</a></h1>
+    
+
+    <nav class="links">
+        <ul>
+            
+                <li>
+                    <a href="/">
+                            <i class="fa fa-home">&nbsp;</i>Inicio
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/about/">
+                            <i class="fa fa-id-card-o">&nbsp;</i>Sobre Mí
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/proyectos/">
+                            <i class="fa fa-list">&nbsp;</i>Proyectos
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/consultoria/">
+                            <i class="fa fa-comments-o">&nbsp;</i>Consultoria
+                    </a>
+                </li>
+            
+        </ul>
+    </nav>
+    <nav class="main">
+        <ul>
+            
+            <li id="share-nav" class="share-menu" style="display:none;">
+                <a class="fa-share-alt" href="#share-menu">Share</a>
+            </li>
+            
+            <li class="search">
+                <a class="fa-search" href="#search">Search</a>
+                <form id="search" method="get" action="//google.com/search">
+                    <input type="text" name="q" placeholder="Search" />
+                    <input type="hidden" name="as_sitesearch" value="/">
+                </form>
+            </li>
+            <li class="menu">
+                <a class="fa-bars" href="#menu">Menu</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+<section id="menu">
+
+    
+        <section>
+            <form class="search" method="get" action="//google.com/search">
+                <input type="text" name="q" placeholder="Search" />
+                <input type="hidden" name="as_sitesearch" value="/">
+            </form>
+        </section>
+
+    
+        <section>
+            <ul class="links">
+                
+                    <li>
+                        <a href="/">
+                            <h3>
+                                <i class="fa fa-home">&nbsp;</i>Inicio
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/about/">
+                            <h3>
+                                <i class="fa fa-id-card-o">&nbsp;</i>Sobre Mí
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/proyectos/">
+                            <h3>
+                                <i class="fa fa-list">&nbsp;</i>Proyectos
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/consultoria/">
+                            <h3>
+                                <i class="fa fa-comments-o">&nbsp;</i>Consultoria
+                            </h3>
+                        </a>
+                    </li>
+                
+            </ul>
+        </section>
+
+    
+        <section class="recent-posts">
+            <div class="mini-posts">
+                <header>
+                    <h3>Recent Posts</h3>
+                </header>
+                
+
+                
+                    
+                
+
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="/blog/test-bayesiano-vs-frecuentista/">Test Bayesiano vs Frecuentista</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2020-07-27'>
+                                    July 27, 2020</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="/blog/calculadora-de-ab-test-y-guia-de-uso/">Calculadora de AB Test y guia de uso</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2020-07-19'>
+                                    July 19, 2020</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="/blog/toma-de-decisiones-y-experimentacion/">Toma de decisiones y experimentación</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2020-07-05'>
+                                    July 5, 2020</time>
+                            </header>
+                            
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="/blog/hipotesis-distintas-opciones-y-como-elegir-la-mas-adecuada/">Hipótesis. Distintas opciones y cómo elegir la más adecuada.</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2020-06-28'>
+                                    June 28, 2020</time>
+                            </header>
+                            
+    
+
+    
+        
+        
+
+
+
+
+
+
+
+  
+
+
+        
+        
+        
+
+        <a href="/blog/hipotesis-distintas-opciones-y-como-elegir-la-mas-adecuada/" class="image featured">
+            <img src="/img/main//hipotesis_superioridad_fuerte.png" alt="">
+        </a>
+    
+
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="/blog/errores-frequentes-en-tests-ab-clasicos/">Errores frequentes en Tests AB clásicos</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2020-06-21'>
+                                    June 21, 2020</time>
+                            </header>
+                            
+
+                        </article>
+                
+
+                
+                    <a href=
+                        
+                            /blog/
+                        
+                        class="button">View more posts</a>
+                
+            </div>
+        </section>
+
+    
+        
+</section>
+
+    <section id="share-menu">
+    <section id="social-share-nav">
+        <ul class="links">
+            <header>
+                <h3>Share this post <i class="fa fa-smile-o"></i></h3>
+            </header>
+            
+
+
+
+<li>
+  <a href="//twitter.com/share?url=%2fblog%2ftest-bayesiano-vs-frecuentista%2f&amp;text=Test%20Bayesiano%20vs%20Frecuentista&amp;via=LazioB" target="_blank" class="share-btn twitter">
+    <i class="fa fa-twitter"></i>
+    <p>Twitter</p>
+    </a>
+</li>
+
+
+
+
+
+
+
+
+<li>
+  <a href="//www.facebook.com/sharer/sharer.php?u=%2fblog%2ftest-bayesiano-vs-frecuentista%2f" target="_blank" class="share-btn facebook">
+    <i class="fa fa-facebook"></i>
+    <p>Facebook</p>
+    </a>
+</li>
+
+
+
+
+<li>
+  <a href="//reddit.com/submit?url=%2fblog%2ftest-bayesiano-vs-frecuentista%2f&amp;title=Test%20Bayesiano%20vs%20Frecuentista" target="_blank" class="share-btn reddit">
+    <i class="fa fa-reddit-alien"></i>
+    <p>Reddit</p>
+  </a>
+</li>
+
+
+
+
+<li>
+  <a href="//www.linkedin.com/shareArticle?url=%2fblog%2ftest-bayesiano-vs-frecuentista%2f&amp;title=Test%20Bayesiano%20vs%20Frecuentista" target="_blank" class="share-btn linkedin">
+      <i class="fa fa-linkedin"></i>
+      <p>LinkedIn</p>
+    </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a href="mailto:?subject=Check out this post by Ezequiel%20Boehler&amp;body=%2fblog%2ftest-bayesiano-vs-frecuentista%2f" target="_blank" class="share-btn email">
+    <i class="fa fa-envelope"></i>
+    <p>Email</p>
+  </a>
+</li>
+
+
+        </ul>
+    </section>
+</section>
+
+    
+    <div id="main">
+        
+        
+        <article class="post">
+  <header>
+    <div class="title">
+        
+            <h1><a href="/blog/test-bayesiano-vs-frecuentista/">Test Bayesiano vs Frecuentista</a></h1>
+            
+        
+        
+            <p>Es importante entender las diferencias fundamentales entre ambos, en especial que cada metodología busca contestar preguntas distintas, y que por eso muchos argumentos brindados por los vendors sobre porque uno es mejor que el otro son erróneos</p>
+        
+    </div>
+    <div class="meta">
+        
+
+        <time class="published"
+            datetime='2020-07-27'>
+            July 27, 2020</time>
+        <span class="author">Ezequiel Boehler</span>
+        
+            <p>19 minute read</p>
+        
+        
+    </div>
+</header>
+
+
+  
+  <div id="content">
+    <p>Hace ya un tiempo que hay una tendencia en internet sobre una metodología distinta para experimentación, que para este artículo denominaremos “Test AB Bayesiano”. Digo distinta porque por lo general, casi todas las empresas que ofrecían herramientas y calculadoras para Tests AB se basaban en el método frecuentista, también conocido como Null Hypothesis Significance Testing, al que me voy a referir cómo NHST en este artículo.</p>
+<p>El problema que encuentro, es que casi todos los vendors que ofrecen esta metodología (Google Optimize, VWO, AB Tasty, Dynamic Yield y más) suelen comunicar las ventajas respecto al NHST como abrumadoras, apalancando se en un pequeño subconjunto de argumentos, muchas veces mal interpretados.</p>
+<p>Por lo tanto con este artículo me propongo:</p>
+<ol>
+<li>Marcar las características elementales de NHST y Test AB Bayesiano</li>
+<li>Dar contexto de porque el Test AB Bayesiano se puso de moda en los vendors más importantes</li>
+<li>Demostrar que cada uno busca contestar distintas preguntas, y por lo tanto no son sustitutos uno del otro</li>
+<li>Desmitificar alguno de los argumentos erróneamente comunicados a favor de Test AB Bayesiano</li>
+</ol>
+<p>Es importante que sepan que yo particularmente no estoy más a favor de uno que del otro, e intentaré plasmar esa opinión lo más objetivamente posible en el contenido a continuación. De lo que sí estoy a favor, es de que haya un conocimiento claro sobre las distintas metodologías de experimentación y creo que con el fin de lograr un mayor atractivo y por lo tanto más ventas, la comunicación sobre estos temas está sesgada y siendo poco justa.</p>
+<p>Por lo tanto, comencemos dando contexto a esta discusión.</p>
+<h3 id="contexto">Contexto</h3>
+<p>Para quienes estén familiarizados con NHST, sabrán que realizarlo correctamente requiere realizar un test de potencia previo en base a ciertos parámetros, que nos devuelve una cantidad de observaciones mínimas para que nuestro experimento tenga validez respecto a esos parámetros. Por lo tanto, para ciertos diseños experimentales, ese requisito es muy limitante dado que en general nosotros experimentamos con el tráfico que nuestro sitio recibe, y no podemos generar más visitantes de un día para el otro. Por lo tanto cuando realizamos un test de potencia con nuestros parámetros ideales y nos da que necesitamos más observaciones de las que podemos obtener en un tiempo considerable, nos vemos limitados a decidir no correr el experimento, o a sacrificar algún aspecto / parámetros de nuestro diseño experimental por otro menos ideal pero que sí podamos realizar.</p>
+<p>Por otro lado, además de cumplir con las observaciones necesarias, debemos obedecer de no querer frenar el experimento cuando vemos un resultado que nos interesa (por ejemplo un p-value &lt; 0.15), dado que frenar el experimento bajo esas condiciones, algo que entra en lo que se denomina Optional Stopping, invalida el control de los parámetros que decidimos en el test de potencia, a excepción de que hayamos hecho un diseño experimental que sí tenga en cuenta esa posibilidad (como test secuenciales) pero que por lo general no son lo que más se aplica.</p>
+<p>Y por último, si realizamos el diseño experimental correcto, respetamos las reglas que nos impone, y concluimos el experimento, el mismo nos devuelve como resultados un p-value y un intervalo de confianza, que son dos valores que mucha gente malinterpreta y considera confusos de entender.</p>
+<p>Entonces aparece una nueva alternativa. Una metodología que dice no necesita correr por una cantidad mínima de días o juntar una cantidad mínima de observaciones, que se puede frenar en cualquier momento y aún así mantener resultados válidos, y que su resultado es más fácil de interpretar que un p-value. ¿Suena tentador verdad?</p>
+<p>Esta alternativa es lo que se denomina Test AB Bayesiano. Y los argumentos que mencioné recién son una simplificación bastante certera de los mismos argumentos que usan los vendors mencionados anteriormente para convencerte de cambiar a esta metodología.</p>
+<p>Pero el truco está en que al cambiar de una metodología a otra, se está cambiando la pregunta o problema a resolver, y por lo tanto esos beneficios dejan de ser contrastables a las limitaciones del NHST, dado que apuntan a objetivos distintos.</p>
+<p>Veamos por qué.</p>
+<h3 id="nhst">NHST</h3>
+<p>El NHST entiende a la probabilidad como una frecuencia de sucesos, por eso se llama estadística frecuentista. Concretamente, el suceso al que hace referencia un NHST es al error. ya sea el error de tipo 1 o el error de tipo 2. Lo que tiene como objetivo un NHST bien hecho es controlar la frecuencia de veces que estaríamos cometiendo alguno de esos errores. En el caso del p-value, el mismo debe interpretarse como: Si la hipótesis nula es verdad, un valor del tamaño que observamos o mayor, es esperable un p-value por ciento de las veces. Por lo tanto, si decidimos rechazar la hipótesis nula en pos del valor que observamos, estaríamos cometiendo un error de tipo 1 un p-value por ciento de las veces.</p>
+<p>Lo mismo con el error de tipo 2 y por lo tanto con la potencia de un test. Como podrán ver, el NHST busca controlar por esos errores, independientemente de cual sean los valores de su hipótesis, sea que el efecto es menor a 0, a 10, mayor a 20, o que sea exactamente 5, da igual. La dificultad reside en que si uno está intentando detectar efectos muy pequeños, o que la varianza de la métrica a evaluar es muy grande, o el nivel al que uno quiere controlar dichos riesgos es muy alto, entonces la metodología requiere muchas observaciones para poder discernir ese control. No es lo mismo querer estar seguro de que la probabilidad de equivocarse es solo un 5% que un 50%, y tampoco es lo mismo querer estar seguro que un efecto es de al menos el 15%, que del 0,015% con el mismo nivel de seguridad.</p>
+<p>Lo que no nos dice un NHST es cual es la probabilidad de la hipótesis por ejemplo. No nos dice cuán probable es que haya un efecto positivo, ni nos dice cuán probable es que el efecto esté entre tal número y tal otro. No confundir esto úlltimo con el intervalo de confianza, dado que el intervalo de confianza (por ejemplo al 95%) de un NHST nos dice: si uno calcula un intervalo de confianza al 95% repetidamente en varios experimentos iguales y válidos, en promedio el 95% de las veces el rango de confianza va a contener el efecto real del tratamiento. Ven? De nuevo aparece lo de “repetidamente en varios experimentos”. Porque seguimos en el marco de la frecuencia esperada de lo observado. Seguimos en estadística frecuentista.</p>
+<p>Hay muchos otros detalles que podemos mencionar sobre NHST, pero lo anterior es lo mínimo que creo necesario para que puedan continuar con este artículo. Quienes les interese saber más pueden aventurarse a esta otro <a href="https://eboehler.com/blog/errores-frequentes-en-tests-ab-clasicos/" title="Errores frecuentes Test AB">artículo</a>.</p>
+<h3 id="test-ab-bayesiano">Test AB Bayesiano</h3>
+<p>La estadística bayesiana no es más nueva que la frecuentista. De hecho existe desde antes, y la disputa entre ambas metodologías continúa hasta el día de hoy, donde ahora se enfrentan en el ámbito de la experimentación online.</p>
+<p>Los Test AB Bayesianos interpretan la probabilidad no como una frecuencia de sucesos, sino como una comparación entre qué cosa es más probable que la otra. En este caso la “cosa” en cuestión sería la hipótesis. Entonces como resultado por lo general obtenemos un coeficiente de cuánto más probable es una hipótesis que la otra, y a su vez una distribución de posibles valores del efecto.</p>
+<p>Como hace la estadística Bayesiana para obtener estos resultados? Se basa en el Teorema de Bayes donde:</p>
+
+
+
+  
+    
+    
+    
+      
+    
+    
+      
+    
+
+    
+    
+
+
+
+
+
+
+
+  
+
+
+
+    
+    
+    
+    
+
+    <div class="fancybox">
+      <a data-fancybox="gallery" href="/img/main//teorema_bayes.png" data-caption="teorema_bayes"><img src="/img/main//teorema_bayes.png"></a>
+      
+    </div>
+  
+
+
+<p>Acá la P(H|D) es la probabilidad de la hipótesis en cuestión dada la data, P(d|H) es a probabilidad de la data observada dado la hipótesis (también conocido como Likelihood), la P(H) es la probabilidad de la Hipótesis en cuestión (lo que se conoce como Prior) y P(d) es la probabilidad de los datos.</p>
+<p>En un contexto de experimentación online, P(d|H) o Likelihood es simplemente la distribución de los datos observados. Por ejemplo cuando nuestra métrica a observar es un  promedio, nuestro likelihood sigue una distribución normal (Venta por usuario promedio, Páginas vistas por usuario promedio, etc) y cuando es una proporción (Tasa conversión, CTR) sigue una distribución Bernoulli. A su vez, el prior corresponde a nuestras creencias previas sobre la métrica. Por ejemplo, qué valores creemos que puede tomar el CTR o el ticket promedio. También se puede asignar un prior a la distribución del efecto, por ejemplo creer que el efecto tiene que estar entre tal y tal número.</p>
+<p>Por lo general los priors son algo que se puede calcular con data histórica, y algún otro ajuste de flexibilidad o información del negocio o del tratamiento. El poder incluir información subjetiva al diseño experimental es uno de los puntos que más destacan de la metodología Bayesiana, ya que es la herramienta que le permite “agilizar” los resultados, es decir, requerir menos observaciones.</p>
+<p>No es mi objetivo en esta ocasión hacer un análisis técnico super profundo de esta metodología, pero sí que entiendan como los vendors mencionados anteriormente la utilizan para Tests AB en experimentación online.</p>
+<p>La metodología bayesiana para Tests AB por lo general es la siguiente:</p>
+<ol>
+<li>Seleccionamos una distribución “Prior” para la métrica que vamos a evaluar, que puede ser la misma para el control (C)  y el tratamiento (T) o pueden ser Priors distintos.</li>
+<li>Recolectamos los datos de cada variante, y ajustamos nuestros respectivos Priors con la data nueva observada (como se hace esta actualización dependerá de la distribución Prior seleccionada y de la distribución real de los datos observados)</li>
+<li>Ahora que tenemos dos distribuciones actualizadas (tratamiento y control), obtenemos de estas distribuciones N observaciones aleatorias, por ejemplo, 1 millón de muestras aleatorias de cada distribución (que normalmente se realiza con Simulaciones Monte Carlo)</li>
+<li>Comparamos el millón de muestras del tratamiento con el del control, y calculamos el porcentaje de veces que las muestras de tratamiento fueron mayores que las del control, y la diferencia entre cada columna, creando así una nueva columna que representa el “Efecto” (T - C).</li>
+<li>Repetimos el punto 3 y 4 con cada dato nuevo que vamos obteniendo</li>
+<li>Evaluamos la distribución de la columna Efecto, calculamos la probabilidad de que el efecto sea mayor a 0, el intervalo de valores con 95% de probabilidad de suceder, y alguna función de pérdida y frenamos el experimento cuando se cumpla alguna condición que nos interese.</li>
+</ol>
+<p>Por lo tanto, de la misma forma que con los test frecuentistas debemos seleccionar criteriosamente nuestros parámetros alpha, beta y efecto mínimo a detectar, acá debemos seleccionar nuestras distribuciones priors para tratamiento y control, y alguna regla para decidir cuando efectivamente declaramos que una versión “ganó” o es mejor.</p>
+<p>Pero no tuvimos que realizar un test de potencia, ni hay presente una cantidad mínima de observaciones, de la misma forma que no estamos mencionando en ninguna parte el error tipo 1 ni error tipo 2. Es porque la metodología bayesiana no controla por este tipo de riesgos, no son parte de sus cálculos en ningún lado. Su enfoque es contestar cuán probable es algo dado los datos observados (likelihood) y mi creencia previa sobre los datos observados (prior). Y cómo no requieren un tamaño muestral mínimo, cuando concluír un experimento Bayesiano queda a criterio del experimentador, aunque hay varios métodos conocidos de los cuales elegir.</p>
+<h3 id="diferencias-clave">Diferencias clave</h3>
+<p>Espero que con lo mencionado anteriormente, tengan una imágen clara de que intentan responder ambas metodologías. Eso es importante, porque al tener claridad sobre eso, se vuelve evidente que buscan responder preguntas complementante distintas, y que por lo tanto argumentar que una es “mejor” que la otra no tiene sustento sin el contexto del problema.</p>
+<p>Pero por si alguno aún tiene dudas, voy a listar algunas diferencias importantes:</p>
+<ol>
+<li>El método NHST pertenece a la metodología frecuentista, y busca controlar la frecuencia de cometer errores (en este caso falsos positivos y falsos negativos) y de poder detectar efectos de determinado tamaño (potencia). Mientras que los Tests AB Bayesianos buscan responder qué valores de efecto son más probables o cuan más probable es que una versión sea mejor que la otra, dada los datos observados y la información subjetiva que elegí a priori.</li>
+<li>El NHST requiere de determinadas cantidad de observaciones para asegurar la correcta validez de sus resultados, por lo tanto juntar esas observaciones es lo que determina cuando debe parar un experimento. Los Tests AB Bayesianos no tienen esta condición, por lo que cuando parar el experimento depende de alguna regla establecida a criterio del experimentador, sea por observaciones o por alguno de los outputs de esta metodología.</li>
+<li>El NHST compara el valor estadístico observado con todos los valores posibles (aunque no hayan sido observados con los datos) para obtener sus resultados. El Test AB Bayesiano solo tienen en consideración los valores observados durante el experimento.</li>
+</ol>
+<h3 id="argumentos-mal-comunicados">Argumentos mal comunicados</h3>
+<p>A continuación iré detallando con su respectiva fuente, algunos argumentos que utilizan los vendors para comunicar las ventajas de los Test AB Bayesianos sobre NHST, que dado lo explicado en la sección anterior puede que detecten porque en verdad no son así. De todas formas explicaré porque en cada argumento.</p>
+<blockquote>
+<p>Google Optimize: Los métodos bayesianos nos permiten calcular probabilidades directamente, para responder mejor a las preguntas que los comerciantes actualmente tienen (en lugar de proporcionar p-values, que pocas personas entienden realmente)   <a href="https://support.google.com/optimize/answer/7405543">https://support.google.com/optimize/answer/7405543</a></p>
+</blockquote>
+<blockquote>
+<p>VWO dice: “Ofrecemos métricas fáciles de digerir junto con recomendaciones para que puedas dejar de buscar la definición de p-value o verificar la significancia estadística, y sólo te concentres en cuáles deben ser tus próximos pasos.”  <a href="https://vwo.com/why-us/technology/bayesian-statistics/">https://vwo.com/why-us/technology/bayesian-statistics/</a></p>
+</blockquote>
+<blockquote>
+<p>Dynamic Yield: Aunque no estamos profundizando en los detalles, se puede ver inmediatamente que el motor bayesiano proporciona respuestas a preguntas más directas como: ¿Cuál es la probabilidad de que A sea mejor que B? (contrasta esto con el p-value mencionado anteriormente) <a href="https://www.dynamicyield.com/lesson/bayesian-testing/">https://www.dynamicyield.com/lesson/bayesian-testing/</a></p>
+</blockquote>
+<p>Ninguno brinda ejemplos de las preguntas que los comerciales actualmente tienen, pero asumo que se refieren a que a los comerciales les interesa solo saber que versión es más probable que tenga un efecto positivo (si Landing A o B, anunció A o B). Pero eso asume que a los comerciales no le interesan decisiones que puedan tener riesgos más altos, como modificar el sistema de pricing de sus servicios web, donde cometer un error de tipo 1 puede ser altamente riesgoso y perjudicial. O cambiar algún elemento de la infraestructura del sitio, o del funnel de checkout, etc. Además, asume que la interpretación del resultado es “la probabilidad de que variante A sea mejor que B” cuando en verdad la interpretación correcta es “la probabilidad de que la variante A sea mejor que B dada la data observada y la información adicional que haya utilizado para mis priors”</p>
+<p>Por otro lado, si los p-values son difíciles de entender, difíciles en comparación con que? Porque en los Test AB Bayesianos, los comerciales deben elegir una distribución que modele sus creencias sobre el comportamiento de la métrica o del efecto (recuerden, el Prior es un elemento de esta metodología) y el modelo seleccionado puede tener repercusiones sobre el resultado. Me cuesta ver de qué manera se está reemplazando algo “difícil” por algo más “fácil”.</p>
+<blockquote>
+<p>VWO: Usted no tiene que preocuparse por tomar las decisiones equivocadas basadas en menos datos. Tus resultados son válidos siempre que los mires. <a href="https://vwo.com/why-us/technology/bayesian-statistics/">https://vwo.com/why-us/technology/bayesian-statistics/</a></p>
+</blockquote>
+<blockquote>
+<p>Google Optimize:  Dado que utilizamos modelos diseñados para tener en cuenta los cambios que se producen en los resultados a lo largo del tiempo, siempre es posible consultar los resultados. Nuestras probabilidades se perfeccionan continuamente a medida que recopilamos más datos. <a href="https://support.google.com/optimize/answer/7405543">https://support.google.com/optimize/answer/7405543</a></p>
+</blockquote>
+<blockquote>
+<p>AB Tasty: Puedes comenzar una prueba sin tener un tamaño de muestra definido de antemano. En su lugar, simplemente se inicia la prueba y tan pronto como se identifica un resultado significativo, se puede utilizar. <a href="https://www.abtasty.com/blog/bayesian-ab-testing/">https://www.abtasty.com/blog/bayesian-ab-testing/</a></p>
+</blockquote>
+<p>Para entender porque esta declaración de que los resultados son válidos siempre que los mires, o que podes frenar el experimento en cualquier momento, es importante entender válidos respecto a que. Dado que se están comparando con los NHST, uno podría creer que significa que son válidos respecto a controlar por los errores de tipo 1 o 2. Eso es imposible dado que la metodología bayesiana en ningún momento busca controlar esos errores, así que decir que una metodología mantiene la validez respecto a la otra en algo que la primera no se propone controlar, es inválido.</p>
+<p>Entonces a qué validez se refiere? Resulta que la interpretación de un Test AB Bayesiana es siempre válida respecto a sus propios resultados, porque trabaja con la data observada más los priors que seleccionemos. Esto significa que si yo miro los resultados hoy y veo una “Probabilidad de que A sea mejor que B del 80%” quiere decir exactamente que “Dada la data observada y los priors seleccionados, la probabilidad de que A sea mejor que B es del 80%”. Si mañana ese número cambia a 60%, la interpretación sigue siendo válida. Ese es el tipo de validez al que se refieren.</p>
+<p>Para más detalle sobre esto pueden consultar este post que ejemplifica muy bien este asunto remarcando que el Test AB Bayesiano no promete un control sobre el error de tipo 1: <a href="http://varianceexplained.org/r/bayesian-ab-testing/" title="Bayesian test y stopping rules">Link</a></p>
+<p>En contraste no podríamos hacer lo mismo con NHST porque estaríamos inflando la frecuencia de cometer un falso positivo. La interpretación de un NHST solo es válida si se cumplió el diseño experimental correcto para poder controlar por los parámetros seleccionados.</p>
+<p>Ahora que establecimos a qué validez se refiere el Test AB Bayesiano, y cómo se diferencia de la del NHST, creo importante aclarar dos elementos importantes sobre el supuesto beneficio de parar el experimento en cualquier momento.</p>
+<ol>
+<li>
+<p>Cuando parar un experimento de Test AB Bayesiano, como mencione anteriormente, queda a criterio del experimentador y sus objetivos. Sin embargo las opciones más frecuentes en experimentación online son:
+A. Probabilidad de ser mejor : La probabilidad de que A sea mayor que B
+B. Función de pérdida: Hay muchas, una común es el efecto esperado cuando B es mayor que A, que se interpreta como “cuánto pierdo si elijo A pero en verdad B era mejor”
+C. Intervalo de alta densidad: Que tamaño de efectos posibles pertenecen al intervalo del 95% de probabilidad. Si este intervalo excluye un determinado rango, freno el experimento a favor de tal variante.</p>
+</li>
+<li>
+<p>La elección de bajo que criterio frenar el experimento viene con determinados costos:
+A. Si bien a esta metodología no le interesa controlar por falsos positivos, la elección de estos criterios tiene incidencia directa en cuán alta es la probabilidad de obtener falsos positivos.
+B. También la precisión de la estimación de los efectos es afectada por el criterio se utiliza para frenar el experimento.</p>
+</li>
+</ol>
+<p>John Kruschke, el autor de Doing Bayesian Data Analysis explora los efectos de distintos criterios para frenar el experimento en ambos factores y pueden encontrar sus resultados acá: <a href="http://doingbayesiandataanalysis.blogspot.com/2013/11/optional-stopping-in-data-collection-p.html" title="Efectos de stopping rules">Link</a></p>
+<p>Y por último sobre este tema, si los resultados son siempre válidos, porque es que Google Optimize, VWO y Dynamic Yield aconsejan o exigen correr los experimentos al menos 1 o 2 semanas? La respuesta es para poder controlar por la variabilidad de resultados por efectos de estacionalidad, y para un test de NHST aconsejaría lo mismo, sin embargo creo que sería justo que eso se mencionara en las comparaciones que realizan.</p>
+<p>Por lo tanto, si, la interpretación de un Test AB Bayesiano es válida en cualquier momento del experimento, pero eso no quiere decir que sus conclusiones sean las deseadas o las más óptimas.</p>
+<p>El último argumento que me interesa mencionar es quizá el más complejo y a su vez el más importante, y tiene que ver con la elección del Prior, que para los que son nuevos en este tema entiendo que es un concepto difícil de comprender.</p>
+<p>Recuerden que les dije que el prior supone una ventaja de la metodología bayesiana, porque nos permite incluir información externa al experimento, ya sea en base a data histórica de experimentos pasados, del comportamiento esperado de la métrica, o temas del negocio. Y que hacer eso permite obtener resultados más ágilmente, dado que es como arrancar el experimento con un camino marcado, en vez de a oscuras.</p>
+<p>Teniendo eso en cuenta uno esperaría que las plataformas que utilizan esta metodología permitiran que el usuario decidiera sobre sus priors, pero ese no es el caso:</p>
+<blockquote>
+<p>Google Optimize: No te permite establecer los priors en ninguna parte, y ellos mismos dicen: “Con respecto a los ganadores y las tasas de conversión, hacemos todo lo posible para usar piors no informativos&hellip; priors con la menor influencia posible en los resultados del experimento.” <a href="https://support.google.com/optimize/answer/7405544?hl=en">https://support.google.com/optimize/answer/7405544?hl=en</a></p>
+</blockquote>
+<blockquote>
+<p>Dynamic Yield también utiliza priors no informativos (Beta 1,1 para proporciones y una Gamma K,T para Venta por usuario) <a href="https://support.dynamicyield.com/hc/en-us/community/posts/360012753898-Prior-distributions-">https://support.dynamicyield.com/hc/en-us/community/posts/360012753898-Prior-distributions-</a> (requiere estar logeados)</p>
+</blockquote>
+<blockquote>
+<p>AB Tasty y VWO  por lo visto no tienen opción de setear los priors manualmente, y no encontré documentación sobre que priors utilizan.</p>
+</blockquote>
+<p>Entonces cómo puede ser que un elemento tan importante de esta metodología, y sobre el cual se basan argumentos como la agilidad respecto a NHST, estén tan poco informados y el usuario no tenga control sobre ellos?</p>
+<p>Esto se vuelve un problema porque como dijimos, la interpretación del resultado de estos tests es: “la probabilidad de que A sea mejor que B dada la data observada y el prior utilizado”. Y para algunos casos no tenemos información sobre qué priors se utilizaron, y para los que sí, igual no podemos elegir nuestros propios priors que hagan sentido para nuestro análisis.</p>
+<p>Esto como usuario me deja creyendo que en verdad los Tests AB Bayesianos son sólo más “fáciles” que los NHST, cuando le quitamos la complejidad al usuario de tener que elegir quizá el aspecto más importante de su metodología, que es el prior. Algunos podrán argumentar que esta decisión es porque dada una cantidad suficiente de observaciones recolectadas, los priors elegidos dejan de tener peso respecto al resultado. Pero eso igual depende del prior seleccionado, Cuanto más restrictivo sea el prior que seleccione, más va a tardar eso en suceder. Pero no encontré aún estudios que determinen a partir de qué tamaño de observaciones eso sucede y su impacto en los Tests AB Bayesianos, por lo que esconder esa información al usuario tampoco me parece justo.</p>
+<p>El equivalente en NHST sería que no puedas elegir tu alpha ni tu beta, y por lo tanto yo te diga si tu resultado es significativo o no sin que vos sepas qué medida estás controlando los falsos positivos o la potencia.</p>
+<h3 id="conclusión">Conclusión</h3>
+<p>Espero que con todo lo mencionado anteriormente, entiendan que las dos metodologías son extremadamente distintas porque desde su naturaleza buscan contestar preguntas distintas. Creo que ambas tienen su lugar en la experimentación online, y que de hecho se complementan, pero solo si se tiene claro el objetivo y contexto de cada experimento. Los argumentos y promesas que ofrecen los vendors sobre la metodología bayesiana no resisten una evaluación estricta respecto al contexto dado que simplifican toda la metodología a solo un aspecto, le quitan al usuario la posibilidad de utilizarla correctamente y se comparan con el NHST en puntos que no son comparables.</p>
+<p>Hay casos donde controlar riesgos de errores es más importante, y casos donde poder modelar el comportamiento o conocimiento previo para poder tener una estimación rápida y precisa de un efecto sea el objetivo. Por eso es que nadie se salva de tener que, frente a un problema o incertidumbre, enmarcar la toma de decisiones, y elegir una metodología que se adecue a ese marco, sea frecuentista o bayesiana, y ejecutar la misma de la forma más correcta posible, con sus pros y contras.</p>
+
+  </div>
+  <div>
+    <hr>
+    <h3>Gracias por leer mi blog!</h3>
+    <p style="margin-bottom: 15px">Si te gustó lo que leiste te invito a que te sumes al newsletter para recibir un mail semanal con el nuevo contenido y novedades. O podes apoyarme con su desarrollo invitandome un cafe :) Muchas gracias!</p>
+    <p style="display: flex;justify-content: center;">
+      <a class="subscribe" href="https://tinyletter.com/eboehler" target="popup" onclick="window.open('https://tinyletter.com/eboehler','popup','width=600,height=600'); return false;"> Subscribirse </a> <a class="cafecito" href='https://cafecito.app/lazio' rel='noopener' target='_blank'><img srcset='https://cdn.cafecito.app/imgs/buttons/button_4.png 1x, https://cdn.cafecito.app/imgs/buttons/button_4_2x.png 2x, https://cdn.cafecito.app/imgs/buttons/button_4_3.75x.png 3.75x' src='https://cdn.cafecito.app/imgs/buttons/button_4.png' alt='Invitame un café en cafecito.app' /></a>
+    </p>
+</div>
+  <footer>
+    <ul class="stats">
+  <li class="categories">
+    <ul>
+        
+            
+            
+                <i class="fa fa-folder"></i>
+                
+                
+                <li><a class="article-category-link" href="/categories/ab-test">ab test</a></li>
+                
+            
+        
+    </ul>
+  </li>
+  <li class="tags">
+    <ul>
+        
+            
+            
+                <i class="fa fa-tags"></i>
+                
+                
+                <li><a class="article-category-link" href="/tags/bayes">bayes</a></li>
+                
+                
+                <li><a class="article-category-link" href="/tags/estadistica">estadistica</a></li>
+                
+                
+                <li><a class="article-category-link" href="/tags/hipotesis">hipotesis</a></li>
+                
+                
+                <li><a class="article-category-link" href="/tags/test-de-hipotesis-bayesiano">test de hipotesis bayesiano</a></li>
+                
+                
+                <li><a class="article-category-link" href="/tags/test-de-hipotesis">test de hipotesis</a></li>
+                
+                
+                <li><a class="article-category-link" href="/tags/test-ab">test ab</a></li>
+                
+                
+                <li><a class="article-category-link" href="/tags/p-value">p-value</a></li>
+                
+            
+        
+    </ul>
+  </li>
+</ul>
+
+  </footer>
+
+</article>
+
+    <article class="post">
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "eboehler" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </article>
+
+
+<ul class="actions pagination">
+    
+        <li><a href="/blog/calculadora-de-ab-test-y-guia-de-uso/"
+                class="button big previous">Calculadora de AB Test y guia de uso</a></li>
+    
+
+    
+</ul>
+
+
+    </div>
+    
+<section id="sidebar">
+
+  
+  <section id="intro">
+    
+    
+      
+        <a href='/' class="logo"><img src="/img/main/foto-lazio.jpg" alt="perfil_laziob" /></a>
+      
+    
+    
+      <header>
+        <h2>Blog de LazioB</h2>
+        <p>Blog sobre experimentación (A/B Tests) en marketing y productos digitales. Diseño de experimentos, buenas practicas, explicación de conceptos y metodologías diversas. <i class='fa fa-hand-peace-o'></i></p>
+      </header>
+    
+    
+      <ul class="icons">
+        
+        
+  <li><a href="//github.com/laziob" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//linkedin.com/in/ezequiel-boehler-1b01783b" target="_blank" title="LinkedIn" class="fa fa-linkedin"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//twitter.com/LazioB" target="_blank" title="Twitter" class="fa fa-twitter"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//cafecito.app/lazio" target="_blank" title="Cafecito" class="customicon customicon-cafecito"></a></li>
+
+
+
+
+
+
+
+
+
+  <li><a href="mailto:ezequielboehler@gmail.com" title="Email" class="fa fa-envelope"></a></li>
+
+
+      </ul>
+    
+  </section>
+
+  
+  <section class="recent-posts">
+    <div class="mini-posts">
+      <header>
+        <h3>Recent Posts</h3>
+      </header>
+      <div class="posts-container">
+        
+
+        
+          
+        
+
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="/blog/test-bayesiano-vs-frecuentista/">Test Bayesiano vs Frecuentista</a>
+              </h3>
+              
+              <time class="published" datetime='2020-07-27'>
+                July 27, 2020
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="/blog/calculadora-de-ab-test-y-guia-de-uso/">Calculadora de AB Test y guia de uso</a>
+              </h3>
+              
+              <time class="published" datetime='2020-07-19'>
+                July 19, 2020
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="/blog/toma-de-decisiones-y-experimentacion/">Toma de decisiones y experimentación</a>
+              </h3>
+              
+              <time class="published" datetime='2020-07-05'>
+                July 5, 2020
+              </time>
+            </header>
+            
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="/blog/hipotesis-distintas-opciones-y-como-elegir-la-mas-adecuada/">Hipótesis. Distintas opciones y cómo elegir la más adecuada.</a>
+              </h3>
+              
+              <time class="published" datetime='2020-06-28'>
+                June 28, 2020
+              </time>
+            </header>
+            
+    
+
+    
+        
+        
+
+
+
+
+
+
+
+  
+
+
+        
+        
+        
+
+        <a href="/blog/hipotesis-distintas-opciones-y-como-elegir-la-mas-adecuada/" class="image featured">
+            <img src="/img/main//hipotesis_superioridad_fuerte.png" alt="">
+        </a>
+    
+
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="/blog/errores-frequentes-en-tests-ab-clasicos/">Errores frequentes en Tests AB clásicos</a>
+              </h3>
+              
+              <time class="published" datetime='2020-06-21'>
+                June 21, 2020
+              </time>
+            </header>
+            
+
+          </article>
+        
+      </div>
+
+      
+        <a href=
+          
+            /blog/
+          
+        class="button">View more posts</a>
+      
+    </div>
+  </section>
+
+  
+  
+  
+  
+  
+    <section id="categories">
+      <header>
+        <h3>
+          <a href="/categories/">Categorias</a>
+        </h3>
+      </header>
+        
+          
+        
+
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/ab-test/">ab-test</a>
+                <span style="float:right;">6</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/analytics/">analytics</a>
+                <span style="float:right;">1</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/toma-de-decisiones/">toma-de-decisiones</a>
+                <span style="float:right;">1</span>
+              
+            </header>
+          </article>
+        </p>
+        
+    </section>
+  
+  
+
+  
+  
+    <section id="mini-bio">
+      <h3>
+        <a href="/about/">About</a>
+      </h3>
+      <p>Data Scientist en Falabella Retail. Apasionado por los datos, buscando formas de mejorar la toma de decisiones de equipos y disminuir sus sesgos.</p>
+    </section>
+  
+
+  
+  <section id="footer">
+    
+      <ul class="icons">
+        
+        
+  <li><a href="//github.com/laziob" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//linkedin.com/in/ezequiel-boehler-1b01783b" target="_blank" title="LinkedIn" class="fa fa-linkedin"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//twitter.com/LazioB" target="_blank" title="Twitter" class="fa fa-twitter"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//cafecito.app/lazio" target="_blank" title="Cafecito" class="customicon customicon-cafecito"></a></li>
+
+
+
+
+
+
+
+
+
+  <li><a href="mailto:ezequielboehler@gmail.com" title="Email" class="fa fa-envelope"></a></li>
+
+
+      </ul>
+    
+    <p class="copyright">
+      
+        &copy; 2020
+        
+          Blog de Ezequiel Boehler
+        
+      .
+      Powered by <a href="//gohugo.io" target="_blank">Hugo</a>
+    </p>
+  </section>
+</section>
+
+    </div>
+    <a id="back-to-top" href="#" class="fa fa-arrow-up fa-border fa-2x"></a>
+    
+
+    
+      
+    
+
+    
+      
+      
+      
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/highlight.min.js"></script>
+        
+        
+        
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/r.min.js"></script>
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/yaml.min.js"></script>
+        <script src="//cdn.bootcss.com/highlight.js/9.11.0/languages/css.min.js"></script>
+        <script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+      
+    
+    
+    
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>
+      <script src="/js/util.js"></script>
+      <script src="/js/main.js"></script>
+      <script src="/js/backToTop.js"></script>
+    
+
+    
+      
+        
+      
+    
+
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+      <script src="//yihui.name/js/math-code.js"></script>
+<script async
+src="//cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+  </body>
+</html>
+

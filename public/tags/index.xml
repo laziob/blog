@@ -6,10 +6,73 @@
     <description>Recent content in Tags on Blog de Ezequiel Boehler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-AR</language>
-    <lastBuildDate>Sun, 19 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 27 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>bayes</title>
+      <link>/tags/bayes/</link>
+      <pubDate>Mon, 27 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/bayes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>estadistica</title>
+      <link>/tags/estadistica/</link>
+      <pubDate>Mon, 27 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/estadistica/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hipotesis</title>
+      <link>/tags/hipotesis/</link>
+      <pubDate>Mon, 27 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/hipotesis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>p-value</title>
+      <link>/tags/p-value/</link>
+      <pubDate>Mon, 27 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/p-value/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>test ab</title>
+      <link>/tags/test-ab/</link>
+      <pubDate>Mon, 27 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/test-ab/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>test de hipotesis</title>
+      <link>/tags/test-de-hipotesis/</link>
+      <pubDate>Mon, 27 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/test-de-hipotesis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>test de hipotesis bayesiano</title>
+      <link>/tags/test-de-hipotesis-bayesiano/</link>
+      <pubDate>Mon, 27 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/test-de-hipotesis-bayesiano/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>ab test</title>
@@ -39,38 +102,11 @@
     </item>
     
     <item>
-      <title>estadistica</title>
-      <link>/tags/estadistica/</link>
-      <pubDate>Sun, 19 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/estadistica/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>herramientas</title>
       <link>/tags/herramientas/</link>
       <pubDate>Sun, 19 Jul 2020 00:00:00 +0000</pubDate>
       
       <guid>/tags/herramientas/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>test ab</title>
-      <link>/tags/test-ab/</link>
-      <pubDate>Sun, 19 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/test-ab/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>test de hipotesis</title>
-      <link>/tags/test-de-hipotesis/</link>
-      <pubDate>Sun, 19 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/test-de-hipotesis/</guid>
       <description></description>
     </item>
     
@@ -102,24 +138,6 @@
     </item>
     
     <item>
-      <title>hipotesis</title>
-      <link>/tags/hipotesis/</link>
-      <pubDate>Sun, 05 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/hipotesis/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>p-value</title>
-      <link>/tags/p-value/</link>
-      <pubDate>Sun, 21 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/p-value/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>test de potencia</title>
       <link>/tags/test-de-potencia/</link>
       <pubDate>Sun, 21 Jun 2020 00:00:00 +0000</pubDate>
@@ -129,29 +147,11 @@
     </item>
     
     <item>
-      <title>bayes</title>
-      <link>/tags/bayes/</link>
-      <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/bayes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>muestreo adaptivo</title>
       <link>/tags/muestreo-adaptivo/</link>
       <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>/tags/muestreo-adaptivo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>test de hipotesis bayesiano</title>
-      <link>/tags/test-de-hipotesis-bayesiano/</link>
-      <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/test-de-hipotesis-bayesiano/</guid>
       <description></description>
     </item>
     
