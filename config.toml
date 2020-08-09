@@ -9,6 +9,7 @@ googleAnalytics = "UA-27830219-2"
 pluralizeListTitles = false
 
 [params]
+  gtm_id = "GTM-T7TXSZ4"
   # Sets the meta tag description
   description          = "Blog sobre experimentación (A/B Tests) en marketing y productos digitales. Diseño de experimentos, buenas practicas, explicación de conceptos y metodologías diversas."
   # Sets the navbarTitle that appears in the top left of the navigation bar

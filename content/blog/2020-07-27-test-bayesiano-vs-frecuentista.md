@@ -174,6 +174,3 @@ El equivalente en NHST sería que no puedas elegir tu alpha ni tu beta, y por lo
 Espero que con todo lo mencionado anteriormente, entiendan que las dos metodologías son extremadamente distintas porque desde su naturaleza buscan contestar preguntas distintas. Creo que ambas tienen su lugar en la experimentación online, y que de hecho se complementan, pero solo si se tiene claro el objetivo y contexto de cada experimento. Los argumentos y promesas que ofrecen los vendors sobre la metodología bayesiana no resisten una evaluación estricta respecto al contexto dado que simplifican toda la metodología a solo un aspecto, le quitan al usuario la posibilidad de utilizarla correctamente y se comparan con el NHST en puntos que no son comparables. 
 
 Hay casos donde controlar riesgos de errores es más importante, y casos donde poder modelar el comportamiento o conocimiento previo para poder tener una estimación rápida y precisa de un efecto sea el objetivo. Por eso es que nadie se salva de tener que, frente a un problema o incertidumbre, enmarcar la toma de decisiones, y elegir una metodología que se adecue a ese marco, sea frecuentista o bayesiana, y ejecutar la misma de la forma más correcta posible, con sus pros y contras. 
-
-
-
