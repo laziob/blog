@@ -1,5 +1,6 @@
 baseurl = "https://eboehler.com"
 languageCode = "es-AR"
+DefaultContentLanguage = "es"
 title = "Blog de Ezequiel Boehler"
 theme = "hugo-future-imperfect"
 preserveTaxonomyNames = true
@@ -10,6 +11,7 @@ pluralizeListTitles = false
 
 [params]
   gtm_id = "GTM-T7TXSZ4"
+  gtm_datalayer = "basic"
   # Sets the meta tag description
   description          = "Blog sobre experimentación (A/B Tests) en marketing y productos digitales. Diseño de experimentos, buenas practicas, explicación de conceptos y metodologías diversas."
   # Sets the navbarTitle that appears in the top left of the navigation bar
