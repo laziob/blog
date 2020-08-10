@@ -6,10 +6,20 @@
     <description>Recent content in data driven on Blog de Ezequiel Boehler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-AR</language>
-    <lastBuildDate>Sun, 05 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 10 Aug 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/data-driven/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>MAOEC: Un framework de trabajo para analítica digital</title>
+      <link>/blog/maoec-un-framework-de-trabajo-para-anal%C3%ADtica-digital/</link>
+      <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/maoec-un-framework-de-trabajo-para-anal%C3%ADtica-digital/</guid>
+      <description>Muchas empresas, en especial las pymes, tienen dificultad para crear una recolección de datos web que los ayude a alcanzar sus objetivos. Las causas de esto son varias, entre ellas:
+ No se tiene un área dedicada a esto El área responsable trabaja solamente con los objetivos de esa área y no con los del resto de la empresa (silos) La recolección queda relegada a una agencia externa que solo recolecta lo que la agencia necesita.</description>
+    </item>
     
     <item>
       <title>Toma de decisiones y experimentación</title>

@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ga on Blog de LazioB</title>
+    <title>ga on Blog de Ezequiel Boehler</title>
     <link>/tags/ga/</link>
-    <description>Recent content in ga on Blog de LazioB</description>
+    <description>Recent content in ga on Blog de Ezequiel Boehler</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ar-es</language>
-    <lastBuildDate>Sun, 18 Feb 2018 00:00:00 +0000</lastBuildDate>
+    <language>es-AR</language>
+    <lastBuildDate>Mon, 10 Aug 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/ga/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Test Own Post 1</title>
-      <link>/post/test-own-post-1/</link>
-      <pubDate>Sun, 18 Feb 2018 00:00:00 +0000</pubDate>
+      <title>MAOEC: Un framework de trabajo para analítica digital</title>
+      <link>/blog/maoec-un-framework-de-trabajo-para-anal%C3%ADtica-digital/</link>
+      <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/test-own-post-1/</guid>
-      <description>Posteo de prueba para ver donde se ve, como</description>
+      <guid>/blog/maoec-un-framework-de-trabajo-para-anal%C3%ADtica-digital/</guid>
+      <description>Muchas empresas, en especial las pymes, tienen dificultad para crear una recolección de datos web que los ayude a alcanzar sus objetivos. Las causas de esto son varias, entre ellas:
+ No se tiene un área dedicada a esto El área responsable trabaja solamente con los objetivos de esa área y no con los del resto de la empresa (silos) La recolección queda relegada a una agencia externa que solo recolecta lo que la agencia necesita.</description>
     </item>
     
   </channel>
