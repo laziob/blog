@@ -2,7 +2,7 @@
 title: 'MAOEC: Un framework de trabajo para analítica digital'
 author: Ezequiel Boehler
 date: '2020-08-10'
-slug: maoec-un-framework-de-trabajo-para-analítica-digital
+slug: maoec-un-framework-de-trabajo-para-analitica-digital
 categories:
   - analytics
 tags:
@@ -226,6 +226,3 @@ Hay muchas formas de encarar la recolección de datos de un sitio o producto dig
 Por eso lo que más me importa que se lleven es que siempre tengan en cuenta los objetivos, que piensen qué información les puede ayudar a alcanzar dicho objetivos, y que armen una recolección para esos datos que sea resiliente e independiente de las herramientas, dado que estas últimas irán cambiando a medida que las necesidades de la empresa cambia. 
 
 Espero que les sea de utilidad, y como siempre, cualquier duda o feedback que tengan al respecto es más que bienvenida. 
-
-
-
