@@ -23,6 +23,7 @@ type: post
 ---
 
 Muchas empresas, en especial las pymes, tienen dificultad para crear una recolección de datos web que los ayude a alcanzar sus objetivos. Las causas de esto son varias, entre ellas:
+
 1. No se tiene un área dedicada a esto
 2. El área responsable trabaja solamente con los objetivos de esa área y no con los del resto de la empresa (silos)
 3. La recolección queda relegada a una agencia externa que solo recolecta lo que la agencia necesita.
