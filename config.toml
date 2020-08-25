@@ -13,7 +13,7 @@ pluralizeListTitles = false
   gtm_id = "GTM-T7TXSZ4"
   gtm_datalayer = "basic"
   # Sets the meta tag description
-  description          = "Blog sobre experimentación (A/B Tests) en marketing y productos digitales. Diseño de experimentos, buenas practicas, explicación de conceptos y metodologías diversas."
+  description          = "Blog sobre analítica y experimentación (A/B Tests) en marketing y productos digitales. Recolección de datos, diseño de experimentos, buenas practicas, explicación de conceptos y metodologías diversas."
   # Sets the navbarTitle that appears in the top left of the navigation bar
   navbarTitle          = "Inicio  "
   # Sets where "View More Posts" links
