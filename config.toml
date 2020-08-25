@@ -6,7 +6,7 @@ theme = "hugo-future-imperfect"
 preserveTaxonomyNames = true
 paginate = 3
 disqusShortname = "eboehler"
-googleAnalytics = "UA-27830219-2"
+#googleAnalytics = "UA-27830219-2"
 pluralizeListTitles = false
 
 [params]
