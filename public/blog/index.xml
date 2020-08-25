@@ -6,10 +6,19 @@
     <description>Recent content in Blog on Blog de Ezequiel Boehler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-AR</language>
-    <lastBuildDate>Mon, 10 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 24 Aug 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Factores importantes a tener en cuenta cuando experimentamos</title>
+      <link>/blog/factores-importantes-a-tener-en-cuenta-cuando-experimentamos/</link>
+      <pubDate>Mon, 24 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/factores-importantes-a-tener-en-cuenta-cuando-experimentamos/</guid>
+      <description>En artículos anteriores estuve hablando sobre los beneficios de experimentar en nuestros productos digitales y en el negocio en general. También mencioné algunos errores frecuentes que se cometen al experimentar y cómo evitarlos. Sin embargo, todo eso siempre estuvo relacionado a experimentos de hipótesis nula aleatorios, mejor conocidos como Test A/B, donde la asignación es aleatoria y el tratamiento (un cambio en UX, en precio,etc) es introducido por nosotros mismos.</description>
+    </item>
     
     <item>
       <title>MAOEC: Un framework de trabajo para analítica digital</title>
