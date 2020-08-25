@@ -9,7 +9,7 @@ tags:
   - experimentacion
   - estadistica
   - inferencia
-description: 'Cuando experimentamos estamos realizando inferencias y al hacerlo debemos considerar como la metodología que decidimos utilizar afecta a la validez interna y externa de la relación causal que queremos descubrir.'
+description: 'Cuando experimentamos estamos realizando inferencias y al hacerlo debemos considerar cómo la metodología que decidimos utilizar afecta a la validez interna y externa de la relación causal que queremos descubrir.'
 featured: ''
 featuredalt: ''
 featuredpath: ''
