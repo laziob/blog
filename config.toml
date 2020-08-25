@@ -92,9 +92,9 @@ canonifyURLs = true
   # These are optional params related to the sidebar. They are recommended, but not
   # required for proper functionality. HTML is supported within the params.
 [params.intro]
-  header    = "Blog de LazioB"
+  header    = "Blog de Ezequiel Boehler"
 
-  paragraph = "Blog sobre experimentación (A/B Tests) en marketing y productos digitales. Diseño de experimentos, buenas practicas, explicación de conceptos y metodologías diversas. <i class='fa fa-hand-peace-o'></i>"
+  paragraph = "Blog sobre analítica y experimentación (A/B Tests) en marketing y productos digitales. Recolección de datos, diseño de experimentos, buenas practicas, explicación de conceptos y metodologías diversas. <i class='fa fa-hand-peace-o'></i>"
 
   about     = "Data Scientist en Falabella Retail. Apasionado por los datos, buscando formas de mejorar la toma de decisiones de equipos y disminuir sus sesgos."
   # This appears at the top of the sidebar above params.intro.header.
