@@ -6,10 +6,19 @@
     <description>Recent content in decisiones on Blog de Ezequiel Boehler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-AR</language>
-    <lastBuildDate>Sun, 05 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 21 Sep 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/decisiones/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>La calidad de datos como pilar de la analitica digital</title>
+      <link>/blog/la-calidad-de-datos-como-pilar-de-la-analitica-digital/</link>
+      <pubDate>Mon, 21 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/la-calidad-de-datos-como-pilar-de-la-analitica-digital/</guid>
+      <description>Un dato de mi trabajo freelance es que quizás el 80% del tiempo lo dedico a arreglar recolecciones de datos web. Es curioso como por un lado vendors y clientes comunican las cosas increíbles que están logrando con técnicas avanzadas de Machine Learning y AI, y por otro lado el grueso de las empresas de ecommerce por ejemplo no tienen ni bien configurado su Comercio Electrónico Mejorado en Google Analytics, o tienen problemas hasta para medir ciertas conversiones en sus canales de publicidad.</description>
+    </item>
     
     <item>
       <title>Toma de decisiones y experimentación</title>

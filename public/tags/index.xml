@@ -6,10 +6,46 @@
     <description>Recent content in Tags on Blog de Ezequiel Boehler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-AR</language>
-    <lastBuildDate>Mon, 24 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 21 Sep 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>analytics</title>
+      <link>/tags/analytics/</link>
+      <pubDate>Mon, 21 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/analytics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>business intelligence</title>
+      <link>/tags/business-intelligence/</link>
+      <pubDate>Mon, 21 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/business-intelligence/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>decisiones</title>
+      <link>/tags/decisiones/</link>
+      <pubDate>Mon, 21 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/decisiones/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>recoleccion de datos</title>
+      <link>/tags/recoleccion-de-datos/</link>
+      <pubDate>Mon, 21 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/recoleccion-de-datos/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>estadistica</title>
@@ -35,15 +71,6 @@
       <pubDate>Mon, 24 Aug 2020 00:00:00 +0000</pubDate>
       
       <guid>/tags/inferencia/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>analytics</title>
-      <link>/tags/analytics/</link>
-      <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/analytics/</guid>
       <description></description>
     </item>
     
@@ -98,15 +125,6 @@
       <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>
       
       <guid>/tags/guia/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>recoleccion de datos</title>
-      <link>/tags/recoleccion-de-datos/</link>
-      <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/recoleccion-de-datos/</guid>
       <description></description>
     </item>
     
@@ -197,24 +215,6 @@
       <pubDate>Sun, 19 Jul 2020 00:00:00 +0000</pubDate>
       
       <guid>/tags/herramientas/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>business intelligence</title>
-      <link>/tags/business-intelligence/</link>
-      <pubDate>Sun, 05 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/business-intelligence/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>decisiones</title>
-      <link>/tags/decisiones/</link>
-      <pubDate>Sun, 05 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/decisiones/</guid>
       <description></description>
     </item>
     
