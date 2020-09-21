@@ -10,7 +10,7 @@ tags:
   - decisiones
   - recoleccion de datos
   - business intelligence
-description: ''
+description: 'Una mala calidad de datos genera desconfianza en todo el programa de analítica digital de la empresa, perjudicando tanto la toma de decisiones como la cultura de la misma. ¿Por qué motivos sucede y qué podemos hacer para evitarlo?'
 featured: ''
 featuredalt: ''
 featuredpath: ''
