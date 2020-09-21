@@ -1,5 +1,5 @@
 ---
-title: La calidad de datos como pilar de la analitica digital
+title: La calidad de datos como pilar de la analítica digital
 author: Ezequiel Boehler
 date: '2020-09-21'
 slug: la-calidad-de-datos-como-pilar-de-la-analitica-digital
