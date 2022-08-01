@@ -2,13 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ezequiel -Lazio- Boehler on Blog de Ezequiel Boehler</title>
-    <link>/about/</link>
+    <link>https://eboehler.com/about/</link>
     <description>Recent content in Ezequiel -Lazio- Boehler on Blog de Ezequiel Boehler</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>es-AR</language>
-    
-	<atom:link href="/about/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>es-AR</language><atom:link href="https://eboehler.com/about/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

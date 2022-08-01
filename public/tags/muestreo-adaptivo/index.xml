@@ -2,21 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>muestreo adaptivo on Blog de Ezequiel Boehler</title>
-    <link>/tags/muestreo-adaptivo/</link>
+    <link>https://eboehler.com/tags/muestreo-adaptivo/</link>
     <description>Recent content in muestreo adaptivo on Blog de Ezequiel Boehler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-AR</language>
-    <lastBuildDate>Fri, 12 Jun 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/muestreo-adaptivo/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 12 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://eboehler.com/tags/muestreo-adaptivo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Test A/B: Ajuste su método al contexto del problema que quiere resolver</title>
-      <link>/blog/metodos-ab-test/</link>
+      <link>https://eboehler.com/blog/metodos-ab-test/</link>
       <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blog/metodos-ab-test/</guid>
+      <guid>https://eboehler.com/blog/metodos-ab-test/</guid>
       <description>Este articulo esta basado principalmente en los escritos y presentaciones de Matt Gershoff, fundador de Conductrics https://conductrics.com quien me autorizó a utilizar sus ideas y material. Pueden encontrar su presentación sobre este tema en el siguiente link. Los invito a que visiten su blog en el sitio de Conductrics, ya que contiene material didáctico sobre este tema y similares.
 Hoy en día, cada vez más empresas se ven involucradas por una u otra razón en la realización de Tests A/B con el fin de poder tomar mejores decisiones.</description>
     </item>

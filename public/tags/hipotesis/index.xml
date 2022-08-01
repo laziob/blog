@@ -2,61 +2,57 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>hipotesis on Blog de Ezequiel Boehler</title>
-    <link>/tags/hipotesis/</link>
+    <link>https://eboehler.com/tags/hipotesis/</link>
     <description>Recent content in hipotesis on Blog de Ezequiel Boehler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-AR</language>
-    <lastBuildDate>Mon, 27 Jul 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/hipotesis/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 27 Jul 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://eboehler.com/tags/hipotesis/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Test Bayesiano vs Frecuentista</title>
-      <link>/blog/test-bayesiano-vs-frecuentista/</link>
+      <link>https://eboehler.com/blog/test-bayesiano-vs-frecuentista/</link>
       <pubDate>Mon, 27 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blog/test-bayesiano-vs-frecuentista/</guid>
+      <guid>https://eboehler.com/blog/test-bayesiano-vs-frecuentista/</guid>
       <description>Hace ya un tiempo que hay una tendencia en internet sobre una metodología distinta para experimentación, que para este artículo denominaremos “Test AB Bayesiano”. Digo distinta porque por lo general, casi todas las empresas que ofrecían herramientas y calculadoras para Tests AB se basaban en el método frecuentista, también conocido como Null Hypothesis Significance Testing, al que me voy a referir cómo NHST en este artículo.
 El problema que encuentro, es que casi todos los vendors que ofrecen esta metodología (Google Optimize, VWO, AB Tasty, Dynamic Yield y más) suelen comunicar las ventajas respecto al NHST como abrumadoras, apalancando se en un pequeño subconjunto de argumentos, muchas veces mal interpretados.</description>
     </item>
     
     <item>
       <title>Toma de decisiones y experimentación</title>
-      <link>/blog/toma-de-decisiones-y-experimentacion/</link>
+      <link>https://eboehler.com/blog/toma-de-decisiones-y-experimentacion/</link>
       <pubDate>Sun, 05 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blog/toma-de-decisiones-y-experimentacion/</guid>
+      <guid>https://eboehler.com/blog/toma-de-decisiones-y-experimentacion/</guid>
       <description>Hay un hecho recurrente en equipos que intentan tomar una cultura data-driven que está mal. Y este es cuando los mismos ponen la experimentación como el objetivo. A qué me refiero con esto? A que les importa más decir que “se experimentó”, que haber tomado una decisión informada, controlando por ciertos factores.
 Si vienen siguiendo mis posteos anteriores, sabrán ya que hay muchos elementos que pueden hacer que una experimentación sea inválida.</description>
     </item>
     
     <item>
       <title>Hipótesis. Distintas opciones y cómo elegir la más adecuada.</title>
-      <link>/blog/hipotesis-distintas-opciones-y-como-elegir-la-mas-adecuada/</link>
+      <link>https://eboehler.com/blog/hipotesis-distintas-opciones-y-como-elegir-la-mas-adecuada/</link>
       <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blog/hipotesis-distintas-opciones-y-como-elegir-la-mas-adecuada/</guid>
+      <guid>https://eboehler.com/blog/hipotesis-distintas-opciones-y-como-elegir-la-mas-adecuada/</guid>
       <description>A la hora de hacer Tests de Hipótesis Nula, uno de los factores más importantes es seleccionar la hipótesis correcta. En posts anteriores explique que casi todos los valores resultantes de un test de hipótesis nula, como el p-value y los intervalos de confianza, solo pueden ser interpretados en relación a la hipótesis nula seleccionada.
 Muchos equipos suelen seleccionar por defecto la hipótesis nula de que la diferencia entre el grupo tratamiento y el grupo control es igual a 0.</description>
     </item>
     
     <item>
       <title>Errores frequentes en Tests AB clásicos</title>
-      <link>/blog/errores-frequentes-en-tests-ab-clasicos/</link>
+      <link>https://eboehler.com/blog/errores-frequentes-en-tests-ab-clasicos/</link>
       <pubDate>Sun, 21 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blog/errores-frequentes-en-tests-ab-clasicos/</guid>
+      <guid>https://eboehler.com/blog/errores-frequentes-en-tests-ab-clasicos/</guid>
       <description>En mi primer posteo, que pueden encontrar acá , mencioné algunos errores comunes que los equipos cometen a la hora de hacer A/B tests. En este post voy a profundizar en algunos de estos errores. Mi objetivo es que ganen un mejor entendimiento de por qué el error es en efecto un error, y de qué forma altera o invalida la interpretación de resultados de ese experimento.
-TL:DR Los 4 errores más frecuentes y que hay que tratar de evitar son:</description>
+TL:DRLos 4 errores más frecuentes y que hay que tratar de evitar son:</description>
     </item>
     
     <item>
       <title>Test A/B: Ajuste su método al contexto del problema que quiere resolver</title>
-      <link>/blog/metodos-ab-test/</link>
+      <link>https://eboehler.com/blog/metodos-ab-test/</link>
       <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blog/metodos-ab-test/</guid>
+      <guid>https://eboehler.com/blog/metodos-ab-test/</guid>
       <description>Este articulo esta basado principalmente en los escritos y presentaciones de Matt Gershoff, fundador de Conductrics https://conductrics.com quien me autorizó a utilizar sus ideas y material. Pueden encontrar su presentación sobre este tema en el siguiente link. Los invito a que visiten su blog en el sitio de Conductrics, ya que contiene material didáctico sobre este tema y similares.
 Hoy en día, cada vez más empresas se ven involucradas por una u otra razón en la realización de Tests A/B con el fin de poder tomar mejores decisiones.</description>
     </item>

@@ -2,40 +2,36 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>analytics on Blog de Ezequiel Boehler</title>
-    <link>/tags/analytics/</link>
+    <link>https://eboehler.com/tags/analytics/</link>
     <description>Recent content in analytics on Blog de Ezequiel Boehler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-AR</language>
-    <lastBuildDate>Mon, 21 Sep 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/analytics/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 21 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://eboehler.com/tags/analytics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>La calidad de datos como pilar de la analítica digital</title>
-      <link>/blog/la-calidad-de-datos-como-pilar-de-la-analitica-digital/</link>
+      <link>https://eboehler.com/blog/la-calidad-de-datos-como-pilar-de-la-analitica-digital/</link>
       <pubDate>Mon, 21 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blog/la-calidad-de-datos-como-pilar-de-la-analitica-digital/</guid>
+      <guid>https://eboehler.com/blog/la-calidad-de-datos-como-pilar-de-la-analitica-digital/</guid>
       <description>Un dato de mi trabajo freelance es que quizás el 80% del tiempo lo dedico a arreglar recolecciones de datos web. Es curioso como por un lado vendors y clientes comunican las cosas increíbles que están logrando con técnicas avanzadas de Machine Learning y AI, y por otro lado el grueso de las empresas de ecommerce por ejemplo no tienen ni bien configurado su Comercio Electrónico Mejorado en Google Analytics, o tienen problemas hasta para medir ciertas conversiones en sus canales de publicidad.</description>
     </item>
     
     <item>
       <title>MAOEC: Un framework de trabajo para analítica digital</title>
-      <link>/blog/maoec-un-framework-de-trabajo-para-analitica-digital/</link>
+      <link>https://eboehler.com/blog/maoec-un-framework-de-trabajo-para-analitica-digital/</link>
       <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blog/maoec-un-framework-de-trabajo-para-analitica-digital/</guid>
+      <guid>https://eboehler.com/blog/maoec-un-framework-de-trabajo-para-analitica-digital/</guid>
       <description>Muchas empresas, en especial las pymes, tienen dificultad para crear una recolección de datos web que los ayude a alcanzar sus objetivos. Las causas de esto son varias, entre ellas:
- No se tiene un área dedicada a esto El área responsable trabaja solamente con los objetivos de esa área y no con los del resto de la empresa (silos) La recolección queda relegada a una agencia externa que solo recolecta lo que la agencia necesita.</description>
+No se tiene un área dedicada a esto El área responsable trabaja solamente con los objetivos de esa área y no con los del resto de la empresa (silos) La recolección queda relegada a una agencia externa que solo recolecta lo que la agencia necesita.</description>
     </item>
     
     <item>
       <title>¿Que pasó con las decisiones basadas en datos?</title>
-      <link>/blog/la-falacia-de-la-analitica-digital/</link>
+      <link>https://eboehler.com/blog/la-falacia-de-la-analitica-digital/</link>
       <pubDate>Thu, 11 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blog/la-falacia-de-la-analitica-digital/</guid>
+      <guid>https://eboehler.com/blog/la-falacia-de-la-analitica-digital/</guid>
       <description>La realidad es que la mayoría de los equipos de marketing digital, o analytics, no toman decisiones en base a datos, no son &amp;ldquo;data-driven&amp;rdquo;.
 Hoy en día, la comunicación sobre el presente y futuro de los datos y su impacto en los negocios abunda. Alcanza con buscar &amp;ldquo;negocios data&amp;rdquo; en Google para encontrar un sinfin de notas sobre el tema.
 Con el aumento de herramientas de recolección de datos web, su facilidad de uso y la poca regulación (que en el último año comenzo a cambiar), los equipos de Marketing y UX fueron quizás de los más beneficiados, obteniendo datos no solo de la adquisición (campañas, audiencias, canales) de posibles clientes sino también de sus interacciones con todo su producto o servicio.</description>

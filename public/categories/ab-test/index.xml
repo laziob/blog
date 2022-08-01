@@ -2,79 +2,75 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ab test on Blog de Ezequiel Boehler</title>
-    <link>/categories/ab-test/</link>
+    <link>https://eboehler.com/categories/ab-test/</link>
     <description>Recent content in ab test on Blog de Ezequiel Boehler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-AR</language>
-    <lastBuildDate>Mon, 24 Aug 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/categories/ab-test/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 24 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://eboehler.com/categories/ab-test/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Factores importantes a tener en cuenta cuando experimentamos</title>
-      <link>/blog/factores-importantes-a-tener-en-cuenta-cuando-experimentamos/</link>
+      <link>https://eboehler.com/blog/factores-importantes-a-tener-en-cuenta-cuando-experimentamos/</link>
       <pubDate>Mon, 24 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blog/factores-importantes-a-tener-en-cuenta-cuando-experimentamos/</guid>
+      <guid>https://eboehler.com/blog/factores-importantes-a-tener-en-cuenta-cuando-experimentamos/</guid>
       <description>En artículos anteriores estuve hablando sobre los beneficios de experimentar en nuestros productos digitales y en el negocio en general. También mencioné algunos errores frecuentes que se cometen al experimentar y cómo evitarlos. Sin embargo, todo eso siempre estuvo relacionado a experimentos de hipótesis nula aleatorios, mejor conocidos como Test A/B, donde la asignación es aleatoria y el tratamiento (un cambio en UX, en precio,etc) es introducido por nosotros mismos.</description>
     </item>
     
     <item>
       <title>Test Bayesiano vs Frecuentista</title>
-      <link>/blog/test-bayesiano-vs-frecuentista/</link>
+      <link>https://eboehler.com/blog/test-bayesiano-vs-frecuentista/</link>
       <pubDate>Mon, 27 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blog/test-bayesiano-vs-frecuentista/</guid>
+      <guid>https://eboehler.com/blog/test-bayesiano-vs-frecuentista/</guid>
       <description>Hace ya un tiempo que hay una tendencia en internet sobre una metodología distinta para experimentación, que para este artículo denominaremos “Test AB Bayesiano”. Digo distinta porque por lo general, casi todas las empresas que ofrecían herramientas y calculadoras para Tests AB se basaban en el método frecuentista, también conocido como Null Hypothesis Significance Testing, al que me voy a referir cómo NHST en este artículo.
 El problema que encuentro, es que casi todos los vendors que ofrecen esta metodología (Google Optimize, VWO, AB Tasty, Dynamic Yield y más) suelen comunicar las ventajas respecto al NHST como abrumadoras, apalancando se en un pequeño subconjunto de argumentos, muchas veces mal interpretados.</description>
     </item>
     
     <item>
       <title>Calculadora de AB Test y guia de uso</title>
-      <link>/blog/calculadora-de-ab-test-y-guia-de-uso/</link>
+      <link>https://eboehler.com/blog/calculadora-de-ab-test-y-guia-de-uso/</link>
       <pubDate>Sun, 19 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blog/calculadora-de-ab-test-y-guia-de-uso/</guid>
+      <guid>https://eboehler.com/blog/calculadora-de-ab-test-y-guia-de-uso/</guid>
       <description>Si, otra calculadora para tests A/B clásicos Existen muchas calculadoras para tests A/B en internet. Pero la mayoría no solo está en inglés, si no que además se centran solo en la evaluación de los resultados, sin tener en cuenta el diseño experimental detrás del mismo. Por último, los cálculos que utilizan suele estar escondidos dentro del código, lo que hace difícil tener un entendimiento claro de cómo llegó a sus resultados.</description>
     </item>
     
     <item>
       <title>Calculadora de Test AB de tamaño de muestra fijo</title>
-      <link>/proyectos/calculadora-de-test-ab-de-tama%C3%B1o-de-muestra-fijo/</link>
+      <link>https://eboehler.com/proyectos/calculadora-de-test-ab-de-tama%C3%B1o-de-muestra-fijo/</link>
       <pubDate>Sun, 19 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>/proyectos/calculadora-de-test-ab-de-tama%C3%B1o-de-muestra-fijo/</guid>
+      <guid>https://eboehler.com/proyectos/calculadora-de-test-ab-de-tama%C3%B1o-de-muestra-fijo/</guid>
       <description>Links Calculadora
 Video</description>
     </item>
     
     <item>
       <title>Hipótesis. Distintas opciones y cómo elegir la más adecuada.</title>
-      <link>/blog/hipotesis-distintas-opciones-y-como-elegir-la-mas-adecuada/</link>
+      <link>https://eboehler.com/blog/hipotesis-distintas-opciones-y-como-elegir-la-mas-adecuada/</link>
       <pubDate>Sun, 28 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blog/hipotesis-distintas-opciones-y-como-elegir-la-mas-adecuada/</guid>
+      <guid>https://eboehler.com/blog/hipotesis-distintas-opciones-y-como-elegir-la-mas-adecuada/</guid>
       <description>A la hora de hacer Tests de Hipótesis Nula, uno de los factores más importantes es seleccionar la hipótesis correcta. En posts anteriores explique que casi todos los valores resultantes de un test de hipótesis nula, como el p-value y los intervalos de confianza, solo pueden ser interpretados en relación a la hipótesis nula seleccionada.
 Muchos equipos suelen seleccionar por defecto la hipótesis nula de que la diferencia entre el grupo tratamiento y el grupo control es igual a 0.</description>
     </item>
     
     <item>
       <title>Errores frequentes en Tests AB clásicos</title>
-      <link>/blog/errores-frequentes-en-tests-ab-clasicos/</link>
+      <link>https://eboehler.com/blog/errores-frequentes-en-tests-ab-clasicos/</link>
       <pubDate>Sun, 21 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blog/errores-frequentes-en-tests-ab-clasicos/</guid>
+      <guid>https://eboehler.com/blog/errores-frequentes-en-tests-ab-clasicos/</guid>
       <description>En mi primer posteo, que pueden encontrar acá , mencioné algunos errores comunes que los equipos cometen a la hora de hacer A/B tests. En este post voy a profundizar en algunos de estos errores. Mi objetivo es que ganen un mejor entendimiento de por qué el error es en efecto un error, y de qué forma altera o invalida la interpretación de resultados de ese experimento.
-TL:DR Los 4 errores más frecuentes y que hay que tratar de evitar son:</description>
+TL:DRLos 4 errores más frecuentes y que hay que tratar de evitar son:</description>
     </item>
     
     <item>
       <title>Test A/B: Ajuste su método al contexto del problema que quiere resolver</title>
-      <link>/blog/metodos-ab-test/</link>
+      <link>https://eboehler.com/blog/metodos-ab-test/</link>
       <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blog/metodos-ab-test/</guid>
+      <guid>https://eboehler.com/blog/metodos-ab-test/</guid>
       <description>Este articulo esta basado principalmente en los escritos y presentaciones de Matt Gershoff, fundador de Conductrics https://conductrics.com quien me autorizó a utilizar sus ideas y material. Pueden encontrar su presentación sobre este tema en el siguiente link. Los invito a que visiten su blog en el sitio de Conductrics, ya que contiene material didáctico sobre este tema y similares.
 Hoy en día, cada vez más empresas se ven involucradas por una u otra razón en la realización de Tests A/B con el fin de poder tomar mejores decisiones.</description>
     </item>

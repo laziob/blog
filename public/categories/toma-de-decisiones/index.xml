@@ -2,21 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>toma de decisiones on Blog de Ezequiel Boehler</title>
-    <link>/categories/toma-de-decisiones/</link>
+    <link>https://eboehler.com/categories/toma-de-decisiones/</link>
     <description>Recent content in toma de decisiones on Blog de Ezequiel Boehler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-AR</language>
-    <lastBuildDate>Sun, 05 Jul 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/categories/toma-de-decisiones/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 05 Jul 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://eboehler.com/categories/toma-de-decisiones/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Toma de decisiones y experimentación</title>
-      <link>/blog/toma-de-decisiones-y-experimentacion/</link>
+      <link>https://eboehler.com/blog/toma-de-decisiones-y-experimentacion/</link>
       <pubDate>Sun, 05 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blog/toma-de-decisiones-y-experimentacion/</guid>
+      <guid>https://eboehler.com/blog/toma-de-decisiones-y-experimentacion/</guid>
       <description>Hay un hecho recurrente en equipos que intentan tomar una cultura data-driven que está mal. Y este es cuando los mismos ponen la experimentación como el objetivo. A qué me refiero con esto? A que les importa más decir que “se experimentó”, que haber tomado una decisión informada, controlando por ciertos factores.
 Si vienen siguiendo mis posteos anteriores, sabrán ya que hay muchos elementos que pueden hacer que una experimentación sea inválida.</description>
     </item>

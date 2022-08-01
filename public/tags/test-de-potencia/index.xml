@@ -2,23 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>test de potencia on Blog de Ezequiel Boehler</title>
-    <link>/tags/test-de-potencia/</link>
+    <link>https://eboehler.com/tags/test-de-potencia/</link>
     <description>Recent content in test de potencia on Blog de Ezequiel Boehler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-AR</language>
-    <lastBuildDate>Sun, 21 Jun 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/test-de-potencia/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 21 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://eboehler.com/tags/test-de-potencia/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Errores frequentes en Tests AB clásicos</title>
-      <link>/blog/errores-frequentes-en-tests-ab-clasicos/</link>
+      <link>https://eboehler.com/blog/errores-frequentes-en-tests-ab-clasicos/</link>
       <pubDate>Sun, 21 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blog/errores-frequentes-en-tests-ab-clasicos/</guid>
+      <guid>https://eboehler.com/blog/errores-frequentes-en-tests-ab-clasicos/</guid>
       <description>En mi primer posteo, que pueden encontrar acá , mencioné algunos errores comunes que los equipos cometen a la hora de hacer A/B tests. En este post voy a profundizar en algunos de estos errores. Mi objetivo es que ganen un mejor entendimiento de por qué el error es en efecto un error, y de qué forma altera o invalida la interpretación de resultados de ese experimento.
-TL:DR Los 4 errores más frecuentes y que hay que tratar de evitar son:</description>
+TL:DRLos 4 errores más frecuentes y que hay que tratar de evitar son:</description>
     </item>
     
   </channel>

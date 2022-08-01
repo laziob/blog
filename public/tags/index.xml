@@ -2,264 +2,260 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Blog de Ezequiel Boehler</title>
-    <link>/tags/</link>
+    <link>https://eboehler.com/tags/</link>
     <description>Recent content in Tags on Blog de Ezequiel Boehler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-AR</language>
-    <lastBuildDate>Mon, 21 Sep 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 21 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://eboehler.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>analytics</title>
-      <link>/tags/analytics/</link>
+      <link>https://eboehler.com/tags/analytics/</link>
       <pubDate>Mon, 21 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/analytics/</guid>
+      <guid>https://eboehler.com/tags/analytics/</guid>
       <description></description>
     </item>
     
     <item>
       <title>business intelligence</title>
-      <link>/tags/business-intelligence/</link>
+      <link>https://eboehler.com/tags/business-intelligence/</link>
       <pubDate>Mon, 21 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/business-intelligence/</guid>
+      <guid>https://eboehler.com/tags/business-intelligence/</guid>
       <description></description>
     </item>
     
     <item>
       <title>decisiones</title>
-      <link>/tags/decisiones/</link>
+      <link>https://eboehler.com/tags/decisiones/</link>
       <pubDate>Mon, 21 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/decisiones/</guid>
+      <guid>https://eboehler.com/tags/decisiones/</guid>
       <description></description>
     </item>
     
     <item>
       <title>recoleccion de datos</title>
-      <link>/tags/recoleccion-de-datos/</link>
+      <link>https://eboehler.com/tags/recoleccion-de-datos/</link>
       <pubDate>Mon, 21 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/recoleccion-de-datos/</guid>
+      <guid>https://eboehler.com/tags/recoleccion-de-datos/</guid>
       <description></description>
     </item>
     
     <item>
       <title>estadistica</title>
-      <link>/tags/estadistica/</link>
+      <link>https://eboehler.com/tags/estadistica/</link>
       <pubDate>Mon, 24 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/estadistica/</guid>
+      <guid>https://eboehler.com/tags/estadistica/</guid>
       <description></description>
     </item>
     
     <item>
       <title>experimentacion</title>
-      <link>/tags/experimentacion/</link>
+      <link>https://eboehler.com/tags/experimentacion/</link>
       <pubDate>Mon, 24 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/experimentacion/</guid>
+      <guid>https://eboehler.com/tags/experimentacion/</guid>
       <description></description>
     </item>
     
     <item>
       <title>inferencia</title>
-      <link>/tags/inferencia/</link>
+      <link>https://eboehler.com/tags/inferencia/</link>
       <pubDate>Mon, 24 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/inferencia/</guid>
+      <guid>https://eboehler.com/tags/inferencia/</guid>
       <description></description>
     </item>
     
     <item>
       <title>data driven</title>
-      <link>/tags/data-driven/</link>
+      <link>https://eboehler.com/tags/data-driven/</link>
       <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/data-driven/</guid>
+      <guid>https://eboehler.com/tags/data-driven/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ga</title>
-      <link>/tags/ga/</link>
+      <link>https://eboehler.com/tags/ga/</link>
       <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/ga/</guid>
+      <guid>https://eboehler.com/tags/ga/</guid>
       <description></description>
     </item>
     
     <item>
       <title>google analytics</title>
-      <link>/tags/google-analytics/</link>
+      <link>https://eboehler.com/tags/google-analytics/</link>
       <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/google-analytics/</guid>
+      <guid>https://eboehler.com/tags/google-analytics/</guid>
       <description></description>
     </item>
     
     <item>
       <title>google tag manager</title>
-      <link>/tags/google-tag-manager/</link>
+      <link>https://eboehler.com/tags/google-tag-manager/</link>
       <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/google-tag-manager/</guid>
+      <guid>https://eboehler.com/tags/google-tag-manager/</guid>
       <description></description>
     </item>
     
     <item>
       <title>gtm</title>
-      <link>/tags/gtm/</link>
+      <link>https://eboehler.com/tags/gtm/</link>
       <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/gtm/</guid>
+      <guid>https://eboehler.com/tags/gtm/</guid>
       <description></description>
     </item>
     
     <item>
       <title>guia</title>
-      <link>/tags/guia/</link>
+      <link>https://eboehler.com/tags/guia/</link>
       <pubDate>Mon, 10 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/guia/</guid>
+      <guid>https://eboehler.com/tags/guia/</guid>
       <description></description>
     </item>
     
     <item>
       <title>bayes</title>
-      <link>/tags/bayes/</link>
+      <link>https://eboehler.com/tags/bayes/</link>
       <pubDate>Mon, 27 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/bayes/</guid>
+      <guid>https://eboehler.com/tags/bayes/</guid>
       <description></description>
     </item>
     
     <item>
       <title>hipotesis</title>
-      <link>/tags/hipotesis/</link>
+      <link>https://eboehler.com/tags/hipotesis/</link>
       <pubDate>Mon, 27 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/hipotesis/</guid>
+      <guid>https://eboehler.com/tags/hipotesis/</guid>
       <description></description>
     </item>
     
     <item>
       <title>p-value</title>
-      <link>/tags/p-value/</link>
+      <link>https://eboehler.com/tags/p-value/</link>
       <pubDate>Mon, 27 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/p-value/</guid>
+      <guid>https://eboehler.com/tags/p-value/</guid>
       <description></description>
     </item>
     
     <item>
       <title>test ab</title>
-      <link>/tags/test-ab/</link>
+      <link>https://eboehler.com/tags/test-ab/</link>
       <pubDate>Mon, 27 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/test-ab/</guid>
+      <guid>https://eboehler.com/tags/test-ab/</guid>
       <description></description>
     </item>
     
     <item>
       <title>test de hipotesis</title>
-      <link>/tags/test-de-hipotesis/</link>
+      <link>https://eboehler.com/tags/test-de-hipotesis/</link>
       <pubDate>Mon, 27 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/test-de-hipotesis/</guid>
+      <guid>https://eboehler.com/tags/test-de-hipotesis/</guid>
       <description></description>
     </item>
     
     <item>
       <title>test de hipotesis bayesiano</title>
-      <link>/tags/test-de-hipotesis-bayesiano/</link>
+      <link>https://eboehler.com/tags/test-de-hipotesis-bayesiano/</link>
       <pubDate>Mon, 27 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/test-de-hipotesis-bayesiano/</guid>
+      <guid>https://eboehler.com/tags/test-de-hipotesis-bayesiano/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ab test</title>
-      <link>/tags/ab-test/</link>
+      <link>https://eboehler.com/tags/ab-test/</link>
       <pubDate>Sun, 19 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/ab-test/</guid>
+      <guid>https://eboehler.com/tags/ab-test/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ab test calculator</title>
-      <link>/tags/ab-test-calculator/</link>
+      <link>https://eboehler.com/tags/ab-test-calculator/</link>
       <pubDate>Sun, 19 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/ab-test-calculator/</guid>
+      <guid>https://eboehler.com/tags/ab-test-calculator/</guid>
       <description></description>
     </item>
     
     <item>
       <title>calculadora ab test</title>
-      <link>/tags/calculadora-ab-test/</link>
+      <link>https://eboehler.com/tags/calculadora-ab-test/</link>
       <pubDate>Sun, 19 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/calculadora-ab-test/</guid>
+      <guid>https://eboehler.com/tags/calculadora-ab-test/</guid>
       <description></description>
     </item>
     
     <item>
       <title>herramientas</title>
-      <link>/tags/herramientas/</link>
+      <link>https://eboehler.com/tags/herramientas/</link>
       <pubDate>Sun, 19 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/herramientas/</guid>
+      <guid>https://eboehler.com/tags/herramientas/</guid>
       <description></description>
     </item>
     
     <item>
       <title>test de potencia</title>
-      <link>/tags/test-de-potencia/</link>
+      <link>https://eboehler.com/tags/test-de-potencia/</link>
       <pubDate>Sun, 21 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/test-de-potencia/</guid>
+      <guid>https://eboehler.com/tags/test-de-potencia/</guid>
       <description></description>
     </item>
     
     <item>
       <title>muestreo adaptivo</title>
-      <link>/tags/muestreo-adaptivo/</link>
+      <link>https://eboehler.com/tags/muestreo-adaptivo/</link>
       <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/muestreo-adaptivo/</guid>
+      <guid>https://eboehler.com/tags/muestreo-adaptivo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>thompson sampling</title>
-      <link>/tags/thompson-sampling/</link>
+      <link>https://eboehler.com/tags/thompson-sampling/</link>
       <pubDate>Fri, 12 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/thompson-sampling/</guid>
+      <guid>https://eboehler.com/tags/thompson-sampling/</guid>
       <description></description>
     </item>
     
     <item>
       <title>inteligencia de negocio</title>
-      <link>/tags/inteligencia-de-negocio/</link>
+      <link>https://eboehler.com/tags/inteligencia-de-negocio/</link>
       <pubDate>Thu, 11 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/inteligencia-de-negocio/</guid>
+      <guid>https://eboehler.com/tags/inteligencia-de-negocio/</guid>
       <description></description>
     </item>
     
     <item>
       <title>test hipotesis</title>
-      <link>/tags/test-hipotesis/</link>
+      <link>https://eboehler.com/tags/test-hipotesis/</link>
       <pubDate>Thu, 11 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/test-hipotesis/</guid>
+      <guid>https://eboehler.com/tags/test-hipotesis/</guid>
       <description></description>
     </item>
     

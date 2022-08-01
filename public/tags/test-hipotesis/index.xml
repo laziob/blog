@@ -2,21 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>test hipotesis on Blog de Ezequiel Boehler</title>
-    <link>/tags/test-hipotesis/</link>
+    <link>https://eboehler.com/tags/test-hipotesis/</link>
     <description>Recent content in test hipotesis on Blog de Ezequiel Boehler</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-AR</language>
-    <lastBuildDate>Thu, 11 Jun 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="/tags/test-hipotesis/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 11 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://eboehler.com/tags/test-hipotesis/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>¿Que pasó con las decisiones basadas en datos?</title>
-      <link>/blog/la-falacia-de-la-analitica-digital/</link>
+      <link>https://eboehler.com/blog/la-falacia-de-la-analitica-digital/</link>
       <pubDate>Thu, 11 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/blog/la-falacia-de-la-analitica-digital/</guid>
+      <guid>https://eboehler.com/blog/la-falacia-de-la-analitica-digital/</guid>
       <description>La realidad es que la mayoría de los equipos de marketing digital, o analytics, no toman decisiones en base a datos, no son &amp;ldquo;data-driven&amp;rdquo;.
 Hoy en día, la comunicación sobre el presente y futuro de los datos y su impacto en los negocios abunda. Alcanza con buscar &amp;ldquo;negocios data&amp;rdquo; en Google para encontrar un sinfin de notas sobre el tema.
 Con el aumento de herramientas de recolección de datos web, su facilidad de uso y la poca regulación (que en el último año comenzo a cambiar), los equipos de Marketing y UX fueron quizás de los más beneficiados, obteniendo datos no solo de la adquisición (campañas, audiencias, canales) de posibles clientes sino también de sus interacciones con todo su producto o servicio.</description>
