@@ -10,7 +10,8 @@ disqusShortname = "eboehler"
 pluralizeListTitles = false
 
 [params]
-  gtm_id = "GTM-T7TXSZ4"
+  # gtm_id = "GTM-T7TXSZ4"
+  googleAnalytics = "G-J7M64VVXLF"
   gtm_datalayer = "basic"
   # Sets the meta tag description
   description          = "Blog sobre analítica y experimentación (A/B Tests) en marketing y productos digitales. Recolección de datos, diseño de experimentos, buenas practicas, explicación de conceptos y metodologías diversas."
