@@ -3,8 +3,6 @@
 <html lang="es">
     <head>
         
-        
-        
         <script src="//staging-2020.cdn-v3.conductrics.com/ac-vPmxPoxNfu/v3/agent-api/js/f-oDQWzbOGCH/dt-rKhureQtkZfXQbQBrk0oSGfZl6B1Pk?apikey=api-GAoZYRiMkEEykWRjvnOm" type="text/javascript"></script>
           <link href="https://www.googletagmanager.com" rel="preconnect" crossorigin>
   <link rel="dns-prefetch" href="https://www.googletagmanager.com">  <script>
@@ -65,7 +63,7 @@
 
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="generator" content="Hugo 0.101.0" />
+        <meta name="generator" content="Hugo 0.113.0">
         
   
     
@@ -101,7 +99,6 @@
 <meta property="article:published_time" content="2020-06-12T00:00:00+00:00" />
 <meta property="article:modified_time" content="2020-06-12T00:00:00+00:00" />
 
-
         <meta property="og:image" content="https://eboehler.com/images/logo.png">
         <meta property="og:image:type" content="image/png">
         <meta property="og:image:width" content="512">
@@ -111,7 +108,6 @@
 <meta itemprop="dateModified" content="2020-06-12T00:00:00+00:00" />
 <meta itemprop="wordCount" content="2867">
 <meta itemprop="keywords" content="ab test,estadistica,bayes,hipotesis,test de hipotesis,test de hipotesis bayesiano,muestreo adaptivo,thompson sampling," />
-        
 
         
             
@@ -448,8 +444,8 @@
   
   <div id="content">
     <p>Este articulo esta basado principalmente en los escritos y presentaciones de Matt Gershoff, fundador de Conductrics  <a href="https://conductrics.com">https://conductrics.com</a> quien me autorizó a utilizar sus ideas y material. Pueden encontrar su presentación sobre este tema en el siguiente <a href="https://docs.google.com/presentation/d/1mbRGTPe3cB1yvghARLbVg-h-oizq6fZfZg1MYriTzQk/edit," title="Presentacion Matt">link</a>. Los invito a que visiten su blog en el sitio de Conductrics, ya que contiene material didáctico sobre este tema y similares.</p>
-<p>Hoy en día, cada vez más empresas se ven involucradas por una u otra razón en la realización de Tests A/B con el fin de poder tomar mejores decisiones. Ya sean por cambios en UX de páginas web o Apps, cambios en segmentación o mensajes de campañas publicitarias, e incluso en distintas selecciones de modelos de Machine Learning, decidir que versión es mejor que otra conlleva una gran cantidad de tareas, que aquellos que lo intentaron, sabrán que no son fáciles. 
-El objetivo de este articulo es poder darles una guía de pautas sobre distintos métodos de muestreo y evaluación  para poder realizar experimentos que se adecuen de la mejor manera posible al desafío que tienen por delante. 
+<p>Hoy en día, cada vez más empresas se ven involucradas por una u otra razón en la realización de Tests A/B con el fin de poder tomar mejores decisiones. Ya sean por cambios en UX de páginas web o Apps, cambios en segmentación o mensajes de campañas publicitarias, e incluso en distintas selecciones de modelos de Machine Learning, decidir que versión es mejor que otra conlleva una gran cantidad de tareas, que aquellos que lo intentaron, sabrán que no son fáciles.
+El objetivo de este articulo es poder darles una guía de pautas sobre distintos métodos de muestreo y evaluación  para poder realizar experimentos que se adecuen de la mejor manera posible al desafío que tienen por delante.
 Para lograrlo revisaremos  los siguientes temas:</p>
 <p>Espero que luego de haber leído el articulo, tengan un mejor entendimiento de que no todos los tests o decisiones deben evaluarse de la misma manera, sino que existen alternativas más adecuadas a ciertos tipos de contextos,  y que sepan el funcionamiento elemental de dichas alternativas.</p>
 <p>Habiendo dicho eso, comencemos!</p>
@@ -582,7 +578,7 @@ Esto se traduce a la siguiente receta:</p>
 <ul>
 <li>Cuanto más bajo el Error Tipo 1 y Tipo 2, mejor</li>
 <li>Para lograr eso, uno debe &lsquo;pagar&rsquo; y en este caso, la moneda con la que se paga es el tamaño de la muestra.</li>
-<li>Por lo tanto para bajar alguna tasa de error uno debe: 
+<li>Por lo tanto para bajar alguna tasa de error uno debe:
 a) Aumentar la tasa del otro tipo de error
 b) Aumentar su presupuesto (tamaño muestral)</li>
 </ul>
@@ -1085,7 +1081,7 @@ b) Aumentar su presupuesto (tamaño muestral)</li>
 
 
 <p>Podemos ver que en este caso, la distribución de nuestros resultados (10 mil diferencias de Tasa de Conv B - Tasa de Conv A) se centra en 0, lo cual tiene sentido dado que pusimos tasas iguales de 0.04 para ambas variantes. Esto significa que en este caso, si luego de correr el experimento seleccionamos como variante ganadora aquella que tuvo la mayor tasa de conversión, estaremos seleccionando correctamente el 50% de las veces. Pero dado que en el contexto del problema, no nos interesaba controlar el riesgo de estar eligiendo una versión que pueda ser peor, este resultado no sería grave.</p>
-<p>En resumen, realizar selección Por Potencia, nos permite ejecutar un experimento con tamaños muestráles ampliamente menores al que necesitaríamos si decidiéramos niveles de significancia altos (alpha = 0.05 o 0.01), pero en caso de haber efecto, estaríamos seleccionando la versión correcta el 95% de las veces, o el % de las veces que determinemos con la Potencia que decidamos. 
+<p>En resumen, realizar selección Por Potencia, nos permite ejecutar un experimento con tamaños muestráles ampliamente menores al que necesitaríamos si decidiéramos niveles de significancia altos (alpha = 0.05 o 0.01), pero en caso de haber efecto, estaríamos seleccionando la versión correcta el 95% de las veces, o el % de las veces que determinemos con la Potencia que decidamos.
 Comparemos entonces el mismo experimento con las 3 metodologías en las que nos enfocamos:</p>
 
 

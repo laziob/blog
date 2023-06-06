@@ -6,9 +6,7 @@
 -->
 <html lang="es">
     <head>
-        {{ if .Site.Params.googleAnalytics}}
         {{ template "_internal/google_analytics.html" . }}
-        {{end}}
         <script src="//staging-2020.cdn-v3.conductrics.com/ac-vPmxPoxNfu/v3/agent-api/js/f-oDQWzbOGCH/dt-rKhureQtkZfXQbQBrk0oSGfZl6B1Pk?apikey=api-GAoZYRiMkEEykWRjvnOm" type="text/javascript"></script>
         {{ if .Site.Params.gtm_id}}{{- partial "gtm.html" . }}{{ end }}
         {{ partial "seo_schema" . }}
@@ -45,7 +43,6 @@
         <meta property="og:image:width" content="512">
         <meta property="og:image:height" content="512">
         {{ template "_internal/schema.html" . }}
-        {{ template "_internal/google_news.html" . }}
 
         {{ if isset .Site.Params "customcss" }}
             {{ $.Scratch.Set "cssFiles" .Site.Params.customCSS }}
