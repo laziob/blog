@@ -2,6 +2,7 @@
   <link rel="dns-prefetch" href="https://www.googletagmanager.com">{{ end }}
 {{- if eq .Site.Params.gtm_datalayer "basic"}}  <script>
 	window.dataLayer = window.dataLayer || [];
+	window.dataLayer.push({'event': 'gtag_test', 'event_category':'conductrics'});
 	window.dataLayer.push({
 		'pagePublishDate': '{{ .PublishDate.Format "2006-01-02" }}',
 		'pageModifiedDate': '{{ .Lastmod.Format "2006-01-02"  }}',
