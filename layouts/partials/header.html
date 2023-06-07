@@ -6,9 +6,11 @@
 -->
 <html lang="es">
     <head>
-        {{ template "_internal/google_analytics.html" . }}
+      <script>window.dataLayer = window.dataLayer || [];
+	window.dataLayer.push({'event': 'gtag_test', 'event_category':'conductrics'})</script>
+        {{ if .Site.Params.google_analytics}}{{- partial "google_analytics.html" . }}{{ end }}
         <script src="//staging-2020.cdn-v3.conductrics.com/ac-vPmxPoxNfu/v3/agent-api/js/f-oDQWzbOGCH/dt-rKhureQtkZfXQbQBrk0oSGfZl6B1Pk?apikey=api-GAoZYRiMkEEykWRjvnOm" type="text/javascript"></script>
-        {{ if .Site.Params.gtm_id}}{{- partial "gtm.html" . }}{{ end }}
+        <!-- {{ if .Site.Params.gtm_id}}{{- partial "gtm.html" . }}{{ end }} -->
         {{ partial "seo_schema" . }}
         {{ with $.Scratch.Get "generalTitle" }}
             <title>{{ . }}</title>
@@ -76,8 +78,6 @@
     <link href='{{ $.Site.Params.highlightjsCDN | default "//cdn.bootcss.com" }}/highlight.js/{{ . }}/styles/{{ $highTheme }}.min.css' rel='stylesheet' type='text/css' />
   {{ end }}
 {{ end }}
-
-      {{ template "_internal/google_analytics.html" . }}
     </head>
     <body>
       {{ if .Site.Params.gtm_id}}<noscript><iframe src="//www.googletagmanager.com/ns.html?id={{ .Site.Params.gtm_id }}" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>{{ end }}
